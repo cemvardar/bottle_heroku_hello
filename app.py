@@ -1,9 +1,16 @@
 import os
-from bottle import route, run
+from bottle import route, run, template
 
 @route('/hello/:name')
 def index(name='World'):
     return '<b>Hello Cem %s!</b>' % name
+
+@route('/')
+def index2():
+    titles = ['isim','soyadi']
+    items = [['cem','vardar'], ['hulya','hisim']]
+    return template('make_table', titles=titles, rows=items)
+
 
 
 if __name__ == '__main__':
