@@ -3,7 +3,7 @@ from bottle import route, run
 
 @route('/hello/:name')
 def index(name='World'):
-    return '<b>Hello %s!</b>' % name
+    return '<b>Hello Cem %s!</b>' % name
 
 
 if __name__ == '__main__':
