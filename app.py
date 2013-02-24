@@ -56,6 +56,26 @@ def login_submit():
     names_collection.insert(newRecord)
     return index2()
 
+items = {1: 'first item', 2: 'second item'}
+
+# a simple json test main page
+@route('/json')
+def jsontest():
+    return template('json')
+
+@route('/chart')
+def jsontest():
+    return template('chart')
+
+@route('/getallitems.json')
+def shop_aj_getallitems():
+    names = get_names()
+    cnt=1
+    json = {}
+    for i in names:
+        json[cnt] = i[0] + ' ' + i[1]
+        cnt+=1
+    return (json)
 
 if __name__ == '__main__':
     # Get required port, default to 5000.
