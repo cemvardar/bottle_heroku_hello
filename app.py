@@ -1,20 +1,27 @@
 import os
-from bottle import route, run, template
+from bottle import route, run, template, post, request, get
 import pymongo
+from pymongo import MongoClient
 
 
-def get_names():
+def get_names_collection():
     mongodb_uri = "mongodb://heroku_hello:HerokuHello75@ds053937.mongolab.com:53937/cem_heroku_hello"
     db_name = 'cem_heroku_hello'
-
     try:
         connection = pymongo.Connection(mongodb_uri)
+        # connection = MongoClient()
         database = connection[db_name]
     except:
         print('Error: Unable to connect to database.')
         connection = None
+    names_collection = database.names
+    return names_collection
 
-    if connection is not None:
+
+def get_names():
+    names_collection = get_names_collection()
+
+    if names_collection is not None:
 
         # To begin with, we'll add a few adventurers to the database. Note that
         # nothing is required to create the adventurers collection--it is
@@ -22,7 +29,7 @@ def get_names():
         # objects.
         #
         # database.names.insert({'name': 'liplip', 'lastname': 'tikir'})
-        namesCursor = database.names.find()
+        namesCursor = names_collection.find()
         rows = []
         for names in namesCursor:
             n = names['name']
@@ -34,13 +41,20 @@ def get_names():
 def index(name='World'):
     return '<b>Hello Cem %s!</b>' % name
 
-@route('/')
+@get('/')
 def index2():
     titles = ['isim', 'soyadi']
-    # items = [['cem','vardar'], ['hulya','hisim']]
     items= get_names()
     return template('make_table', titles=titles, rows=items)
 
+@post('/', method='POST')
+def login_submit():
+    name     = request.forms.get('name')
+    lastname = request.forms.get('lastname')
+    newRecord = {"name":name, "lastname":lastname}
+    names_collection = get_names_collection()
+    names_collection.insert(newRecord)
+    return index2()
 
 
 if __name__ == '__main__':

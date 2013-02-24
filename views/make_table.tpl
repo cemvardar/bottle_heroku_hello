@@ -13,3 +13,9 @@
   </tr>
 %end
 </table>
+
+<form action="/" method="POST">
+    <input name="name"     type="text" />
+    <input name="lastname" type="text" />
+    <input type="submit" value="Add"/>
+</from>
