@@ -19,7 +19,6 @@ if (window.XMLHttpRequest) {
 function GetItems()
 {
   if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-    // var jsonobj = eval ("(" + xmlhttp.responseText + ")");
     var jsonobj = JSON.parse(xmlhttp.responseText);
 
     var output = xmlhttp.responseText;
@@ -40,9 +39,6 @@ function GetItems()
   }
 }
 
-// xmlhttp.onreadystatechange = GetArticles;
-// the GetItems function will be triggered once the ajax
-// request is terminated.
 xmlhttp.onload = GetItems;
 
 // send the request in an async way
