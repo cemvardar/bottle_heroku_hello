@@ -7,7 +7,7 @@
     </list>
     <ignored path="bottle_heroku_hello.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361756025908" ignored="false" />
+    <file path="/Dummy.txt" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361756976841" ignored="false" />
     <file path="/app.py" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361755612239" ignored="false" />
     <file path="/monglab_tests.py" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361658189083" ignored="false" />
     <file path="/make_table.tpl" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361659103550" ignored="false" />
@@ -54,7 +54,7 @@
       <file leaf-file-name="requirements.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="14" selection-start="118" selection-end="118" vertical-scroll-proportion="0.19555555">
+            <state line="2" column="0" selection-start="35" selection-end="35" vertical-scroll-proportion="0.09777778">
               <folding />
             </state>
           </provider>
@@ -402,7 +402,11 @@
       <created>1361756037742</created>
       <updated>1361756037742</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="gviz api in requirements">
+      <created>1361756979695</created>
+      <updated>1361756979695</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -467,7 +471,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="feeding chart data with google python visualization API" />
+    <option name="LAST_COMMIT_MESSAGE" value="gviz api in requirements" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -485,6 +489,7 @@
     <MESSAGE value="adding a form to save new records into mongodb" />
     <MESSAGE value="adding ajax connection and a toy charting example" />
     <MESSAGE value="feeding chart data with google python visualization API" />
+    <MESSAGE value="gviz api in requirements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -556,7 +561,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="14" selection-start="118" selection-end="118" vertical-scroll-proportion="0.19555555">
+        <state line="2" column="0" selection-start="35" selection-end="35" vertical-scroll-proportion="0.09777778">
           <folding />
         </state>
       </provider>
