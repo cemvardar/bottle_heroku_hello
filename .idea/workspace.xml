@@ -2,22 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e01c0d0e-985e-421f-8ad9-b1369936cbc7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google_graph_tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/chart.tpl" afterPath="$PROJECT_DIR$/views/chart.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/json.tpl" afterPath="$PROJECT_DIR$/views/json.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bottle_heroku_hello.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361683020695" ignored="false" />
+    <file path="/Dummy.txt" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361756025908" ignored="false" />
     <file path="/app.py" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361755612239" ignored="false" />
     <file path="/monglab_tests.py" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361658189083" ignored="false" />
     <file path="/make_table.tpl" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361659103550" ignored="false" />
     <file path="/chart.tpl" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361755905866" ignored="false" />
     <file path="/json.tpl" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361725124351" ignored="false" />
     <file path="/google_graph_tests.py" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361755569666" ignored="false" />
+    <file path="/requirements.txt" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361756950993" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,10 +42,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chart.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="chart.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/chart.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="23" selection-start="1810" selection-end="1810" vertical-scroll-proportion="0.3020595">
+            <state line="40" column="23" selection-start="1810" selection-end="1810" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="14" selection-start="118" selection-end="118" vertical-scroll-proportion="0.19555555">
               <folding />
             </state>
           </provider>
@@ -129,6 +135,7 @@
         <option value="$PROJECT_DIR$/google_graph_tests.py" />
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/views/chart.tpl" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -391,7 +398,11 @@
       <created>1361683023605</created>
       <updated>1361683023607</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feeding chart data with google python visualization API">
+      <created>1361756037742</created>
+      <updated>1361756037742</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -456,7 +467,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding ajax connection and a toy charting example" />
+    <option name="LAST_COMMIT_MESSAGE" value="feeding chart data with google python visualization API" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -473,6 +484,7 @@
     <MESSAGE value="trying to connect to mongolab" />
     <MESSAGE value="adding a form to save new records into mongodb" />
     <MESSAGE value="adding ajax connection and a toy charting example" />
+    <MESSAGE value="feeding chart data with google python visualization API" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -537,7 +549,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/chart.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="23" selection-start="1810" selection-end="1810" vertical-scroll-proportion="0.3020595">
+        <state line="40" column="23" selection-start="1810" selection-end="1810" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="14" selection-start="118" selection-end="118" vertical-scroll-proportion="0.19555555">
           <folding />
         </state>
       </provider>
