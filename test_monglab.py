@@ -13,8 +13,8 @@ class mongolab_tests(TestCase):
         db_name = 'cem_heroku_hello'
 
         try:
-            # connection = pymongo.Connection(mongodb_uri)
-            connection = MongoClient()
+            connection = pymongo.Connection(mongodb_uri)
+            # connection = MongoClient()
             database = connection[db_name]
         except:
             print('Error: Unable to connect to database.')

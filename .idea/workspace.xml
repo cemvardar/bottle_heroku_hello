@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e01c0d0e-985e-421f-8ad9-b1369936cbc7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google_graph_tests.py" afterPath="$PROJECT_DIR$/google_graph_tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+    <list default="true" id="e01c0d0e-985e-421f-8ad9-b1369936cbc7" name="Default" comment="fixing column order and axes for the graphs">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/google_graph_tests.py" afterPath="$PROJECT_DIR$/test_google_graph.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/monglab_tests.py" afterPath="$PROJECT_DIR$/test_monglab.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bottle_heroku_hello.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361841062409" ignored="false" />
+    <file path="/Dummy.txt" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361923952889" ignored="false" />
     <file path="/app.py" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361844706771" ignored="false" />
     <file path="/monglab_tests.py" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361658189083" ignored="false" />
     <file path="/make_table.tpl" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361659103550" ignored="false" />
     <file path="/chart.tpl" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361755905866" ignored="false" />
     <file path="/json.tpl" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361725124351" ignored="false" />
-    <file path="/google_graph_tests.py" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361843451692" ignored="false" />
+    <file path="/google_graph_tests.py" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361924215187" ignored="false" />
     <file path="/requirements.txt" changelist="e01c0d0e-985e-421f-8ad9-b1369936cbc7" time="1361756950993" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,25 +36,25 @@
       <file leaf-file-name="app.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="29" selection-start="2562" selection-end="2562" vertical-scroll-proportion="-8.8">
+            <state line="81" column="29" selection-start="2562" selection-end="2562" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chart.tpl" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="chart.tpl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/chart.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="28" selection-start="1927" selection-end="1927" vertical-scroll-proportion="0.0">
+            <state line="43" column="28" selection-start="1927" selection-end="1927" vertical-scroll-proportion="1.006865">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="requirements.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="126" selection-end="126" vertical-scroll-proportion="0.19555555">
+            <state line="4" column="0" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -69,19 +69,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="monglab_tests.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/monglab_tests.py">
+      <file leaf-file-name="test_monglab.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_monglab.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="22" selection-start="440" selection-end="450" vertical-scroll-proportion="0.0">
+            <state line="15" column="29" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="google_graph_tests.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/google_graph_tests.py">
+      <file leaf-file-name="test_google_graph.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_google_graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="41" selection-start="1351" selection-end="1407" vertical-scroll-proportion="-9.96">
+            <state line="32" column="17" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -132,8 +143,10 @@
         <option value="$PROJECT_DIR$/views/google_graph_tests.py" />
         <option value="$PROJECT_DIR$/views/chart.tpl" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/google_graph_tests.py" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/google_graph_tests.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/test_monglab.py" />
       </list>
     </option>
   </component>
@@ -227,11 +240,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../GridLogViewer" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -241,7 +255,7 @@
       <PyConsoleSettings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Python tests.Unittests in /Users/cvardar/PycharmProjects/bottle_heroku_hello">
     <configuration default="false" name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -270,7 +284,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <module name="bottle_heroku_hello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/monglab_tests.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_monglab.py" />
       <option name="CLASS_NAME" value="mongolab_tests" />
       <option name="METHOD_NAME" value="test_first" />
       <option name="FOLDER_NAME" value="" />
@@ -293,11 +307,34 @@
       <option name="IS_MODULE_SDK" value="true" />
       <module name="bottle_heroku_hello" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/google_graph_tests.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_google_graph.py" />
       <option name="CLASS_NAME" value="google_graph_tests" />
       <option name="METHOD_NAME" value="test_first" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in test_google_graph" type="tests" factoryName="Unittests" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="bottle_heroku_hello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_google_graph.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PUREUNITTEST" value="true" />
@@ -361,16 +398,44 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="3">
+    <configuration default="false" name="Unittests in /Users/cvardar/PycharmProjects/bottle_heroku_hello" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="bottle_heroku_hello" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="$PROJECT_DIR$" />
+      <option name="TEST_TYPE" value="TEST_FOLDER" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.app" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest mongolab_tests.test_first" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest google_graph_tests.test_first" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in /Users/cvardar/PycharmProjects/bottle_heroku_hello" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest mongolab_tests.test_first" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest google_graph_tests.test_first" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test_google_graph" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.app" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest google_graph_tests.test_first" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest mongolab_tests.test_first" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest mongolab_tests.test_first" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_google_graph" />
+        <item index="2" class="java.lang.String" itemvalue="Python.app" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest google_graph_tests.test_first" />
       </list>
     </recent_temporary>
   </component>
@@ -427,7 +492,11 @@
       <created>1361758415156</created>
       <updated>1361758415156</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixing column order and axes for the graphs">
+      <created>1361844978224</created>
+      <updated>1361844978224</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -438,7 +507,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17001435" sideWeight="0.67134833" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17216642" sideWeight="0.67134833" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22893259" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -492,7 +561,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="gviz api in requirements trying again" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing column order and axes for the graphs" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -512,6 +581,7 @@
     <MESSAGE value="feeding chart data with google python visualization API" />
     <MESSAGE value="gviz api in requirements" />
     <MESSAGE value="gviz api in requirements trying again" />
+    <MESSAGE value="fixing column order and axes for the graphs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -519,13 +589,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/chart.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="23" selection-start="1810" selection-end="1810" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
@@ -540,14 +603,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monglab_tests.py">
+    <entry file="file://$PROJECT_DIR$/test_monglab.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="22" selection-start="440" selection-end="450" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/google_graph_tests.py">
+    <entry file="file://$PROJECT_DIR$/test_google_graph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="32" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0">
           <folding>
@@ -575,20 +640,6 @@
         <state line="223" column="0" selection-start="7712" selection-end="7712" vertical-scroll-proportion="0.33205375" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/make_table.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="15" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monglab_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="22" selection-start="440" selection-end="450" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/python2.7/site-packages/gviz_api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1004" column="6" selection-start="41786" selection-end="41786" vertical-scroll-proportion="0.0">
@@ -603,32 +654,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/chart.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="28" selection-start="1927" selection-end="1927" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/google_graph_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="41" selection-start="1351" selection-end="1407" vertical-scroll-proportion="-9.96">
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="29" selection-start="2562" selection-end="2562" vertical-scroll-proportion="-8.8">
+        <state line="81" column="29" selection-start="2562" selection-end="2562" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="126" selection-end="126" vertical-scroll-proportion="0.19555555">
+        <state line="4" column="0" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_monglab.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="29" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_google_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="17" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/make_table.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="15" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/chart.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="28" selection-start="1927" selection-end="1927" vertical-scroll-proportion="1.006865">
           <folding />
         </state>
       </provider>

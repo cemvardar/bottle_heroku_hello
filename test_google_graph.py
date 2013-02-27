@@ -1,4 +1,5 @@
 from unittest import TestCase
+import unittest
 import gviz_api
 
 __author__ = 'cvardar'
@@ -32,3 +33,6 @@ class google_graph_tests(TestCase):
         print data_table.ToJSonResponse(columns_order=("year", "Austria", "Bulgaria", "Denmark"))
 
         print data_table.ToJSon()
+
+if __name__ == '__main__':
+    unittest.main()
