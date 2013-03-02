@@ -37,7 +37,6 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
                 }).responseText;
         document.getElementById("ajaxData").innerHTML = jsonData;
         // Create and populate the data table.
-        //var data = jsonData.getDataTable();
         var data = new google.visualization.DataTable(jsonData);
 
         // Create and draw the visualization.

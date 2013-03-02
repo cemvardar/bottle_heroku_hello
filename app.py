@@ -1,30 +1,11 @@
 import gviz_api
+from mongolab_helper import get_names_collection
 import os
 from bottle import route, run, template, post, request, get
-import pymongo
-from pymongo import MongoClient
-
-
-def get_names_collection():
-    userid = os.environ['mongolab_userid']
-    password = os.environ['mongolab_password']
-    mongodb_uri = "mongodb://"+userid+":"+ password+ "@ds053937.mongolab.com:53937/cem_heroku_hello"
-    db_name = 'cem_heroku_hello'
-    try:
-        connection = pymongo.Connection(mongodb_uri)
-        # connection = MongoClient()
-        database = connection[db_name]
-    except:
-        print('Error: Unable to connect to database.')
-        connection = None
-    names_collection = database.names
-    return names_collection
-
 
 def get_names():
     names_collection = get_names_collection()
     if names_collection is not None:
-        # database.names.insert({'name': 'liplip', 'lastname': 'tikir'})
         namesCursor = names_collection.find()
         rows = []
         for names in namesCursor:
@@ -35,9 +16,7 @@ def get_names():
 
 @route('/hello/:name')
 def index(name='World'):
-    print os.environ['mongolab_userid']
-    print os.environ['mongolab_password']
-    return os.environ['mongolab_password'] + '<b>Hello Cem %s!</b>' % name
+    return '<b>Hello Cem %s!</b>' % name
 
 @get('/')
 def index2():
@@ -53,8 +32,6 @@ def login_submit():
     names_collection = get_names_collection()
     names_collection.insert(newRecord)
     return index2()
-
-items = {1: 'first item', 2: 'second item'}
 
 # a simple json test main page
 @route('/json')
