@@ -21,14 +21,7 @@ def get_names_collection():
 
 def get_names():
     names_collection = get_names_collection()
-
     if names_collection is not None:
-
-        # To begin with, we'll add a few adventurers to the database. Note that
-        # nothing is required to create the adventurers collection--it is
-        # created automatically when we insert into it. These are simple JSON
-        # objects.
-        #
         # database.names.insert({'name': 'liplip', 'lastname': 'tikir'})
         namesCursor = names_collection.find()
         rows = []
@@ -40,7 +33,9 @@ def get_names():
 
 @route('/hello/:name')
 def index(name='World'):
-    return '<b>Hello Cem %s!</b>' % name
+    print os.environ['mongolab_userid']
+    print os.environ['mongolab_password']
+    return os.environ['mongolab_password'] + '<b>Hello Cem %s!</b>' % name
 
 @get('/')
 def index2():
@@ -81,18 +76,6 @@ def jsonchartdata():
     data_table = gviz_api.DataTable(description)
     data_table.LoadData(data)
     return data_table.ToJSon(columns_order=("year", "Austria", "Bulgaria", "Denmark"))
-    # return data_table.ToJSonResponse(columns_order=("year", "Austria", "Bulgaria", "Denmark"),
-    #                                 order_by="Austria")
-
-    # return [
-    #     ['Year', 'Austria', 'Bulgaria', 'Denmark', 'Greece'],
-    #     ['2003',  1336060,    400361,    1001582,   997974],
-    #     ['2004',  1538156,    366849,    1119450,   941795],
-    #     ['2005',  1576579,    440514,    993360,    930593],
-    #     ['2006',  1600652,    434552,    1004163,   897127],
-    #     ['2007',  1968113,    393032,    979198,    1080887],
-    #     ['2008',  1901067,    517206,    916965,    1056036]
-    # ]
 
 @route('/getallitems.json')
 def shop_aj_getallitems():
