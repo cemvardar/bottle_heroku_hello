@@ -1,5 +1,6 @@
+import datetime
 import gviz_api
-from mongolab_helper import get_names_collection
+from mongolab_helper import get_names_collection, get_commutes_collection
 import os
 from bottle import route, run, template, post, request, get
 
@@ -14,24 +15,35 @@ def get_names():
             rows.append([n,l])
         return rows
 
+def get_commutes():
+    names_collection = get_commutes_collection()
+    if names_collection is not None:
+        namesCursor = names_collection.find()
+        rows = []
+        for names in namesCursor:
+            n = names['date']
+            l = names['duration']
+            rows.append([n,l])
+        return rows
+
 @route('/hello/:name')
 def index(name='World'):
     return '<b>Hello Cem %s!</b>' % name
 
 @get('/')
-def index2():
+def show_names():
     titles = ['isim', 'soyadi']
     items= get_names()
     return template('make_table', titles=titles, rows=items)
 
 @post('/', method='POST')
-def login_submit():
+def save_new_name():
     name     = request.forms.get('name')
     lastname = request.forms.get('lastname')
     newRecord = {"name":name, "lastname":lastname}
     names_collection = get_names_collection()
     names_collection.insert(newRecord)
-    return index2()
+    return show_names()
 
 # a simple json test main page
 @route('/json')
@@ -40,7 +52,19 @@ def jsontest():
 
 @route('/commutes')
 def commutes():
-    return template('commutes')
+    titles = ['Commute Date', 'duration']
+    items= get_commutes()
+    return template('commutes', titles=titles, rows=items)
+
+@post('/commutes', method='POST')
+def save_new_commute():
+    date_string = request.forms.get('date')
+    duration = request.forms.get('duration')
+    date = datetime.datetime.strptime(date_string,'%m/%d/%Y')
+    newRecord = {"date":date, "duration":int(duration)}
+    commutes_collection = get_commutes_collection()
+    commutes_collection.insert(newRecord)
+    return commutes()
 
 @route('/chart')
 def jsontest():
@@ -59,6 +83,18 @@ def jsonchartdata():
     data_table = gviz_api.DataTable(description)
     data_table.LoadData(data)
     return data_table.ToJSon(columns_order=("year", "Austria", "Bulgaria", "Denmark"))
+
+@route('/commutedata')
+def jsoncommutechartdata():
+    commutes = get_commutes()
+    description = {"date": ("string", "Date"),
+                   "duration": ("number", "Duration")}
+    data = []
+    for (date, duration) in commutes:
+        data.append({"date": date, "duration":int(duration)})
+    data_table = gviz_api.DataTable(description)
+    data_table.LoadData(data)
+    return data_table.ToJSon(columns_order=("date", "duration"))
 
 @route('/getallitems.json')
 def shop_aj_getallitems():
