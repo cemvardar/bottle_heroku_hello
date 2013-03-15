@@ -38,6 +38,10 @@ def login_submit():
 def jsontest():
     return template('json')
 
+@route('/commutes')
+def commutes():
+    return template('commutes')
+
 @route('/chart')
 def jsontest():
     return template('chart')
