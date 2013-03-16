@@ -1,30 +1,16 @@
 import datetime
 import gviz_api
-from mongolab_helper import get_names_collection, get_commutes_collection
+from mongolab_helper import get_names_collection, get_commutes_collection, SimpleQuery
 import os
 from bottle import route, run, template, post, request, get
 
 def get_names():
-    names_collection = get_names_collection()
-    if names_collection is not None:
-        namesCursor = names_collection.find()
-        rows = []
-        for names in namesCursor:
-            n = names['name']
-            l = names['lastname']
-            rows.append([n,l])
-        return rows
+    s = SimpleQuery('names')
+    return s.get_data(['name','lastname'])
 
 def get_commutes():
-    names_collection = get_commutes_collection()
-    if names_collection is not None:
-        namesCursor = names_collection.find()
-        rows = []
-        for names in namesCursor:
-            n = names['date']
-            l = names['duration']
-            rows.append([n,l])
-        return rows
+    s = SimpleQuery('commutes')
+    return s.get_data(['date','duration'])
 
 @route('/hello/:name')
 def index(name='World'):

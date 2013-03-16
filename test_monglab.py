@@ -1,6 +1,6 @@
 from unittest import TestCase
 import sys
-from mongolab_helper import get_names_collection
+from mongolab_helper import get_names_collection, SimpleQuery
 import os
 import pymongo
 from pymongo import MongoClient
@@ -15,3 +15,9 @@ class mongolab_tests(TestCase):
             party = database.names.find()
             for i in party:
                 print i
+
+    def test_simple_query(self):
+        q = SimpleQuery('commutes')
+        fieldsToPull = ['duration']
+        for r in q.get_data(fieldsToPull):
+            print r

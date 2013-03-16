@@ -32,3 +32,19 @@ def get_collection(collectionName):
     names_collection = database[collectionName]
     return names_collection
 
+class SimpleQuery():
+    def __init__(self, collectionName):
+        self.collectionName = collectionName
+
+    def get_data(self, fieldsToPull):
+        collection = get_collection(self.collectionName)
+        if collection is not None:
+            namesCursor = collection.find()
+            rows = []
+            for names in namesCursor:
+                row = []
+                for f in fieldsToPull:
+                    row.append(names[f])
+                rows.append(row)
+            return rows
+        return []
