@@ -1,6 +1,7 @@
 import datetime
 import gviz_api
-from mongolab_helper import get_names_collection, get_commutes_collection, SimpleQuery
+from kose_yazisi import get_yazi_json, insert_doc_into_yazilar, get_yazilar_collection
+from mongolab_helper import get_names_collection, get_commutes_collection, SimpleQuery, get_data_from_collection
 import os
 from bottle import route, run, template, post, request, get
 
@@ -12,9 +13,21 @@ def get_commutes():
     s = SimpleQuery('commutes')
     return s.get_data(['date','duration'])
 
-@route('/hello/:name')
-def index(name='World'):
-    return '<b>Hello Cem %s!</b>' % name
+def get_yazilar():
+    return get_data_from_collection(get_yazilar_collection(), ['author', 'date','title'])
+
+
+@route('/koseyazisi/:name')
+def koseyazisi_show(name='cem'):
+    titles=['yazar','tarih','baslik']
+    rows=get_yazilar()
+    return template('kose_yazisi', titles=titles, rows=rows)
+
+@post('/koseyazisi/:name')
+def save_new_name(name='cem'):
+    url     = request.forms.get('url')
+    insert_doc_into_yazilar(get_yazi_json(url))
+    return koseyazisi_show()
 
 @get('/')
 def show_names():
