@@ -4,4 +4,4 @@
     <input name="name"     type="text" />
     <input name="lastname" type="text" />
     <input type="submit" value="Add"/>
-</from>
+</form>

@@ -13,7 +13,7 @@ $(function() {
     Date : <input name="date"     type="text" id="datepicker" />
     Duration (in minutes): <input name="duration" type="text" />
     <input type="submit" value="AddCommute"/>
-</from>
+</form>
 </p>
 
     <script type="text/javascript" src="http://www.google.com/jsapi"></script>

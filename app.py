@@ -1,9 +1,10 @@
 import datetime
 import gviz_api
-from kose_yazisi import get_yazi_json, insert_doc_into_yazilar, get_yazilar_collection
+from kose_yazisi import get_yazi_json, insert_doc_into_yazilar, get_yazilar_collection, delete_doc_from_yazilar
 from mongolab_helper import get_names_collection, get_commutes_collection, SimpleQuery, get_data_from_collection
 import os
-from bottle import route, run, template, post, request, get
+from bottle import route, run, template, post, request, get, redirect
+
 
 def get_names():
     s = SimpleQuery('names')
@@ -13,21 +14,29 @@ def get_commutes():
     s = SimpleQuery('commutes')
     return s.get_data(['date','duration'])
 
-def get_yazilar():
-    return get_data_from_collection(get_yazilar_collection(), ['author', 'date','title'])
+def get_yazilar(user_name):
+    s = SimpleQuery('yazilar')
+    return s.get_data(['author', 'date','title', '_id'], {'user_name':user_name})
 
+@route('/koseyazisi/:user_name')
+def koseyazisi_show(user_name='cem'):
+    titles=['yazar','tarih','baslik','action']
+    rows=get_yazilar(user_name)
+    for row in rows:
+        row[3] = (template('delete_botton', object_id=row[3], user_name=user_name))
+    return template('kose_yazisi', titles=titles, rows=rows, user_name=user_name)
 
-@route('/koseyazisi/:name')
-def koseyazisi_show(name='cem'):
-    titles=['yazar','tarih','baslik']
-    rows=get_yazilar()
-    return template('kose_yazisi', titles=titles, rows=rows)
-
-@post('/koseyazisi/:name')
-def save_new_name(name='cem'):
+@post('/koseyazisi/:user_name')
+def save_new_koseyazisi(user_name='cem'):
     url     = request.forms.get('url')
-    insert_doc_into_yazilar(get_yazi_json(url))
-    return koseyazisi_show()
+    insert_doc_into_yazilar(get_yazi_json(url), user_name)
+    redirect('/koseyazisi/'+user_name)
+
+@post('/koseyazisi/:user_name/sil')
+def delete_kose_yazisi(user_name='cem'):
+    object_id= request.forms.get('object_id')
+    delete_doc_from_yazilar(object_id, user_name)
+    redirect('/koseyazisi/'+user_name)
 
 @get('/')
 def show_names():

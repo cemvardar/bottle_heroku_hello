@@ -1,8 +1,8 @@
 <p>
-<form action="/koseyazisi/cem" method="POST">
+<form action="/koseyazisi/{{user_name}}" method="POST">
     Adres : <input name="url"     type="text" id="datepicker" />
     <input type="submit" value="Yaziyi ekle"/>
-</from>
+</form>
 </p>
 
 %include table titles=titles, rows=rows
