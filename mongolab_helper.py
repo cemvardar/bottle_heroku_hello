@@ -1,3 +1,4 @@
+from bson import ObjectId
 import pymongo
 import os
 
@@ -33,13 +34,18 @@ def get_collection(collectionName):
     return names_collection
 
 def get_data_from_collection(collection, fieldsToPull, query=None):
+    if query and '_id' in query:
+        query['_id'] = ObjectId(query['_id'])
     if collection is not None:
-        namesCursor = collection.find(query)
+        docCursor = collection.find(query)
         rows = []
-        for names in namesCursor:
+        for document in docCursor:
             row = []
             for f in fieldsToPull:
-                row.append(names[f])
+                if f in document:
+                    row.append(document[f])
+                else:
+                    row.append('')
             rows.append(row)
         return rows
     return []

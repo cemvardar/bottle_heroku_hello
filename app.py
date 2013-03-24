@@ -16,13 +16,20 @@ def get_commutes():
 
 def get_yazilar(user_name):
     s = SimpleQuery('yazilar')
-    return s.get_data(['author', 'date','title', '_id'], {'user_name':user_name})
+    return s.get_data(['author', 'date','title', '_id', 'url'], {'user_name':user_name})
+
+def get_yazi_content(user_name, object_id):
+    s = SimpleQuery('yazilar')
+    query = {'user_name': user_name, '_id': object_id }
+    return s.get_data(['author', 'date','title', '_id', 'url', 'content'], query)
+
 
 @route('/koseyazisi/:user_name')
 def koseyazisi_show(user_name='cem'):
-    titles=['yazar','tarih','baslik','action']
+    titles=['yazar','tarih','baslik','action', 'link']
     rows=get_yazilar(user_name)
     for row in rows:
+        row[2] = (template('link', url=row[4], link_text=row[2]))
         row[3] = (template('delete_botton', object_id=row[3], user_name=user_name))
     return template('kose_yazisi', titles=titles, rows=rows, user_name=user_name)
 
@@ -37,6 +44,13 @@ def delete_kose_yazisi(user_name='cem'):
     object_id= request.forms.get('object_id')
     delete_doc_from_yazilar(object_id, user_name)
     redirect('/koseyazisi/'+user_name)
+
+@post('/koseyazisi/:user_name/goster')
+def show_kose_yazisi(user_name='cem'):
+    object_id= request.forms.get('object_id')
+    yazi_row = get_yazi_content(user_name, object_id)[0]
+    return template('kose_yazisi_goster', author=yazi_row[0], date=yazi_row[1], content=yazi_row[5])
+
 
 @get('/')
 def show_names():
