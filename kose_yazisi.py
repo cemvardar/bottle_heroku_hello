@@ -9,8 +9,17 @@ __author__ = 'cvardar'
 def get_yazi_json(url):
     yazi={}
     yazi['url'] = url
-    response = urllib2.urlopen(url)
+    response = None
+    try:
+        response = urllib2.urlopen(url)
+    except urllib2.HTTPError, err:
+        if err.code == 404:
+            return yazi
+        else:
+            raise
+
     html = response.read()
+
     soup = BeautifulSoup(html)
     tarih = soup.find('div', attrs={'class': 'tarihSp FL'}).text
     yazi['date'] = tarih
