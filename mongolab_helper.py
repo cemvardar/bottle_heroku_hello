@@ -21,8 +21,8 @@ def get_commutes_collection():
     return get_collection('commutes')
 
 def get_collection(collectionName):
-    mongodb_uri = get_mongoDb_url()
-    # mongodb_uri = get_mongoDb_url_local()
+    # mongodb_uri = get_mongoDb_url()
+    mongodb_uri = get_mongoDb_url_local()
     db_name = 'cem_heroku_hello'
     try:
         connection = pymongo.Connection(mongodb_uri)
