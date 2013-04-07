@@ -20,24 +20,26 @@ def strip_tags(html):
 
 class KeywordLookupTests(TestCase):
     def test_first(self):
-        for i in get_collection('yazilar').find():
-            print strip_tags(i['content'])
+        pass
+        # for i in get_collection('yazilar').find():
+        #     print strip_tags(i['content'])
 
     def test_remove_all_keywords(self):
         keywordCollection = get_collection('keywords')
         # keywordCollection.remove()
     def test_insert_single_record_keywords(self):
         keywordCollection = get_collection('keywords')
-        keywordCollection.insert({'user_name':'cem', 'include':[]})
+        # keywordCollection.insert({'user_name':'cem', 'include':[]})
 
     def test_insert_keywords(self):
+        pass
         # get_collection('keywords').insert({'include':['bir', 'halk']})
         keywordCollection = get_collection('keywords')
         keywords = keywordCollection.find_one({'user_name':'cem'})['include']
         # keywords=['halk', 'millet', 'vatan', 'tayyip', 'bakan', 'tbmm']
         keywords+=['millet', 'tayyip']
         print keywords
-        keywordCollection.update({'user_name':'cem'}, {'user_name':'cem', 'include': keywords},True)
+        # keywordCollection.update({'user_name':'cem'}, {'user_name':'cem', 'include': keywords},True)
         for i in keywordCollection.find():
         # for i in keywordCollection.find({'user_name':'cem'}):
             if 'user_name' in i:
