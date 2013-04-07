@@ -7,31 +7,34 @@ from pymongo import MongoClient
 
 __author__ = 'cvardar'
 
-def get_yazi_json(url):
-    yazi={}
-    yazi['url'] = url
-    response = None
-    try:
-        response = urllib2.urlopen(url)
-    except urllib2.HTTPError, err:
-        if err.code == 404:
-            return yazi
-        else:
-            raise
 
-    html = response.read()
-
+def get_yazi_from_html(html, url):
     soup = BeautifulSoup(html)
+
+    yazi = {}
+    yazi['url'] = url
     tarih = soup.find('div', attrs={'class': 'tarihSp FL'}).text
     yazi['date'] = tarih
     yazarName = soup.find('div', attrs={'class': 'YazarNameContainer_2'}).find('a').text
     yazi['author'] = yazarName
-
     yaziContent = soup.find("div", {"id": "YazarDetayText"})
     title = yaziContent.find('span').text
     yazi['content'] = unicode(yaziContent)
     yazi['title'] = title
     return yazi
+
+
+def get_yazi_json(url):
+    try:
+        response = urllib2.urlopen(url)
+    except urllib2.HTTPError, err:
+        if err.code == 404:
+            return {}
+        else:
+            raise
+
+    html = response.read()
+    return get_yazi_from_html(html, url)
 
 
 def get_yazilar_collection():
