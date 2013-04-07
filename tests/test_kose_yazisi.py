@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import pprint
 from unittest import TestCase
-import urllib2
 import bottle
 from kose_yazisi import get_yazi_json, get_yazi_from_html, get_yazilar_collection, insert_doc_into_yazilar, get_yazilar
 
