@@ -78,7 +78,8 @@ def get_yazilar(user_name):
     rows = s.get_data(['author', 'date', 'title', '_id', 'keywords', 'url'], {'user_name': user_name})
     for row in rows:
         row[2] = (template('link', url=row[5], link_text=row[2]))
-        row[3] = (template('delete_botton', object_id=row[3], user_name=user_name))
+        actionsCell =(template('goster_button', object_id=row[3], user_name=user_name))
+        row[3] = actionsCell + (template('delete_button', object_id=row[3], user_name=user_name))
         keywordsListEncoded = []
         for word in row[4]:
             keywordsListEncoded.append(word.encode('utf-8'))
