@@ -60,7 +60,7 @@ def show_keywords(user_name='cem'):
 @post('/koseyazisi/:user_name/kelimeler')
 def save_new_keyword(user_name='cem'):
     yeniKelime = request.forms.get('kelime')
-    insert_new_keyword(yeniKelime)
+    insert_new_keyword(yeniKelime, user_name)
     redirect('/koseyazisi/' + user_name + '/kelimeler')
 
 @get('/')

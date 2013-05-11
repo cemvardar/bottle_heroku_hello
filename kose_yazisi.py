@@ -58,6 +58,7 @@ def insert_doc_into_yazilar(json_doc, user_name='cem'):
     if keywordsDoc:
         containedKeywords = get_contained_keywords(json_doc,keywordsDoc['include'])
         json_doc['keywords'] = list(containedKeywords)
+        # json_doc['keywords'] = [s.encode('utf-8') for s in containedKeywords]
     yazilar.insert(json_doc)
 
 def insert_keyword_into_keywords(json_doc, user_name='cem'):

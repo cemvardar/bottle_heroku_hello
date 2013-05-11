@@ -1,3 +1,4 @@
+from HtmlAndTextParseHelper import get_unicode
 from mongolab_helper import SimpleQuery, get_collection
 
 __author__ = 'cvardar'
@@ -12,12 +13,13 @@ def get_kelimeler_content(user_name):
             kelimeler.append([i])
     return kelimeler
 
-def insert_new_keyword(yeniKelime):
+def insert_new_keyword(yeniKelime, userName='cem'):
+    newWordUnicode = get_unicode(yeniKelime).lower()
     keywordCollection = get_collection('keywords')
-    record = keywordCollection.find_one({'user_name': 'cem'})
+    record = keywordCollection.find_one({'user_name': userName})
     if record:
         keywords = record['include']
-        keywords.append(yeniKelime)
+        keywords.append(newWordUnicode)
     else:
-        keywords = [yeniKelime]
-    keywordCollection.update({'user_name': 'cem'}, {'$set': {'include': keywords}}, upsert=True)
+        keywords = [newWordUnicode]
+    keywordCollection.update({'user_name': userName}, {'$set': {'include': keywords}}, upsert=True)
