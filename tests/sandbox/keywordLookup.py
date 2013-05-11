@@ -36,4 +36,9 @@ class KeywordLookupTests(TestCase):
         #         if kw in wordset:
         #             print kw
 
-    # def test_insert_update(self):
+    def test_delete_kelime(self):
+        a = ['cem', 'hula', 'cem']
+        # a.remove('cem')
+        a.remove('hula')
+        a.remove('hula')
+        print a

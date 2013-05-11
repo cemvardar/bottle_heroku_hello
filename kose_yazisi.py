@@ -1,11 +1,9 @@
-
 import urllib2
 from HtmlAndTextParseHelper import strip_tags
 from bottle import template
 from bs4 import BeautifulSoup
 from bson import ObjectId
 from mongolab_helper import get_collection, SimpleQuery
-from pymongo import MongoClient
 
 __author__ = 'cvardar'
 
@@ -41,7 +39,6 @@ def get_yazi_json(url):
             return {}
         else:
             raise
-
     html = response.read()
     return get_yazi_from_html(html, url)
 
@@ -58,7 +55,6 @@ def insert_doc_into_yazilar(json_doc, user_name='cem'):
     if keywordsDoc:
         containedKeywords = get_contained_keywords(json_doc,keywordsDoc['include'])
         json_doc['keywords'] = list(containedKeywords)
-        # json_doc['keywords'] = [s.encode('utf-8') for s in containedKeywords]
     yazilar.insert(json_doc)
 
 def insert_keyword_into_keywords(json_doc, user_name='cem'):
@@ -77,9 +73,9 @@ def get_yazilar(user_name):
     s = SimpleQuery('yazilar')
     rows = s.get_data(['author', 'date', 'title', '_id', 'keywords', 'url'], {'user_name': user_name})
     for row in rows:
-        row[2] = (template('link', url=row[5], link_text=row[2]))
-        actionsCell =(template('goster_button', object_id=row[3], user_name=user_name))
-        row[3] = actionsCell + (template('delete_button', object_id=row[3], user_name=user_name))
+        row[2] = template('link', url=row[5], link_text=row[2])
+        actionsCell = template('goster_button', object_id=row[3], user_name=user_name)
+        row[3] = actionsCell + template('delete_button', object_id=row[3], user_name=user_name)
         keywordsListEncoded = []
         for word in row[4]:
             keywordsListEncoded.append(word.encode('utf-8'))

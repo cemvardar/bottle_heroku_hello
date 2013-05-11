@@ -1,5 +1,5 @@
 import datetime
-from KelimelerPage import get_kelimeler_content, insert_new_keyword
+from KelimelerPage import get_kelimeler_content, insert_new_keyword, delete_keyword
 import gviz_api
 from kose_yazisi import get_yazi_json, insert_doc_into_yazilar, get_yazilar_collection, delete_doc_from_yazilar, get_yazilar
 from mongolab_helper import get_names_collection, get_commutes_collection, SimpleQuery, get_data_from_collection, get_collection
@@ -54,13 +54,19 @@ def show_kose_yazisi(user_name='cem'):
 @route('/koseyazisi/:user_name/kelimeler')
 def show_keywords(user_name='cem'):
     kelimeler = get_kelimeler_content(user_name)
-    return template('kelimeler', titles=['keywords'], rows=kelimeler, user_name=user_name)
+    return template('kelimeler', titles=['keywords', 'action'], rows=kelimeler, user_name=user_name)
 
 
 @post('/koseyazisi/:user_name/kelimeler')
 def save_new_keyword(user_name='cem'):
     yeniKelime = request.forms.get('kelime')
     insert_new_keyword(yeniKelime, user_name)
+    redirect('/koseyazisi/' + user_name + '/kelimeler')
+
+@post('/koseyazisi/:user_name/kelime_sil')
+def save_new_keyword(user_name='cem'):
+    yeniKelime = request.forms.get('object_id')
+    delete_keyword(yeniKelime, user_name)
     redirect('/koseyazisi/' + user_name + '/kelimeler')
 
 @get('/')
@@ -72,7 +78,6 @@ def show_names():
     titles = ['isim', 'soyadi']
     items = get_names()
     return template('make_table', titles=titles, rows=items)
-
 
 @post('/', method='POST')
 def save_new_name():
