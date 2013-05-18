@@ -51,23 +51,41 @@ def show_kose_yazisi(user_name='cem'):
     return template('kose_yazisi_goster', author=yazi_row[0], date=yazi_row[1], content=yazi_row[5])
 
 
-@route('/koseyazisi/:user_name/kelimeler')
+@route('/koseyazisi/:user_name/keywords')
 def show_keywords(user_name='cem'):
     kelimeler = get_kelimeler_content(user_name)
-    return template('kelimeler', titles=['keywords', 'action'], rows=kelimeler, user_name=user_name)
+    return template('kelimeler', titles=['keywords', 'action'], rows=kelimeler, user_name=user_name, collection_name='keywords')
 
 
-@post('/koseyazisi/:user_name/kelimeler')
+@post('/koseyazisi/:user_name/keywords')
 def save_new_keyword(user_name='cem'):
     yeniKelime = request.forms.get('kelime')
     insert_new_keyword(yeniKelime, user_name)
-    redirect('/koseyazisi/' + user_name + '/kelimeler')
+    redirect('/koseyazisi/' + user_name + '/keywords')
 
-@post('/koseyazisi/:user_name/kelime_sil')
+@post('/koseyazisi/:user_name/keywords_sil')
 def save_new_keyword(user_name='cem'):
     yeniKelime = request.forms.get('object_id')
     delete_keyword(yeniKelime, user_name)
-    redirect('/koseyazisi/' + user_name + '/kelimeler')
+    redirect('/koseyazisi/' + user_name + '/keywords')
+
+@route('/koseyazisi/:user_name/corpus_keywords')
+def show_keywords(user_name='cem'):
+    kelimeler = get_kelimeler_content(user_name, 'corpus_keywords')
+    return template('kelimeler', titles=['keywords', 'action'], rows=kelimeler, user_name=user_name, collection_name='corpus_keywords')
+
+
+@post('/koseyazisi/:user_name/corpus_keywords')
+def save_new_keyword(user_name='cem'):
+    yeniKelime = request.forms.get('kelime')
+    insert_new_keyword(yeniKelime, user_name, 'corpus_keywords')
+    redirect('/koseyazisi/' + user_name + '/corpus_keywords')
+
+@post('/koseyazisi/:user_name/corpus_keywords_sil')
+def save_new_keyword(user_name='cem'):
+    yeniKelime = request.forms.get('object_id')
+    delete_keyword(yeniKelime, user_name, 'corpus_keywords')
+    redirect('/koseyazisi/' + user_name + '/corpus_keywords')
 
 @get('/')
 def index():
