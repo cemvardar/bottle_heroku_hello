@@ -73,6 +73,7 @@ def get_yazilar(user_name):
     s = SimpleQuery('yazilar')
     rows = s.get_data(['author', 'date', 'title', '_id', 'keywords', 'url'], {'user_name': user_name})
     my_authors = set([])
+    date_user= get_date_username()
     for row in rows:
         my_authors.add(row[0])
         row[2] = template('link', url=row[5], link_text=row[2])
@@ -81,9 +82,8 @@ def get_yazilar(user_name):
         keywordsListEncoded = []
         for word in row[4]:
             keywordsListEncoded.append(word.encode('utf-8'))
-        row[4] = keywordsListEncoded
+        row[4] = str(keywordsListEncoded) + date_user
 
-    date_user= get_date_username()
     new_rows = s.get_data(['author', 'date', 'title', '_id', 'keywords', 'url'], {'user_name': date_user})
 
     new_rows_interesting = []
