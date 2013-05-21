@@ -92,7 +92,7 @@ def get_yazilar(user_name):
         row[2] = template('link', url=row[5], link_text=row[2])
         # actionsCell = template('goster_button', object_id=row[3], user_name=user_name)
         # row[3] = actionsCell + template('delete_button', object_id=row[3], user_name=user_name)
-        row[3] = 'YENI'
+        row[3] = 'YENI' + date_user
         keywordsListEncoded = []
         for word in row[4]:
             keywordsListEncoded.append(word.encode('utf-8'))
