@@ -1,3 +1,4 @@
+from datetime import datetime
 from bson import ObjectId
 import pymongo
 import os
@@ -50,6 +51,9 @@ def get_data_from_collection(collection, fieldsToPull, query=None):
         return rows
     return []
 
+def get_date_username():
+    d = datetime.today()
+    return 'date' + str(d.month) +'-'  + str(d.day)+'-'  + str(d.year)
 
 class SimpleQuery():
     def __init__(self, collectionName):

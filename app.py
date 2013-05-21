@@ -1,8 +1,8 @@
 import datetime
 from KelimelerPage import get_kelimeler_content, insert_new_keyword, delete_keyword
 import gviz_api
-from kose_yazisi import get_yazi_json, insert_doc_into_yazilar, get_yazilar_collection, delete_doc_from_yazilar, get_yazilar
-from mongolab_helper import get_names_collection, get_commutes_collection, SimpleQuery, get_data_from_collection, get_collection
+from kose_yazisi import get_yazi_json, insert_doc_into_yazilar, delete_doc_from_yazilar, get_yazilar
+from mongolab_helper import get_names_collection, get_commutes_collection, SimpleQuery
 import os
 from bottle import route, run, template, post, request, get, redirect
 
@@ -26,8 +26,8 @@ def get_yazi_content(user_name, object_id):
 @route('/koseyazisi/:user_name')
 def koseyazisi_show(user_name='cem'):
     titles = ['yazar', 'tarih', 'baslik', 'action', 'keywords', 'link']
-    rows = get_yazilar(user_name)
-    return template('kose_yazisi', titles=titles, rows=rows, user_name=user_name)
+    rows, rows_new = get_yazilar(user_name)
+    return template('kose_yazisi', titles=titles, rows=rows, rows_new= rows_new, user_name=user_name)
 
 
 @post('/koseyazisi/:user_name')

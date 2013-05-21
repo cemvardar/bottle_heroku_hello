@@ -3,7 +3,7 @@ from HtmlAndTextParseHelper import strip_tags
 from bottle import template
 from bs4 import BeautifulSoup
 from bson import ObjectId
-from mongolab_helper import get_collection, SimpleQuery
+from mongolab_helper import get_collection, SimpleQuery, get_date_username
 
 __author__ = 'cvardar'
 
@@ -72,7 +72,9 @@ def delete_doc_from_yazilar(object_id, user_name):
 def get_yazilar(user_name):
     s = SimpleQuery('yazilar')
     rows = s.get_data(['author', 'date', 'title', '_id', 'keywords', 'url'], {'user_name': user_name})
+    my_authors = set([])
     for row in rows:
+        my_authors.add(row[0])
         row[2] = template('link', url=row[5], link_text=row[2])
         actionsCell = template('goster_button', object_id=row[3], user_name=user_name)
         row[3] = actionsCell + template('delete_button', object_id=row[3], user_name=user_name)
@@ -80,5 +82,21 @@ def get_yazilar(user_name):
         for word in row[4]:
             keywordsListEncoded.append(word.encode('utf-8'))
         row[4] = keywordsListEncoded
-    return rows
+
+    date_user= get_date_username()
+    new_rows = s.get_data(['author', 'date', 'title', '_id', 'keywords', 'url'], {'user_name': date_user})
+
+    new_rows_interesting = []
+    new_rows_unrelated = []
+    for row in new_rows:
+        row[2] = template('link', url=row[5], link_text=row[2])
+        # actionsCell = template('goster_button', object_id=row[3], user_name=user_name)
+        # row[3] = actionsCell + template('delete_button', object_id=row[3], user_name=user_name)
+        row[3] = 'YENI'
+        keywordsListEncoded = []
+        for word in row[4]:
+            keywordsListEncoded.append(word.encode('utf-8'))
+        row[4] = keywordsListEncoded
+        # if(row[0] in my_authors):
+    return rows, new_rows
 
