@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 from bson import ObjectId
 import pymongo
 import os
@@ -51,8 +51,8 @@ def get_data_from_collection(collection, fieldsToPull, query=None):
         return rows
     return []
 
-def get_date_username():
-    d = datetime.today()
+def get_date_username(daysToGoBack=0):
+    d = datetime.today() - timedelta(days=daysToGoBack)
     return 'date' + str(d.month) +'-'  + str(d.day)+'-'  + str(d.year)
 
 class SimpleQuery():
