@@ -103,7 +103,7 @@ def get_most_recent_docs(s):
     daysToGoBack = 0
     date_user = get_date_username(daysToGoBack)
     new_docs = s.get_docs({'user_name': date_user})
-    while not new_docs and daysToGoBack < 7:
+    while new_docs.count() == 0 and daysToGoBack < 7:
         daysToGoBack += 1
         date_user = get_date_username(daysToGoBack)
         new_docs = s.get_docs({'user_name': date_user})
