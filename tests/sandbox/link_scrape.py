@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta
 from unittest import TestCase
 import urllib2
+import urlparse
 from bs4 import BeautifulSoup
 from kose_yazisi import get_yazi_json, insert_doc_into_yazilar
 from mongolab_helper import get_collection, get_date_username
@@ -28,17 +29,6 @@ class CollectLinks(TestCase):
         yazi_links = get_yazi_links("http://www.hurriyet.com.tr/yazarlar/")
         collection = get_collection('links_by_date')
         collection.insert({'date':datetime.utcnow(), 'links': list(yazi_links)})
-
-    def test_get_document(self):
-        utc_now = datetime.utcnow()
-        start = utc_now -  timedelta(days=1)
-        end = utc_now
-        timeQuery ={"date": {"$gte": start, "$lt": end}}
-        for i in get_collection('links_by_date').find(timeQuery):
-            print i
-
-    def test_date(self):
-        print get_date_username()
 
     def test_first(self):
         cnt=0

@@ -25,7 +25,7 @@ def get_yazi_content(user_name, object_id):
 
 @route('/koseyazisi/:user_name')
 def koseyazisi_show(user_name='cem'):
-    titles = ['yazar', 'tarih', 'baslik', 'action', 'keywords', 'link']
+    titles = ['yazar', 'tarih', 'baslik', 'action', 'keywords', 'link', 'gazete']
     rows, rows_new = get_yazilar(user_name)
     return template('kose_yazisi', titles=titles, rows=rows, rows_new= rows_new, user_name=user_name)
 

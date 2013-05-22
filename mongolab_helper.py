@@ -51,9 +51,27 @@ def get_data_from_collection(collection, fieldsToPull, query=None):
         return rows
     return []
 
+def upsert(collection_name, query, set_action):
+    collection = get_collection(collection_name)
+    collection.update(query, set_action, upsert=True, safe=True)
+
+def find_one(collection_name, query):
+    collection = get_collection(collection_name)
+    return collection.find_one(query)
+
 def get_date_username(daysToGoBack=0):
     d = datetime.today() - timedelta(days=daysToGoBack)
     return 'date' + str(d.month) +'-'  + str(d.day)+'-'  + str(d.year)
+
+def insert(collection_name, json_doc):
+    collection = get_collection(collection_name)
+    collection.ensure_index([('user_name', 1), ('author', 1), ('date', 1)])
+    collection.insert(json_doc)
+
+def remove(collection_name, query):
+    collection = get_collection(collection_name)
+    collection.remove(query)
+
 
 class SimpleQuery():
     def __init__(self, collectionName):

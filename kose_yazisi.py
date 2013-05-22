@@ -3,15 +3,19 @@ from HtmlAndTextParseHelper import strip_tags
 from bottle import template
 from bs4 import BeautifulSoup
 from bson import ObjectId
-from mongolab_helper import get_collection, SimpleQuery, get_date_username
-
+from mongolab_helper import get_collection, SimpleQuery, get_date_username, find_one, insert, remove
+import urlparse
 __author__ = 'cvardar'
 
+def get_gazete_name(url):
+    parse_object = urlparse.urlparse(url)
+    address = parse_object.netloc
+    return address.replace('.tr', '').replace('.com','').replace('www.', '')
 
 def get_yazi_from_html(html, url):
     soup = BeautifulSoup(html)
-
     yazi = {}
+    yazi['gazete'] = get_gazete_name(url)
     yazi['url'] = url
     tarih = soup.find('div', attrs={'class': 'tarihSp FL'}).text
     yazi['date'] = tarih
@@ -50,36 +54,23 @@ def get_yazilar_collection():
 
 
 def insert_doc_into_yazilar(json_doc, user_name='cem'):
-    yazilar = get_yazilar_collection()
-    yazilar.ensure_index([('user_name', 1), ('author', 1), ('date', 1)])
     json_doc['user_name'] = user_name
-    keywordsCollection = get_collection('keywords')
-    keywordsDoc = keywordsCollection.find_one({'user_name': user_name})
+    keywordsDoc = find_one('keywords', {'user_name': user_name})
     if keywordsDoc:
         containedKeywords = get_contained_keywords(json_doc, keywordsDoc['include'])
         json_doc['keywords'] = list(containedKeywords)
-    yazilar.insert(json_doc)
-
-
-def insert_keyword_into_keywords(json_doc, user_name='cem'):
-    keywordsCollection = get_collection('keywords')
-    keywordsCollection.ensure_index([('user_name', 1)])
-    json_doc['user_name'] = user_name
-    keywordsCollection.insert(json_doc)
+    insert('yazilar', json_doc)
 
 
 def delete_doc_from_yazilar(object_id, user_name):
-    yazilar = get_yazilar_collection()
-    yazilar.ensure_index([('author', 1), ('date', 1)])
-    yazilar.remove({'_id': ObjectId(object_id), 'user_name': user_name})
+    query = {'_id': ObjectId(object_id), 'user_name': user_name}
+    remove('yazilar', query)
 
 
 def get_yazilar(user_name):
     s = SimpleQuery('yazilar')
-    rows = s.get_data(['author', 'date', 'title', '_id', 'keywords', 'url'], {'user_name': user_name})
-    my_authors = set([])
-    for row in rows:
-        my_authors.add(row[0])
+    archive_rows = s.get_data(['author', 'date', 'title', '_id', 'keywords', 'url', 'gazete'], {'user_name': user_name})
+    for row in archive_rows:
         row[2] = template('link', url=row[5], link_text=row[2])
         actionsCell = template('goster_button', object_id=row[3], user_name=user_name)
         row[3] = actionsCell + template('delete_button', object_id=row[3], user_name=user_name)
@@ -89,7 +80,7 @@ def get_yazilar(user_name):
         row[4] = str(keywordsListEncoded)
     daysToGoBack = 0
     date_user = get_date_username(daysToGoBack)
-    new_rows = s.get_data(['author', 'date', 'title', '_id', 'keywords', 'url'], {'user_name': date_user})
+    new_rows = s.get_data(['author', 'date', 'title', '_id', 'keywords', 'url', 'gazete'], {'user_name': date_user})
     while len(new_rows) == 0 and daysToGoBack < 7:
         daysToGoBack += 1
         date_user = get_date_username(daysToGoBack)
@@ -102,6 +93,5 @@ def get_yazilar(user_name):
         for word in row[4]:
             keywordsListEncoded.append(word.encode('utf-8'))
         row[4] = keywordsListEncoded
-        # if(row[0] in my_authors):
-    return rows, new_rows
+    return archive_rows, new_rows
 

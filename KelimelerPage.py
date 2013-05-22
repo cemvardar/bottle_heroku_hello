@@ -1,6 +1,6 @@
 from HtmlAndTextParseHelper import get_unicode
 from bottle import template
-from mongolab_helper import SimpleQuery, get_collection
+from mongolab_helper import SimpleQuery, upsert, find_one
 
 __author__ = 'cvardar'
 
@@ -17,21 +17,20 @@ def get_kelimeler_content(user_name, collection_name='keywords'):
 
 def insert_new_keyword(yeniKelime, userName='cem', collection_name='keywords'):
     newWordUnicode = get_unicode(yeniKelime).lower()
-    keywordCollection = get_collection(collection_name)
-    record = keywordCollection.find_one({'user_name': userName})
+    record = find_one(collection_name, {'user_name': userName})
     if record:
         keywords = record['include']
         keywords.append(newWordUnicode)
     else:
         keywords = [newWordUnicode]
-    keywordCollection.update({'user_name': userName}, {'$set': {'include': keywords}}, upsert=True)
+    upsert(collection_name,{'user_name': userName}, {'$set': {'include': keywords}})
+
 
 def delete_keyword(kelime, userName='cem', collection_name='keywords'):
     newWordUnicode = get_unicode(kelime).lower()
-    keywordCollection = get_collection(collection_name)
-    record = keywordCollection.find_one({'user_name': userName})
+    record = find_one(collection_name, {'user_name': userName})
     if record:
         keywords = record['include']
         if newWordUnicode in keywords:
             keywords.remove(newWordUnicode)
-            keywordCollection.update({'user_name': userName}, {'$set': {'include': keywords}}, upsert=True)
+            upsert(collection_name,{'user_name': userName}, {'$set': {'include': keywords}})
