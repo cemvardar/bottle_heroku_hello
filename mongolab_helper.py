@@ -51,6 +51,13 @@ def get_data_from_collection(collection, fieldsToPull, query=None):
         return rows
     return []
 
+def get_docs(collectionName, query=None):
+    collection = get_collection(collectionName)
+    if query and '_id' in query:
+        query['_id'] = ObjectId(query['_id'])
+    if collection is not None:
+        return collection.find(query)
+
 def upsert(collection_name, query, set_action):
     collection = get_collection(collection_name)
     collection.update(query, set_action, upsert=True, safe=True)
@@ -80,3 +87,6 @@ class SimpleQuery():
     def get_data(self, fieldsToPull, query=None):
         collection = get_collection(self.collectionName)
         return get_data_from_collection(collection,fieldsToPull,query)
+
+    def get_docs(self, query = None):
+        return get_docs(self.collectionName, query)
