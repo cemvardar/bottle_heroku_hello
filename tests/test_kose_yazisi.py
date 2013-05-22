@@ -54,7 +54,7 @@ class kose_yazisi_tests(TestCase):
         insert_doc_into_yazilar(yazi, get_mock_user_name())
         yazi2 = get_yazi_from_html(self.html_from_local_file(), get_url())
         insert_doc_into_yazilar(yazi2, get_mock_user_name())
-        rows, rows_new = get_yazilar(get_mock_user_name())
+        titles, rows, rows_new = get_yazilar(get_mock_user_name())
         self.assertEqual(2, len(rows))
         for row in rows:
             self.assertEqual(42, len(row[4]))

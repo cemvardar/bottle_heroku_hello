@@ -69,7 +69,10 @@ def delete_doc_from_yazilar(object_id, user_name):
 
 def get_yazilar(user_name):
     s = SimpleQuery('yazilar')
-    archive_rows = s.get_data(['author', 'date', 'title', '_id', 'keywords', 'url', 'gazete'], {'user_name': user_name})
+    titles = ['yazar', 'tarih', 'baslik', 'action', 'keywords', 'link', 'gazete']
+    mongo_fields_needed = ['author', 'date', 'title', '_id', 'keywords', 'url', 'gazete']
+    user_name_query = {'user_name': user_name}
+    archive_rows = s.get_data(mongo_fields_needed, user_name_query)
     for row in archive_rows:
         row[2] = template('link', url=row[5], link_text=row[2])
         actionsCell = template('goster_button', object_id=row[3], user_name=user_name)
@@ -80,11 +83,11 @@ def get_yazilar(user_name):
         row[4] = str(keywordsListEncoded)
     daysToGoBack = 0
     date_user = get_date_username(daysToGoBack)
-    new_rows = s.get_data(['author', 'date', 'title', '_id', 'keywords', 'url', 'gazete'], {'user_name': date_user})
+    new_rows = s.get_data(mongo_fields_needed, {'user_name': date_user})
     while len(new_rows) == 0 and daysToGoBack < 7:
         daysToGoBack += 1
         date_user = get_date_username(daysToGoBack)
-        new_rows = s.get_data(['author', 'date', 'title', '_id', 'keywords', 'url','gazete'], {'user_name': date_user})
+        new_rows = s.get_data(mongo_fields_needed, {'user_name': date_user})
 
     for row in new_rows:
         row[2] = template('link', url=row[5], link_text=row[2])
@@ -93,5 +96,6 @@ def get_yazilar(user_name):
         for word in row[4]:
             keywordsListEncoded.append(word.encode('utf-8'))
         row[4] = keywordsListEncoded
-    return archive_rows, new_rows
+
+    return titles, archive_rows, new_rows
 
