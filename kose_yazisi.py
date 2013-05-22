@@ -84,7 +84,7 @@ def get_yazilar(user_name):
     while len(new_rows) == 0 and daysToGoBack < 7:
         daysToGoBack += 1
         date_user = get_date_username(daysToGoBack)
-        new_rows = s.get_data(['author', 'date', 'title', '_id', 'keywords', 'url'], {'user_name': date_user})
+        new_rows = s.get_data(['author', 'date', 'title', '_id', 'keywords', 'url','gazete'], {'user_name': date_user})
 
     for row in new_rows:
         row[2] = template('link', url=row[5], link_text=row[2])
