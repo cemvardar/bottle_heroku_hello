@@ -57,7 +57,7 @@ def get_docs(collectionName, query=None):
         query['_id'] = ObjectId(query['_id'])
     if collection is not None:
         return collection.find(query)
-
+    return None
 def upsert(collection_name, query, set_action):
     collection = get_collection(collection_name)
     collection.update(query, set_action, upsert=True, safe=True)
