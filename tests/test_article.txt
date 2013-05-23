@@ -1,0 +1,907 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="title" content="Yuh artýk, bu kadar mý - Ertuðrul ÖZKÖK - Hürriyet" />
+<meta name="description" content="ABDULLAH Öcalan Nevruz meydanýndaki halka sesleniþini yaptýðý gün, Türkiye’nin öteki mahallelerinde durum neydi?" />
+<link rel="image_src" href="http://www.hurriyet.com.tr/_yazarlar/images/10b.jpg?fbrefresh=1001" />
+<meta name="medium" content="article" />
+<title>Yuh artýk, bu kadar mý - Ertuðrul ÖZKÖK - Hürriyet</title>
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Yuh artýk, bu kadar mý"/>
+<meta property="og:description" content="ABDULLAH Öcalan Nevruz meydanýndaki halka sesleniþini yaptýðý gün, Türkiye’nin öteki mahallelerinde durum neydi?"/>
+<meta property="og:image" content="http://www.hurriyet.com.tr/_yazarlar/images/10b.jpg?fbrefresh=1001"/>
+<meta property="fb:app_id" content="117890861638620"/>
+<meta property="og:site_name" content="HÜRRÝYET - TÜRKÝYE'NÝN AÇILIÞ SAYFASI"/>
+<meta property="og:url" content="http://www.hurriyet.com.tr/yazarlar/22878887.asp"/>
+
+
+<link type="text/css" rel="stylesheet" href="/_css/2012/FbDesign.css" />
+<script src="//connect.facebook.net/en_US/all.js"></script>	
+<meta name="Description" content="ABDULLAH Öcalan Nevruz meydanýndaki halka sesleniþini yaptýðý gün, Türkiye’nin öteki mahallelerinde durum neydi?" />
+
+
+	
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1254">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-9">
+<meta http-equiv="content-language" content="TR">
+<META NAME="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="cache-control" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="07.04.2013 05:43:53">
+<link REL="SHORTCUT ICON" HREF="/images/hurlogo.ico">
+<!-- (C)2000-2010 Gemius SA - gemiusAudience / hurriyet_com_tr / gundem_all -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var pp_gemius_identifier = new String('nSA70f7M8OibHrqtnYZ7IZXmnA5R1jAlsUiz5rvRgdH.s7');
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.hurriyet.com.tr/_js/gemius.js"></script>
+
+<!-- Urchin Start  --> 
+<script src="http://www.hurriyet.com.tr/_js/urchin.js" type="text/javascript"></script> 
+<script type="text/javascript">urchinTracker();</script> 
+<!-- Urchin Stop -->
+
+<!--   ComScore Start  -->
+<script type="text/javascript">
+var __cs_c1 = 2;
+var __cs_c2 = "7290377";
+var __cs_c3 = "";
+var __cs_c4 = "";
+var __cs_c5 = "";
+var __cs_c6 = "";
+var __cs_c15 = "";
+var __cs_params = ["c1=", __cs_c1, "&c2=", __cs_c2, "&c3=", __cs_c3, "&c4=", __cs_c4, "&c5=", __cs_c5, "&c6=", __cs_c6, "&c15=", __cs_c15].join('');
+
+var ComScoreJsPath = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js?" + __cs_params;
+
+document.write(unescape("%3Cscript src='" + ComScoreJsPath + "' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+<noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=7290377&cv=2.0&cj=1" /></noscript>
+<!--   ComScore Stop  -->
+
+
+<script type="text/javascript" src="/_js/2011/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="/_js/2011/OrtakUstMenu.js"></script>
+<link type="text/css" rel="stylesheet" href="/_css/2011/OrtakUstMenuKat.css?vs=1.5" />
+
+<script src="http://www.hurriyet.com.tr/_js/MNetOrfad.js?v=4.2"></script>
+<script src="http://www.hurriyet.com.tr/_js/adnetSet.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/_css/hyeni.css" />
+<link rel="stylesheet" type="text/css" href="/_css/yenikat.css" />
+<script type="text/javascript" src="/_js/2012/touch.js?v=1.1"></script>
+<script type="text/javascript" src="/_js/2013/mRedirect.js?v=1.2"></script>
+
+
+	
+<script type="text/javascript" src="http://www.hurriyet.com.tr/_js/2011/HurShareLib.js"></script>
+	
+<link rel="stylesheet" href="http://www.hurriyet.com.tr/_css/2011/Yazarlar.css?v=3.0" type="text/css" />
+
+<link href="/_css/hurScramb.css" type="text/css" rel="stylesheet">
+
+<link type="text/css" rel="stylesheet" href="/_css/2012/tipsy.css" />
+
+
+
+
+<script type="text/javascript" src="http://www.hurriyet.com.tr/_js/2013/stickyAds.js"></script>
+<style>
+#hurriyet_yazarlar_scrolling_sol
+{
+margin-left:0 !important;
+}
+#hurriyet_yazarlar_scrolling
+{
+margin-left:0 !important;
+}
+</style>
+
+<script language=javascript>
+$(document).ready(function(){
+  $('#hurriyet_yazarlar_scrolling_sol').stickyMojo({footerID: '#FooterHolder', contentID: '#haberContent'});
+   $('#hurriyet_yazarlar_scrolling').stickyMojo({footerID: '#FooterHolder', contentID: '#haberContent'});
+});
+</script>
+
+
+
+
+
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script type="text/javascript" src="/_js/2012/fbbox.js?v=2.1"></script>
+
+<script type='text/javascript'>
+MNetReq("hurriyet_yazarlar");
+</script>
+
+
+<script language=javascript>
+		<!--
+		function popuparsiv()
+		{
+			window.open("http://benimsayfam.hurriyet.com.tr/arsivekle.aspx?HaberID=22878887&hr=http://www.hurriyet.com.tr/yazarlar/22878887.asp","Arsiv","left=150,top=100,toolbar=no,location=no,menubar=no,status=no,directories=no,width=400,height=365");
+		}
+		var fs   = 12;
+		var min = 10;
+		var max = 50;
+		function increaseFontSize(){
+			var p = $(".YazarDetayText2_Conteiner");
+			if( fs != max )	fs += 1;
+			var pTitle = p.find("span");
+			p.css("font-size",fs+"px");
+			pTitle.css("font-size",fs+2+"px");
+		}
+		function decreaseFontSize(){
+			var p = $(".YazarDetayText2_Conteiner");
+			if( fs != min )	fs -= 1;
+			var pTitle = p.find("span");
+			p.css("font-size",fs+"px");
+			pTitle.css("font-size",fs+2+"px");
+		}
+		$(document).ready(function() {
+		gpType=1;
+		gpSize="tall";
+		fbIsDikey=true;
+		twIsDikey=true;
+		shareUrl="http://www.hurriyet.com.tr/yazarlar/22878887.asp";
+					sharePintImgSrc="";
+	sharePintDesc="";
+	sharePintTotal = sharePintDesc +" "+  shareUrl;
+		hurShareLib.initAllShare("#fbPageShare", null, "#twPageShare", null, "#gpPageShare");
+
+var pa = new hPaylas("fb", "tw", "gp","","");
+		
+		var ctlPressed = false;
+		var ctl = 17; 
+		var c = 67;     
+		jQuery(document).keydown(function(e)     {         
+		if (e.keyCode == ctl)            
+		ctlPressed = true;     
+		}).keyup(function(e)     {         
+		if (e.keyCode == ctl)            
+		ctlPressed = false;     });      
+		jQuery(document).keydown(function(e)     
+		{         if (ctlPressed && e.keyCode == c)            
+		return false;     
+		}); 	
+	
+		
+		});
+		document.oncontextmenu=new Function("return false");
+		//-->
+</script>
+<iframe src="http://sectionsayac.hurriyet.com.tr/ReadCountOfWriters.aspx?ID=10" width="0" height="0" frameborder="0"></iframe>
+<div id="MainContainer">
+<link type="text/css" rel="stylesheet" href="/_css/2011/OtherOrtak.css?vs=1.4" />
+<div class="hTopMenuBar">
+<div class="hTopMenuHold">
+<ul class="hTopMenu clr">
+<li><a href="http://www.hurriyet.com.tr/anasayfa" class="anasayfa">Ana Sayfa</a></li>
+<li><a href="http://hurarsiv.hurriyet.com.tr/arsiv/" class="arsiv">Arþiv</a></li>
+<li><a href="http://www.hurriyetemlak.com/?utm_source=hurriyet&utm_medium=anasayfa&utm_campaign=hurriyet_tepe_bar_logo" target="_blank" class="logoLink"><img src="/p/2013/topmenu/emlak.png" /></a></li>
+<li><a href="http://www.hurriyetoto.com/?utm_source=hurriyet&utm_medium=anasayfa&utm_campaign=hurriyet_tepe_bar_logo" target="_blank" class="logoLink"><img src="/p/2013/topmenu/oto.png" /></a></li>
+<li><a href="http://www.yenibiris.com/?utm_source=hurriyet&utm_medium=anasayfa&utm_campaign=hurriyet_tepe_bar_logo" target="_blank" class="logoLink"><img src="/p/2013/topmenu/yenibiris.png" /></a></li>
+<li><a href="http://www.hurriyetdailynews.com/?utm_source=hurriyet&utm_medium=anasayfa&utm_campaign=hurriyet_tepe_bar_logo" target="_blank" class="logoLink"><img src="/p/2013/topmenu/dailynews-v2.png" /></a></li>
+
+<li><a href="http://www.yakala.co/?utm_source=hurriyet_grup&utm_medium=logo&utm_campaign=hurriyet_tepe_bar_logo" target="_blank" class="logoLink"><img src="/p/2013/topmenu/yakalaco.png" /></a></li>
+
+<li class="rLinks"><a href="http://benimsayfam.hurriyet.com.tr" >Benim Sayfam</a></li>
+
+
+
+
+<li class="rLinks">
+<a href="#" id="lnkSSOMainRegister" onclick="Sso.load_register();" data-event-spy-cb="true">Üye Ol</a>
+</li>
+<li class="rLinks">
+<a href="#" id="lnkSSOMainGiris" onclick="Sso.load_login();" data-event-spy-cb="true">Üye Giriþi</a>
+</li>
+
+</ul>
+</div>
+</div>
+<div id="HeaderContainer">
+		<div class="HeaderHolder">
+				<div class="HeaderCenter FL">
+					<div class="HeaderTop FL">
+					<div class="FL"><img src="http://www.hurriyet.com.tr/p/spacer.gif" width="995" height="10" alt="Hürriyet Haber - Gündem - Ekonomi - Spor"  /></div>
+					<div class="HeaderTopLogoHolder FL">
+					<div class="HurLogo"><a href="http://www.hurriyet.com.tr/"><img src="http://www.hurriyet.com.tr/p/hurriyet_logo_k.gif" width="131" height="34" alt="Hürriyet"  /></a></div>
+					<div class="CanalLogo"><a href="http://www.hurriyet.com.tr/yazarlar/"><img src="http://www.hurriyet.com.tr/p/2011/logolar/9.png" /></a></div>
+					</div>
+					<div class="FL"><img src="http://www.hurriyet.com.tr/p/spacer.gif" width="38" height="30" /></div>
+					<div class="FL">
+					
+					<div id="hurriyet_yazarlar_ust_728x90">
+			
+			<script type="text/javascript">MNetBanner("hurriyet_yazarlar_ust_728x90");</script>
+			
+		</div>
+		
+		</div>
+					</div>
+<div id="DigerHeaderMenu">
+<ul id="DigerMenu">
+<li class="menu_style"><img src="http://www.hurriyet.com.tr/p/spacer.gif" width="1" height="1" /></li>
+									<li><a title="son dakika haberleri" href="http://www.hurriyet.com.tr/gundem">GÜNDEM </a>	</li>
+									<li class="menu_style">
+										<img src="http://www.hurriyet.com.tr/p/spacer.gif" width="1" height="1">
+									</li>
+									<li><a title="dünyadan haberler" href="http://www.hurriyet.com.tr/planet">PLANET </a>	</li>
+									<li class="menu_style">
+										<img src="http://www.hurriyet.com.tr/p/spacer.gif" width="1" height="1">
+									</li>
+									<li><a title="ekonomi haberleri" href="http://www.hurriyet.com.tr/ekonomi">EKONOMÝ </a>
+									</li>
+									<li class="menu_style">
+										<img src="http://www.hurriyet.com.tr/p/spacer.gif" width="1" height="1">
+									</li>
+									<li>
+										<a title="spor haberleri" href="http://www.hurriyet.com.tr/spor">SPOR </a>
+									</li>
+									<li class="menu_style">
+										<img src="http://www.hurriyet.com.tr/p/spacer.gif" width="1" height="1">
+									</li>
+									<li>
+										<a title="son magazin haberleri" href="http://www.hurriyet.com.tr/magazin/">KELEBEK </a>
+									</li>
+									<li class="menu_style">
+										<img src="http://www.hurriyet.com.tr/p/spacer.gif" width="1" height="1">
+									</li>
+									<li>
+										<a title="kültür sanat haberleri" href="http://www.hurriyet.com.tr/kultur-sanat">KÜLTÜR - SANAT </a>
+									</li>
+									<li class="menu_style">
+										<img src="http://www.hurriyet.com.tr/p/spacer.gif" width="1" height="1">
+									</li>
+									<li>
+										<a title="köþe yazarlarý" href="http://www.hurriyet.com.tr/yazarlar/">YAZARLAR</a>
+									</li>
+									<li class="menu_style">
+										<img src="http://www.hurriyet.com.tr/p/spacer.gif" width="1" height="1"> 
+									</li>
+									<li>
+										<a title="Hürriyet WebTv" href="http://webtv.hurriyet.com.tr/" class="hurriyetTvLink">HÜRRÝYET<span class="tvIcon"><img src="http://www.hurriyet.com.tr/p/2013/tv_icon.png"></span></a>
+									</li>
+									<li class="menu_style">
+										<img src="http://www.hurriyet.com.tr/p/spacer.gif" width="1" height="1">
+									</li>
+									<li>
+										<a title="saðlýklý yaþam" href="http://www.hurriyet.com.tr/saglik">SAÐLIK - YAÞAM</a>
+									</li>
+									<li class="menu_style">
+										<img src="http://www.hurriyet.com.tr/p/spacer.gif" width="1" height="1">
+									</li>
+									<li>
+										<a title="teknolojik geliþmeler" href="http://www.hurriyet.com.tr/teknoloji">TEKNOLOJÝ</a>
+									</li>
+
+ 
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="HeaderBottommenuBack" style="display:block">
+<div class="HeaderDiv">
+<ul id="headerBottomMenu">
+<li><a href="http://havadurumu.hurriyet.com.tr/" title="hava durumu">Hava Durumu </a></li>
+<li class="menubottom_style"><img src="http://www.hurriyet.com.tr/p/2011/spacer.gif" width="1" height="1"  border="0" /></li>
+<li><a href="http://sinema.hurriyet.com.tr/" title="sinema filmleri">Sinema </a></li>
+<li class="menubottom_style"><img src="http://www.hurriyet.com.tr/p/2011/spacer.gif" width="1" height="1"  border="0" /></li>
+<li><a href="http://astronet.hurriyet.com.tr">Astroloji </a></li>
+<li class="menubottom_style"><img src="http://www.hurriyet.com.tr/p/2011/spacer.gif" width="1" height="1"  border="0" /></li>
+<li><a href="http://tvrehberi.hurriyet.com.tr" title="tv rehberi">Tv Rehberi</a></li>
+<li class="menubottom_style"><img src="http://www.hurriyet.com.tr/p/2011/spacer.gif" width="1" height="1"  border="0" /></li>
+<li><a href="http://piyasanet.hurriyet.com.tr">Piyasanet </a></li>
+<li class="menubottom_style"><img src="http://www.hurriyet.com.tr/p/2011/spacer.gif" width="1" height="1"  border="0" /></li>
+<li><a href="http://e-gazete.hurriyet.com.tr/">E- Gazete </a></li>
+<li class="menubottom_style"><img src="http://www.hurriyet.com.tr/p/2011/spacer.gif" width="1" height="1"  border="0" /></li>
+<li><a href="http://canlimacsonuclari.hurriyet.com.tr/">Canlý Skor</a></li>
+<li class="menubottom_style"><img src="http://www.hurriyet.com.tr/p/2011/spacer.gif" width="1" height="1"  border="0" /></li>
+<li><a href="http://eniyion.hurriyet.com.tr">En Ýyi On </a></li>
+<li class="menubottom_style"><img src="http://www.hurriyet.com.tr/p/2011/spacer.gif" width="1" height="1"  border="0" /></li>
+<li><a href="http://www.hurriyet.com.tr/pasaj" target="_blank"><img src="http://www.hurriyet.com.tr/p/2013/pasaj_logo.gif" style="margin-top: 3px;" alt=""></a></li>
+<li class="menubottom_style"><img src="http://www.hurriyet.com.tr/p/2011/spacer.gif" width="1" height="1"  border="0" /></li>
+<li><a href="http://fotogaleri.hurriyet.com.tr">Foto Galeri </a></li>
+<li class="menubottom_style"><img src="http://www.hurriyet.com.tr/p/2011/spacer.gif" width="1" height="1"  border="0" /></li>
+<li><a href="http://okurtemsilcisi.hurriyet.com.tr">Okur Temsilcisi </a></li>
+<li class="menubottom_style"><img src="http://www.hurriyet.com.tr/p/2011/spacer.gif" width="1" height="1"  border="0" /></li>
+<li><a href="http://www.hurriyet.com.tr/egitim/">Eðitim</a></li>
+<li class="menubottom_style"><img src="http://www.hurriyet.com.tr/p/2011/spacer.gif" width="1" height="1"  border="0" /></li>
+<li id="EklerButton" style="height:25px;" onMouseOver="eklerOver()" onMouseOut="eklerOut()"><a href="#">Ekler - Bölgeler<img src="http://www.hurriyet.com.tr/p/2011/icon/ok.gif" style="padding-left:5px"></a></li>
+
+</ul>
+<script type="text/javascript">
+function eklerOver()
+{
+$('#SubMenu_OpenClose5').css('display', 'block');
+}
+function eklerOut()
+{
+$('#SubMenu_OpenClose5').css('display', 'none');
+} 
+</script>
+ <!--[if IE 9]>
+ <style type="text/css">
+#SubMenu_OpenClose5 {right:126px !important;}
+</style>
+ <![endif]-->
+<style type="text/css">
+#SubMenu_OpenClose5 a {
+    background-color: transparent;
+    color: #1F4F82;
+    font-size: 12px;
+    text-decoration: none;
+}
+#SubMenu_OpenClose5 a:hover {
+    color: #8E0000;
+}
+</style>
+<div style="width:1000px;height:24px;float:left">
+	<div id="SubMenu_OpenClose5" onMouseOver="eklerOver()" onMouseOut="eklerOut()" class="test" style=" display: none; float: right; position: relative;z-index: 999999;right: 153px;">
+		<div id="SubMenuEk" style="position: absolute;z-index: 999999; text-align:left">
+			<div class="MenuSubKolon" style="padding:5px">
+				<div class="menu_altlink"> <a href="http://www.hurriyet.com.tr/cumartesi/" title="Hürriyet Cumartesi"><span style="color:#e10000;">&raquo;</span> Cumartesi</a> </div>
+				<div class="menu_altlink"> <a href="http://www.hurriyet.com.tr/pazar/" title="Hürriyet Pazar" ><span style="color:#e10000;">&raquo;</span> Pazar</a> </div>
+				<div class="menu_altlink"> <a href="http://www.hurriyet.com.tr/magazin/" title="Hürriyet Kelebek - Hürriyet Magazin"><span style="color:#e10000;">&raquo;</span> Kelebek</a> </div>
+				<div class="menu_altlink"> <a href="http://www.hurriyet.com.tr/keyif/" title="Hürriyet Keyif"><span style="color:#e10000;">&raquo;</span> Keyif</a> </div>
+				<div class="menu_altlink"> <a href="http://www.hurriyet.com.tr/ege/" title="Hürriyet Ege"><span style="color:#e10000;">&raquo;</span> Ege</a> </div>
+				<div class="menu_altlink"> <a href="http://www.hurriyet.com.tr/ankara/" title="Hürriyet Ankara"><span style="color:#e10000;">&raquo;</span> Ankara</a> </div>
+				<div class="menu_altlink"> <a href="http://www.hurriyet.com.tr/seyahat/" title="Hürriyet Seyahat" ><span style="color:#e10000;">&raquo;</span> Seyahat</a> </div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>	
+</div>
+<div class="BodyBg FL"></div>
+
+<div class="HaberDetayHolder FL">
+<div id="YazarlarDetailHold">
+<div style="float:left;margin-left:-130px;">
+<script type="text/javascript">
+if (screen.width>1024)
+{
+document.write("<div id=\"hurriyet_yazarlar_scrolling_sol\"><scr"+"ipt type=\"text/javascript\">MNetBanner(\"hurriyet_yazarlar_scrolling_sol\")</scr"+"ipt></div>")
+}
+</script>							
+</div>
+<div class="HaberDetayLeftCont FL">
+<div id="hurriyet_yazarlar_895x60"><script type="text/javascript">MNetBanner("hurriyet_yazarlar_895x60")</script></div>
+        <div class="YazarlarDetayLeftCont FL">
+            <div class="YazarlarTopLinkHold FL">
+                <ul id="YazarlarTopLinkNew">
+                <li><a id="" title="Hürriyet Yazarlar Ana Sayfa" href="http://www.hurriyet.com.tr/yazarlar/" class="LiSelected">YAZARLAR ANASAYFA</a></li>
+                <li class="menubottom_style"><img width="1" height="1" src="/p/spacer.gif"></li>
+                <li><a id="" title="Hürriyet Yazarlar Arþiv" href="http://hurarsiv.hurriyet.com.tr/yazarlar/" class="YazarlarLink">YAZARLAR ARÞÝV </a></li>
+                <li class="menubottom_style"><img width="1" height="1" src="/p/spacer.gif"></li>
+                </ul>
+			</div>
+			<div class="RSSImage FL"><a href="http://rss.hurriyet.com.tr/yazarlar.aspx?YazarID=10"><img width="21" height="21" src="/p/yazarlar2011/rss_altsayfa.gif"></a></div>	
+			<div class="YazarlarTopLinkBorder FL"><img width="100" height="2" src="/p/yazarlar2011/spacer.gif"></div>
+			
+		</div>
+		
+		
+
+		<div class="YazarlarMenusBottomHolder FL">
+        	<div class="YazarlarConteiner_2">
+            	<div class="YazarDetayConteiner FL">
+                	<div class="Yazarimaj FL"><img src="/_yazarlar/images/10b.jpg?fbrefresh=1001"></div>
+                    <div class="YazarDetayTextConteiner FL">
+                    	<div class="YazarNameContainer_2"><a href="http://www.hurriyet.com.tr/index/ertuðrul_özkök" target="_blank">Ertuðrul ÖZKÖK</a> <br /><span><a href="mailto:"></a></span><br><div class="tarihSp FL">23 Mart 2013</div></div>
+                    </div>
+                    <div class="HaberDetayConvertFont FL">
+						<div class="FR"><a href="javascript:void(0);" onclick="increaseFontSize()"><img width="18" height="14" src="/p/yazarlar2011/text_buyult.gif"></a></div>
+						<div class="FR"><img width="6" height="5" src="/p/yazarlar2011/spacer.gif"></div>
+						<div class="FR"><a href="javascript:void(0);" onclick="decreaseFontSize()"><img width="18" height="14" src="/p/yazarlar2011/text_kucult.gif"></a></div>
+					</div>
+                    <div class="YazarTumYazilar FL"><a href="http://hurarsiv.hurriyet.com.tr/yazarlar/default.aspx?ID=10"><img width="172" height="82" onmouseover="$(this).attr('src','/p/yazarlar2011/yazilar_.gif')" onmouseout="$(this).attr('src','/p/yazarlar2011/yazilar.gif')" src="/p/yazarlar2011/yazilar.gif"></a></div>
+                    <div class="FL"><img width="570" height="10" src="/p/yazarlar2011/spacer.gif"></div>
+                    <div class="newShareContainer"><ul class="nShare"></ul></div>
+					
+
+
+<!--maYear = 2013 and maMonth < 05 and (instr(Request.ServerVariables("HTTP_USER_AGENT"),"MSIE") = 0)-->		
+	
+<script type='text/javascript' charset='utf-8'>
+
+  HaberiDinle_HaberID = 22878887;
+/* <![CDATA[ */
+var bbs=screen,bbn=navigator,bbh;bbh='&ubl='+1*bbn.browserLanguage+'&ucc='+1*bbn.cpuClass+'&ucd='+1*bbs.colorDepth+'&udx='+1*bbs.deviceXDPI+'&udy='+1*bbs.deviceYDPI+'&usl='+1*bbn.systemLanguage+'&uje='+1*bbn.javaEnabled()+'&uah='+1*bbs.availHeight+'&uaw='+1*bbs.availWidth+'&ubd='+1*bbs.bufferDepth+'&uhe='+1*bbs.height+'&ulx='+1*bbs.logicalXDPI+'&uly='+1*bbs.logicalYDPI+'&use='+1*bbs.fontSmoothingEnabled+'&uto='+(new Date()).getTimezoneOffset()+'&uui='+1*bbs.updateInterval+'&uul='+1*bbn.userLanguage+'&uwi='+1*bbs.width;
+if(typeof(bburlparam)=='string') { bbh+='&'+bburlparam; }
+if(typeof(bbkeywords)=='string') { bbh+='&keywords='+escape(bbkeywords); }
+document.write("<scr"+"ipt type='text/javascript' charset='utf-8' src='http://delivery.reklamz.com/please/showit/17794/1/1/22/?typkodu=js"+bbh+"&bust="+Math.random()+"&target=_blank'><"+"\/scr"+"ipt>");
+/* ]]> */
+</script>
+
+
+
+
+                    <div id="YazarDetayText" class="YazarDetayText2_Conteiner FL">
+                    <span>Yuh artýk, bu kadar mý</span><br /><br />ABDULLAH Öcalan Nevruz meydanýndaki halka sesleniþini yaptýðý gün, Türkiye’nin öteki mahallelerinde durum neydi?<br><br /><P>Ben, durumu anlatan çok önemli bir belgeye ulaþtým.<BR>Durum aynen þöyleymiþ:<BR>“Kürtleri sabun yapalým” diyen Türklerin oraný yüzde 45’e çýkmýþ.<BR>Gözlerime inanamadým.<BR>Bir daha okudum.<BR>Cümle týrnak içinde verilmiþ.<BR>Yazan, herhangi bir insan deðil.<BR>Türk basýnýnýn güvenilir isimlerinden biri.<BR>Milliyet yazarý Meral Tamer...<BR>Onun dayandýðý kaynak da en az o kadar saðlam.<BR>Dehþete kapýldým.<BR>Meral Tamer’in atýf yaptýðý kaynak, Türkiye’nin en güvenilir araþtýrma þirketlerinden biri olan Konda’nýn genel müdürü Bekir Aðýrdýr.<BR>Geçen çarþamba akþamý Pera toplantýlarýnda yaptýðý konuþmada, Türkiye’de kutuplaþmanýn giderek arttýðýný söylemiþ.<BR>&nbsp;&nbsp;&nbsp; <BR>Meral Tamer’in verdiði rakamlara göre, “Türklerin yüzde 72’si bir Kürt komþu istemiyormuþ”.<BR>“Kürtleri sabun yapalým” türünden Hitler kadar ýrkçý bir düþünceye sahip olanlarýn oraný yüzde 45’e çýkmýþ.<BR>Buna karþýlýk “Kürtlerle birlikte yaþayalým” diyenlerin oraný da yüzde 35’e çýkmýþ.<BR>Rakamlar karþýsýnda dehþete düþünce, Konda’nýn genel müdürünü arayýp bizzat sorma ihtiyacý duydum.<BR>Soruyu “Kürtleri sabun mu yapalým, birlikte mi yaþayalým” diye mi sordunuz dedim.<BR>“Önce bir düzeltme yapayým. Böyle bir soru yok. Rakam da böyle deðil.”<BR>Peki ne?<BR>“Biz konuyu ikiye ayýrarak sorduk. Bir tarafta ‘Yakýcý, yýkýcý çözüm’. Öteki tarafta ise ‘Yapýcý, barýþçý” çözüm isteyenler. <BR>Hiç taviz vermeyelim, üzerine gidelim, terörü ezelim, bitirelim diyenler, yani, yakýcý yýkýcý çözümden yana olanlarýn oraný yüzde 45’e yükseldi. <BR>Ýþte bunlarýn içinde ‘Sabun yapalým’ diyen de var.”<BR>Mesele þimdi anlaþýldý.<BR>Bir düzeltme daha yaptý.<BR>“Kürt komþu istemiyorum” diyenlerin oraný yüzde 72 deðil, yüzde 52’ymiþ.<BR>Yine de ürkütücü bir tablo deðil mi...<BR>Neredeyse bütün medyanýn “Barýþ” manþeti attýðý gün, ülkenin derin katmanlarýnda böyle duygusal bir kopmanýn yaþanmasý ürkütücü.<BR>&nbsp;&nbsp;&nbsp; <BR>“Yakalým, yýkalým” diyenlerin oraný yüzde 45’e çýkmýþ, ama buna karþýlýk birlikte yaþayalým diyenlerin oraný da yüzde 35’e yükselmiþ.<BR>Bu iyi bir haber deðil mi?<BR>Bekir Aðýrdýr: “Biz bunu þöyle yorumluyoruz. Türkiye’de kutuplaþma azalmýyor artýyor. Aradaki gri alan azalýyor.”<BR>Ve þunu ekliyor:<BR>“Medyanýn oynayabileceði yapýcý rol de azalýyor...”<BR>Günlerdir bunu anlatmaya çalýþýyorum.<BR>Yani Türkiye’nin Kürtlerle ilgili sadece siyasi sorunu yok. <BR>Bu rakamlar Türkiye’nin derin devlet sorunundan çok daha büyük bir “derin sosyoloji ve psikoloji sorunu” olduðunu gösteriyor.</P>
+<P><STRONG><FONT color=red>Ýlginç bir iddia: Türk Kürt ‘megalo idea’sý</FONT></STRONG></P>
+<P><STRONG><FONT color=red>CIMBIZLAMA</FONT></STRONG></P>
+<P>DÜNKÜ gazetelerden ilginç iki yorum:<BR>NURAY MERT, BÝRGÜN: “Öcalan, Türkler ve Kürtlerden ‘Ortadoðu”nun iki temel stratejik unsuru’ olarak söz ediyor. Bu yaklaþým benim, ‘Türk-Kürt megalo ideasý’ dediðim bakýþ açýsýný yansýtýyor.<BR>Bu çerçeve Türkiye’ye topyekûn geliþmiþ bir demokrasi vaat edemez.”<BR>NAMIK ÇINAR, TARAF: “Bana sorarsanýz, artýk generalleri de býrakmanýn zamaný geldi derim. Ergenekonculuðun ve darbeciliðin son otuz seneki týrmanýþýnda hiç mi parmaðý yok bu içsavaþýn?<BR>Nerede baþlayýp nerede bittikleri birbirine karýþmýþ tüm sorunlarý, barýþ sürecinin kapsamýna hep birlikte almayýp da ne yapacaksýnýz?”</P>
+<P><STRONG><FONT color=red>Büyük siyaset iþte budur</FONT></STRONG></P>
+<P>TÜRKÝYE’ye yakýþan budur.<BR>Ýsrail’e yakýþan budur.<BR>Ortadoðu’nun neredeyse iki tek demokrasi ülkesinin yöneticisine yakýþan budur.<BR>Bu özür, eminim Ortadoðu’nun bugün içinde bulunduðu durumdan aydýnlýða çýkmasýnda en önemli adýmlardan biridir.<BR>Evet Mavi Marmara olayýnýn affedilecek yaný yoktu.<BR>Ama bulunduðumuz bölgede Türkiye ile Ýsrail’in iliþkilerinin kötü olmasý lüksü de yok.<BR>Baþbakan Erdoðan’a helal olsun.<BR>Netanyahu’ya da helal olsun.<BR>Devletlerin özür dilemesi zordur sanýlýyordu.<BR>Bütün dünyaya da güzel bir örnek oldu.<BR>Büyük siyaset budur. Büyük siyasetçilik budur.<BR>Tabii ki Erdoðan’ýn hakký da Erdoðan’a...<BR>48 saat içinde iki büyük siyasi baþarý.<BR>Ýkisi de riskliydi.<BR>Çok riskliydi.<BR>Ama ikisini de kazandý.<BR>Allah için...<BR>Büyük siyasetçi...</P>
+                    </div>
+                         
+                    
+                    <div class="ShareConteiner FL">
+                    	<div class="ShareLikeConteiner FL">
+							<div class="shareIconCl">
+							<div id="fbPageShare"></div>
+							</div>
+							<div class="shareIconCl">
+							<div id="twPageShare"></div>
+							</div>
+							<div class="shareIconCl">
+							<div id="gpPageShare"></div>
+							</div>
+						</div>
+                        <div class="ShareConteineraracizgi FL"></div>
+                        <div class="ShareTakipConteiner FL">
+						
+						<div class="ShareTakipTextConteiner"><div class="ShareConteinerText"><span>Ertuðrul ÖZKÖK</span> yazýlarýný takip edin!</div></div>
+                            <div class="ShareTakipiconConteiner FL">
+                            	<div class="ShareTakipicon"><a href="http://www.facebook.com/pages/Ertu%C4%9Frul-%C3%96zk%C3%B6k/133601159990904"><img src="/p/yazarlar2011/facebook.gif"></a></div><div class="ShareTakipicon"><a href="http://benimsayfam.hurriyet.com.tr/default.aspx?pi=20&gid=97"><img src="/p/yazarlar2011/benimsayfam.gif"></a></div>
+                            </div>
+							
+                        </div>
+                    </div>
+                    
+					<div class="SharePrintConteinerMain FL">
+				<div class="SharePrintConteiner FR">
+		<div class="SharePrintSingle FL">
+			<div class="SharePrintIcon FL">
+				<a href="javascript:popuparsiv();"><img src="/p/hd/arsiv.gif" /></a>
+			</div>
+			<div class="SharePrintText FL">
+				<a href="javascript:popuparsiv();">arþive ekle</a>
+			</div>
+		</div>
+		<div class="SharePrintSingle FL">
+			<div class="SharePrintIcon FL">
+				<a href="http://hurarsiv.hurriyet.com.tr/goster/printnews.aspx?DocID=22878887" target="_blank"><img src="/p/hd/yazdir.gif" /></a>
+			</div>
+			<div class="SharePrintText FL">
+				<a href="http://hurarsiv.hurriyet.com.tr/goster/printnews.aspx?DocID=22878887" target="_blank">yazdýr</a>
+			</div>
+		</div>
+	</div>
+		</div>
+
+
+		      <div class="FL"><img width="570" height="20" src="/p/yazarlar2011/spacer.gif"></div>
+                    
+                    
+					 <div class="YazarSonYazilari-main FL"><div class="title FL">Yazarýn Son Yazýlarý</div><div class="line FL"></div><div class="spacer clear"></div><div class="ok FL"><img src="http://www.hurriyet.com.tr/images/ok.gif" alt="" /></div> <div class="text-title FL"><a href="http://www.hurriyet.com.tr/yazarlar/22971554.asp?utm_source=hurriyet&utm_medium=yazarlar&utm_campaign=yazarsonyazi">22’nci güzele alýþmak</a></div><div class="text-date FL">05 Nisan 2013, Cuma</div><div class="spacer clear"></div><div class="ok FL"><img src="http://www.hurriyet.com.tr/images/ok.gif" alt="" /></div> <div class="text-title FL"><a href="http://www.hurriyet.com.tr/yazarlar/22962891.asp?utm_source=hurriyet&utm_medium=yazarlar&utm_campaign=yazarsonyazi">Ýtiraf ediyoruz: Özal’ý biz zehirledik</a></div><div class="text-date FL">04 Nisan 2013, Perþembe</div><div class="spacer clear"></div><div class="ok FL"><img src="http://www.hurriyet.com.tr/images/ok.gif" alt="" /></div> <div class="text-title FL"><a href="http://www.hurriyet.com.tr/yazarlar/22954428.asp?utm_source=hurriyet&utm_medium=yazarlar&utm_campaign=yazarsonyazi">Beþ yýl orada böyle geçti</a></div><div class="text-date FL">03 Nisan 2013, Çarþamba</div><div class="spacer clear"></div><div class="ok FL"><img src="http://www.hurriyet.com.tr/images/ok.gif" alt="" /></div> <div class="text-title FL"><a href="http://www.hurriyet.com.tr/yazarlar/22946054.asp?utm_source=hurriyet&utm_medium=yazarlar&utm_campaign=yazarsonyazi">O forsu ne yapacaðýz</a></div><div class="text-date FL">02 Nisan 2013, Salý</div><div class="spacer clear"></div><div class="ok FL"><img src="http://www.hurriyet.com.tr/images/ok.gif" alt="" /></div> <div class="text-title FL"><a href="http://www.hurriyet.com.tr/yazarlar/22934337.asp?utm_source=hurriyet&utm_medium=yazarlar&utm_campaign=yazarsonyazi">Ayrýlanlar için yaz repertuvarý</a></div><div class="text-date FL">31 Mart 2013, Pazar</div><div class="spacer clear"></div><div class="ok FL"><img src="http://www.hurriyet.com.tr/images/ok.gif" alt="" /></div> <div class="text-title FL"><a href="http://www.hurriyet.com.tr/yazarlar/22934334.asp?utm_source=hurriyet&utm_medium=yazarlar&utm_campaign=yazarsonyazi">Ayrýlanlar için yaz repertuvarý</a></div><div class="text-date FL">31 Mart 2013, Pazar</div><div class="spacer clear"></div><div class="ok FL"><img src="http://www.hurriyet.com.tr/images/ok.gif" alt="" /></div> <div class="text-title FL"><a href="http://www.hurriyet.com.tr/yazarlar/22928546.asp?utm_source=hurriyet&utm_medium=yazarlar&utm_campaign=yazarsonyazi">Türkiye anayasasý Ýmralý'da yazýlamaz</a></div><div class="text-date FL">30 Mart 2013, Cumartesi</div><div class="spacer clear"></div><div class="ok FL"><img src="http://www.hurriyet.com.tr/images/ok.gif" alt="" /></div> <div class="text-title FL"><a href="http://www.hurriyet.com.tr/yazarlar/22922729.asp?utm_source=hurriyet&utm_medium=yazarlar&utm_campaign=yazarsonyazi">Bak kardeþim niye halay çekmiyorum</a></div><div class="text-date FL">29 Mart 2013, Cuma</div><div class="spacer clear"></div><div class="ok FL"><img src="http://www.hurriyet.com.tr/images/ok.gif" alt="" /></div> <div class="text-title FL"><a href="http://www.hurriyet.com.tr/yazarlar/22914364.asp?utm_source=hurriyet&utm_medium=yazarlar&utm_campaign=yazarsonyazi">Camilere 'Güzin Abla' misyonu</a></div><div class="text-date FL">28 Mart 2013, Perþembe</div><div class="spacer clear"></div><div class="ok FL"><img src="http://www.hurriyet.com.tr/images/ok.gif" alt="" /></div> <div class="text-title FL"><a href="http://www.hurriyet.com.tr/yazarlar/22906121.asp?utm_source=hurriyet&utm_medium=yazarlar&utm_campaign=yazarsonyazi">Öyle konuþsaydýnýz imzamýzý atardýk</a></div><div class="text-date FL">27 Mart 2013, Çarþamba</div><div class="FL"><img width="369" height="1" src="/images/spacer.gif"></div><div class="text-title2"><a href="http://hurarsiv.hurriyet.com.tr/yazarlar/default.aspx?ID=10">Yazarýn Tüm Yazýlarý</a></div><div class="ok2"><img src="http://www.hurriyet.com.tr/images/ok.gif" alt=""></div></div><div class="FL"><img width="570" height="20" src="/p/spacer.gif"></div>
+
+					         
+
+					 
+                </div>
+                <div class="FL"><img width="10" height="100" src="/p/yazarlar2011/spacer.gif"></div>
+                <div class="YazarlarListConteiner FL">
+                
+                	<!-- Facebook baþlangýç -->
+                	<div id="FbActivityBox">
+        <div class="FbActivityBoxHeader">
+            <img id="FbActivityLoader" src="/p/2012/FbApp/fbbox-loader.gif" width="16" height="16" alt="" />
+            <img class="FbActivityLogo" src="/p/2012/FbApp/fbbox_logo.gif" width="63" height="14" alt="" />
+        </div>
+       
+        <div id="FbActivityBoxLogout">
+            <div class="FbActivityBoxLogoutLeft">
+                <span>Merhaba</span><br />
+                Hürriyet Facebook deneyiminden yararlanmak için Facebook ile giriþ yapýn.
+            </div>
+            <div class="FbActivityBoxLogoutRight">
+                <a href="javascript:void(0)" id="FbBtnLogin" class="FbActivityButton"><span>Giriþ Yapýn</span></a>
+            </div>
+        </div>
+        <div id="FbActivityBoxLogin">
+            <div class="FbActivityBoxLoginImage">
+                <img id="FbActivityBoxUserImage" src="/p/2011/spacer.gif" width="50" height="50" alt="" /></div>
+            <div class="FbActivityBoxLoginCenter">
+                <span class="FbActivityUser FbActivityBoxTruncate"></span><a href="javascript:void(0)" id="FbBtnActivity" class="FbActivityButton"><span>Okuduklarým</span></a>
+                <a href="javascript:void(0)" id="FbBtnSetting" class="FbActivitySettingsButton"><span>Yardým</span></a>
+            </div>
+            <div class="FbActivityBoxLoginShare">
+                <span>Paylaþým</span><div id="FbActivityShareStatus">
+                </div>
+            </div>
+            <div id="FbActivityBoxLoginReadList" class="FbActivityBoxLoginCollapse">
+                <ul></ul>
+            </div>
+            <div id="FbActivityBoxLoginSetting" class="FbActivityBoxLoginCollapse">
+			<ul>
+			
+			<li><a href="javascript:void(0)" class="FbToolTip" title="Hurriyet Facebook Uygulamasý ile, okuduðunuz haberleri arkadaþlarýnýz ile paylaþýn ve ayný zamanda onlarýn neleri paylaþtýðýndan haberdar olun. <br/> Bu uygulama ile; <br/> <br/> - Arkadaþlarýnýzýn okuduðu veya izlediði haberler hakkýnda öneriler elde edin. <br/><br/> - Okuduðunuz/izlediðiniz haberleri Facebook hesabýnýzda otomatik olarak paylaþýn. <br/><br/> - Facebook hesabýnýzda, arkadaþlarýnýzýn neleri okuduðunu/izlediðini görün. <br/><br/> - Paylaþýmlarýnýzý istediðiniz zaman durdurun, istediðiniz zaman tekrar baþlatýn.">Daha Fazla Bilgi</a></li>
+			<li><a href="javascript:void(0)" onclick="SendFbRequest()">Arkadaþlarýný Davet Et</a></li>
+			<li><a href="http://proje.hurriyet.com.tr/bizeulasin/Default.aspx?tip=fb" target="_blank" class="FbToolTip">Sorun Bildir</a></li>
+			<li><a href="javascript:void(0)" onclick="FBLogOut();" class="FbToolTip">Facebook oturumunu kapat</a></li>
+			</ul>
+            </div>
+        </div>
+    </div>
+                	
+                	<!-- Facebook bitiþ -->
+
+                
+                	<!-- yazarmenu buraya -->	
+                	<div class="YazarlarListConteinerBaslik"><h1>YAZARLAR</h1></div>
+<div class="YazarListConteiner">
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Doðan HIZLAN - Ýzmir’e ilk gidiþim" target="_parent" href="/yazarlar/22986273.asp?yazarid=4">Doðan HIZLAN</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Doðan HIZLAN - Ýzmir’e ilk gidiþim" target="_parent" href="/yazarlar/22986273.asp?yazarid=4">Ýzmir’e ilk gidiþim</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Yýlmaz ÖZDÝL - Hatýralar okyanusu" target="_parent" href="/yazarlar/22986659.asp?yazarid=249">Yýlmaz ÖZDÝL</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Yýlmaz ÖZDÝL - Hatýralar okyanusu" target="_parent" href="/yazarlar/22986659.asp?yazarid=249">Hatýralar okyanusu</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Vahap MUNYAR - Babasýna çikolata karþýlýðý yardýmla baþladý þimdi 61 milyar Euro’yu yönetiyor" target="_parent" href="/yazarlar/22985725.asp?yazarid=44">Vahap MUNYAR</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Vahap MUNYAR - Babasýna çikolata karþýlýðý yardýmla baþladý þimdi 61 milyar Euro’yu yönetiyor" target="_parent" href="/yazarlar/22985725.asp?yazarid=44">Babasýna çikolata karþýlýðý yardýmla baþladý þimdi 61 milyar Euro’yu yönetiyor</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Yalçýn BAYER - 16 Türk bayraðý uydurma mýdýr" target="_parent" href="/yazarlar/22986260.asp?yazarid=42">Yalçýn BAYER</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Yalçýn BAYER - 16 Türk bayraðý uydurma mýdýr" target="_parent" href="/yazarlar/22986260.asp?yazarid=42">16 Türk bayraðý uydurma mýdýr</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Ýsmet BERKAN - Bu anti-elektron yaðmurlarý nereden geliyor?" target="_parent" href="/yazarlar/22985693.asp?yazarid=386">Ýsmet BERKAN</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Ýsmet BERKAN - Bu anti-elektron yaðmurlarý nereden geliyor?" target="_parent" href="/yazarlar/22985693.asp?yazarid=386">Bu anti-elektron yaðmurlarý nereden geliyor?</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Þükrü KIZILOT - Eski Maliye bakanlarý neye gülüyorlar?" target="_parent" href="/yazarlar/22985808.asp?yazarid=82">Þükrü KIZILOT</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Þükrü KIZILOT - Eski Maliye bakanlarý neye gülüyorlar?" target="_parent" href="/yazarlar/22985808.asp?yazarid=82">Eski Maliye bakanlarý neye gülüyorlar?</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Rauf TAMER - Bunlar da var" target="_parent" href="/yazarlar/22985929.asp?yazarid=183">Rauf TAMER</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Rauf TAMER - Bunlar da var" target="_parent" href="/yazarlar/22985929.asp?yazarid=183">Bunlar da var</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Ahmet HAKAN - Ara Güler'in objektifinden Kemal Kýlýçdaroðlu" target="_parent" href="/yazarlar/22985864.asp?yazarid=131">Ahmet HAKAN</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Ahmet HAKAN - Ara Güler'in objektifinden Kemal Kýlýçdaroðlu" target="_parent" href="/yazarlar/22985864.asp?yazarid=131">Ara Güler'in objektifinden Kemal Kýlýçdaroðlu</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Latif DEMÝRCÝ - Latif Demirci" target="_parent" href="/yazarlar/22985354.asp?yazarid=48">Latif DEMÝRCÝ</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Latif DEMÝRCÝ - Latif Demirci" target="_parent" href="/yazarlar/22985354.asp?yazarid=48">Latif Demirci</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Osman MÜFTÜOÐLU - Sistite dair bilmeniz gereken mühim þeyler" target="_parent" href="/yazarlar/22985210.asp?yazarid=96">Osman MÜFTÜOÐLU</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Osman MÜFTÜOÐLU - Sistite dair bilmeniz gereken mühim þeyler" target="_parent" href="/yazarlar/22985210.asp?yazarid=96">Sistite dair bilmeniz gereken mühim þeyler</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Ayþe ARMAN - Yoksa siz hâlâ pin kodunuzu bilmiyor musunuz?" target="_parent" href="/yazarlar/22985564.asp?yazarid=12">Ayþe ARMAN</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Ayþe ARMAN - Yoksa siz hâlâ pin kodunuzu bilmiyor musunuz?" target="_parent" href="/yazarlar/22985564.asp?yazarid=12">Yoksa siz hâlâ pin kodunuzu bilmiyor musunuz?</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Uður CEBECÝ - Helikopterler gece görecek, hastalar sabahý beklemeyecek" target="_parent" href="/yazarlar/22985675.asp?yazarid=41">Uður CEBECÝ</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Uður CEBECÝ - Helikopterler gece görecek, hastalar sabahý beklemeyecek" target="_parent" href="/yazarlar/22985675.asp?yazarid=41">Helikopterler gece görecek, hastalar sabahý beklemeyecek</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Mehmet YAÞÝN - Malt viski kýskançtýr, eþlikçi istemez" target="_parent" href="/yazarlar/22986069.asp?yazarid=45">Mehmet YAÞÝN</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Mehmet YAÞÝN - Malt viski kýskançtýr, eþlikçi istemez" target="_parent" href="/yazarlar/22986069.asp?yazarid=45">Malt viski kýskançtýr, eþlikçi istemez</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Banu TUNA - Haftalýk" target="_parent" href="/yazarlar/22985765.asp?yazarid=103">Banu TUNA</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Banu TUNA - Haftalýk" target="_parent" href="/yazarlar/22985765.asp?yazarid=103">Haftalýk</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Mesude ERÞAN - Ekmek devrimi" target="_parent" href="/yazarlar/22986067.asp?yazarid=110">Mesude ERÞAN</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Mesude ERÞAN - Ekmek devrimi" target="_parent" href="/yazarlar/22986067.asp?yazarid=110">Ekmek devrimi</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Onur BAÞTÜRK - Ben bir biyoenerji alýp geleceðim!" target="_parent" href="/yazarlar/22986000.asp?yazarid=149">Onur BAÞTÜRK</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Onur BAÞTÜRK - Ben bir biyoenerji alýp geleceðim!" target="_parent" href="/yazarlar/22986000.asp?yazarid=149">Ben bir biyoenerji alýp geleceðim!</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Yorgo KIRBAKÝ - Kýbrýs’ýn aykýrý hocasý" target="_parent" href="/yazarlar/22985801.asp?yazarid=136">Yorgo KIRBAKÝ</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Yorgo KIRBAKÝ - Kýbrýs’ýn aykýrý hocasý" target="_parent" href="/yazarlar/22985801.asp?yazarid=136">Kýbrýs’ýn aykýrý hocasý</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Tolga TANIÞ - Bir iþ modeli olarak Discovery" target="_parent" href="/yazarlar/22985651.asp?yazarid=322">Tolga TANIÞ</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Tolga TANIÞ - Bir iþ modeli olarak Discovery" target="_parent" href="/yazarlar/22985651.asp?yazarid=322">Bir iþ modeli olarak Discovery</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Gülse BÝRSEL - Âkil insanlarýn baþýna gelecekler" target="_parent" href="/yazarlar/22985710.asp?yazarid=488">Gülse BÝRSEL</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Gülse BÝRSEL - Âkil insanlarýn baþýna gelecekler" target="_parent" href="/yazarlar/22985710.asp?yazarid=488">Âkil insanlarýn baþýna gelecekler</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Arda TÜRKMEN - Dýþarýda kazýk yemeden karýn doyurma âdâbý" target="_parent" href="/yazarlar/22985947.asp?yazarid=486">Arda TÜRKMEN</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Arda TÜRKMEN - Dýþarýda kazýk yemeden karýn doyurma âdâbý" target="_parent" href="/yazarlar/22985947.asp?yazarid=486">Dýþarýda kazýk yemeden karýn doyurma âdâbý</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Ece SÜKAN - Stilsizlik kaderimiz mi?" target="_parent" href="/yazarlar/22986108.asp?yazarid=474">Ece SÜKAN</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Ece SÜKAN - Stilsizlik kaderimiz mi?" target="_parent" href="/yazarlar/22986108.asp?yazarid=474">Stilsizlik kaderimiz mi?</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Musa Dede - Yanýyor kýrmýzýlý mavili..." target="_parent" href="/yazarlar/22985264.asp?yazarid=459">Musa Dede</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Musa Dede - Yanýyor kýrmýzýlý mavili..." target="_parent" href="/yazarlar/22985264.asp?yazarid=459">Yanýyor kýrmýzýlý mavili...</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Pucca Günlük - Beylere ‘piyasa’ tavsiyeleri" target="_parent" href="/yazarlar/22985106.asp?yazarid=472">Pucca Günlük</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Pucca Günlük - Beylere ‘piyasa’ tavsiyeleri" target="_parent" href="/yazarlar/22985106.asp?yazarid=472">Beylere ‘piyasa’ tavsiyeleri</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Hayat Erbabý - Hayat erbabý" target="_parent" href="/yazarlar/22985127.asp?yazarid=471">Hayat Erbabý</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Hayat Erbabý - Hayat erbabý" target="_parent" href="/yazarlar/22985127.asp?yazarid=471">Hayat erbabý</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Nuran ÇAKMAKÇI - Giriþimcilik ve Özyeðin" target="_parent" href="/yazarlar/22986527.asp?yazarid=372">Nuran ÇAKMAKÇI</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Nuran ÇAKMAKÇI - Giriþimcilik ve Özyeðin" target="_parent" href="/yazarlar/22986527.asp?yazarid=372">Giriþimcilik ve Özyeðin</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Kanat ATKAYA - Yüksek gerilim" target="_parent" href="/yazarlar/22986398.asp?yazarid=25">Kanat ATKAYA</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Kanat ATKAYA - Yüksek gerilim" target="_parent" href="/yazarlar/22986398.asp?yazarid=25">Yüksek gerilim</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Ýlker YASÝN - Kontrolsüz güç güç deðildir" target="_parent" href="/yazarlar/22986418.asp?yazarid=98">Ýlker YASÝN</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Ýlker YASÝN - Kontrolsüz güç güç deðildir" target="_parent" href="/yazarlar/22986418.asp?yazarid=98">Kontrolsüz güç güç deðildir</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Onur SALMAN - Ýstikrar derken" target="_parent" href="/yazarlar/22986443.asp?yazarid=483">Onur SALMAN</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Onur SALMAN - Ýstikrar derken" target="_parent" href="/yazarlar/22986443.asp?yazarid=483">Ýstikrar derken</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Hakan ÜNSAL - Madrid yönetimi" target="_parent" href="/yazarlar/22986511.asp?yazarid=348">Hakan ÜNSAL</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Hakan ÜNSAL - Madrid yönetimi" target="_parent" href="/yazarlar/22986511.asp?yazarid=348">Madrid yönetimi</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Ýlhan SÖYLER - Terim etkisi" target="_parent" href="/yazarlar/22986392.asp?yazarid=489">Ýlhan SÖYLER</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Ýlhan SÖYLER - Terim etkisi" target="_parent" href="/yazarlar/22986392.asp?yazarid=489">Terim etkisi</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Bilgin GÖKBERK - Okuyucu'ya" target="_parent" href="/yazarlar/22986674.asp?yazarid=420">Bilgin GÖKBERK</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Bilgin GÖKBERK - Okuyucu'ya" target="_parent" href="/yazarlar/22986674.asp?yazarid=420">Okuyucu'ya</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Güzin  Abla - Biliyorum beni seviyor ama bunu hissettirmiyor" target="_parent" href="/yazarlar/22986596.asp?yazarid=50">Güzin  Abla</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Güzin  Abla - Biliyorum beni seviyor ama bunu hissettirmiyor" target="_parent" href="/yazarlar/22986596.asp?yazarid=50">Biliyorum beni seviyor ama bunu hissettirmiyor</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Sahrap SOYSAL - Haydi gençler gastronomi bölümüne!" target="_parent" href="/yazarlar/22986620.asp?yazarid=106">Sahrap SOYSAL</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Sahrap SOYSAL - Haydi gençler gastronomi bölümüne!" target="_parent" href="/yazarlar/22986620.asp?yazarid=106">Haydi gençler gastronomi bölümüne!</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Niobe   - Havada aþk kokusu var!" target="_parent" href="/yazarlar/22986615.asp?yazarid=141">Niobe  </a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Niobe   - Havada aþk kokusu var!" target="_parent" href="/yazarlar/22986615.asp?yazarid=141">Havada aþk kokusu var!</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Ajda PEKKAN - Rüya gibi film..." target="_parent" href="/yazarlar/22986606.asp?yazarid=457">Ajda PEKKAN</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Ajda PEKKAN - Rüya gibi film..." target="_parent" href="/yazarlar/22986606.asp?yazarid=457">Rüya gibi film...</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Doðan HIZLAN - Sinemamýz nerede?" target="_parent" href="/yazarlar/22976478.asp?yazarid=4">Doðan HIZLAN</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Doðan HIZLAN - Sinemamýz nerede?" target="_parent" href="/yazarlar/22976478.asp?yazarid=4">Sinemamýz nerede?</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Ayþe ARMAN - Bu sporda bir nevi ‘libido tavan’" target="_parent" href="/yazarlar/22976827.asp?yazarid=12">Ayþe ARMAN</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Ayþe ARMAN - Bu sporda bir nevi ‘libido tavan’" target="_parent" href="/yazarlar/22976827.asp?yazarid=12">Bu sporda bir nevi ‘libido tavan’</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Figen BATUR - Parklarda piknik adabý" target="_parent" href="/yazarlar/22976599.asp?yazarid=88">Figen BATUR</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Figen BATUR - Parklarda piknik adabý" target="_parent" href="/yazarlar/22976599.asp?yazarid=88">Parklarda piknik adabý</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Banu TUNA - Topuklu giy, bir adým öne geç" target="_parent" href="/yazarlar/22976490.asp?yazarid=103">Banu TUNA</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Banu TUNA - Topuklu giy, bir adým öne geç" target="_parent" href="/yazarlar/22976490.asp?yazarid=103">Topuklu giy, bir adým öne geç</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Mesude ERÞAN - Kýþ rehavetini atýyoruz" target="_parent" href="/yazarlar/22976676.asp?yazarid=110">Mesude ERÞAN</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Mesude ERÞAN - Kýþ rehavetini atýyoruz" target="_parent" href="/yazarlar/22976676.asp?yazarid=110">Kýþ rehavetini atýyoruz</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Melda Narmanlý ÇÝMEN - Ýlham deposu dergiler" target="_parent" href="/yazarlar/22976535.asp?yazarid=142">Melda Narmanlý ÇÝMEN</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Melda Narmanlý ÇÝMEN - Ýlham deposu dergiler" target="_parent" href="/yazarlar/22976535.asp?yazarid=142">Ýlham deposu dergiler</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Refika Birgül - Baharýn geldiðini bir aþçý nasýl anlar?" target="_parent" href="/yazarlar/22976655.asp?yazarid=361">Refika Birgül</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Refika Birgül - Baharýn geldiðini bir aþçý nasýl anlar?" target="_parent" href="/yazarlar/22976655.asp?yazarid=361">Baharýn geldiðini bir aþçý nasýl anlar?</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Mehmet ÖZ - Gerçek mi, yoksa efsane mi olduðunu bilmediðiniz 5 beslenme kuralý" target="_parent" href="/yazarlar/22976743.asp?yazarid=453">Mehmet ÖZ</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Mehmet ÖZ - Gerçek mi, yoksa efsane mi olduðunu bilmediðiniz 5 beslenme kuralý" target="_parent" href="/yazarlar/22976743.asp?yazarid=453">Gerçek mi, yoksa efsane mi olduðunu bilmediðiniz 5 beslenme kuralý</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Aynur TARTAN - Justin konserinde bir Belieber annesi olmak" target="_parent" href="/yazarlar/22976771.asp?yazarid=445">Aynur TARTAN</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Aynur TARTAN - Justin konserinde bir Belieber annesi olmak" target="_parent" href="/yazarlar/22976771.asp?yazarid=445">Justin konserinde bir Belieber annesi olmak</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Sibel Arna - Bir otizm hikâyesi" target="_parent" href="/yazarlar/22976786.asp?yazarid=362">Sibel Arna</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Sibel Arna - Bir otizm hikâyesi" target="_parent" href="/yazarlar/22976786.asp?yazarid=362">Bir otizm hikâyesi</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Baþak Dizer Fransez - Saat modasýnda akreple yelkovan kaçý gösteriyor?" target="_parent" href="/yazarlar/22976513.asp?yazarid=468">Baþak Dizer Fransez</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Baþak Dizer Fransez - Saat modasýnda akreple yelkovan kaçý gösteriyor?" target="_parent" href="/yazarlar/22976513.asp?yazarid=468">Saat modasýnda akreple yelkovan kaçý gösteriyor?</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Ahmet Mümtaz TAYLAN - Dikkat barýþ çýkabilir!" target="_parent" href="/yazarlar/22976407.asp?yazarid=454">Ahmet Mümtaz TAYLAN</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Ahmet Mümtaz TAYLAN - Dikkat barýþ çýkabilir!" target="_parent" href="/yazarlar/22976407.asp?yazarid=454">Dikkat barýþ çýkabilir!</a></span></div>
+	</div>
+	
+	<div class="TitleCont FL">
+		<div class="TitleContText FL"><h1><a title="Mesude ERÞAN - Gemi yolculuðuna hazýr mýsýnýz" target="_parent" href="/yazarlar/22938910.asp?yazarid=110">Mesude ERÞAN</a></h1><img src="/p/yazarlar2011/ok.gif" alt="" /><span class="TitleContText_2"><a title="Mesude ERÞAN - Gemi yolculuðuna hazýr mýsýnýz" target="_parent" href="/yazarlar/22938910.asp?yazarid=110">Gemi yolculuðuna hazýr mýsýnýz</a></span></div>
+	</div>
+	
+</div>
+					
+					<!-- yazarmenu buraya -->
+					
+                    <div class="FL"><img style="background-color:#999999" src="http://www.hurriyet.com.tr/p/2011/spacer.gif" height="3" width="300"></div>
+                </div>
+            </div>
+        </div>
+		
+    </div>
+	<div class="HaberDetayRightCont FL">
+	<div class="FL">
+			
+			<div style="width: 100px; height: 600px;  float: left;">
+	
+		<script type="text/javascript">
+		if (screen.width>1024)
+{
+document.write("<div id=\"hurriyet_yazarlar_scrolling\"><scr"+"ipt type=\"text/javascript\">MNetBanner(\"hurriyet_yazarlar_scrolling\")</scr"+"ipt></div>")
+}
+else
+{
+document.write("<div id=\"hurriyet_yazarlar_scrolling_kucuk\"><scr"+"ipt type=\"text/javascript\">MNetBanner(\"hurriyet_yazarlar_scrolling_kucuk\")</scr"+"ipt></div>")
+}
+</script>	
+
+	
+</div>
+
+
+	</div>
+	</div>
+	</div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="/_css/2011/FooterOrtak.css" />
+<div id="FooterHolder" style="height:233px;">
+	<div class="FooterHolderMain FL">
+		<div class="FooterContentsHold">
+		<div class="FL"><img src="/p/2011/spacer.gif" width="890" height="5"/></div>
+		<div class="FooterMen FL">
+			<ul class="FooterTopMenu">
+				<li><a href="http://www.hurriyet.com.tr/gundem/" title="Hürriyet Gündem Haberleri - Gündemden Haberler - Gündem Haberleri">Gündem</a></li>
+				<li><a href="http://www.hurriyet.com.tr/ekonomi/" title="Hürriyet Ekonomi Haberleri - Ekonomiden Haberler - Ekonomi Haberleri">Ekonomi</a></li>
+				<li><a href="http://www.hurriyet.com.tr/magazin/anasayfa/" title="Hürriyet Magazin Haberleri - Magazinden Haberler - Magazin Haberleri - Hürriyet Kelebek">Kelebek</a></li>
+				<li><a href="http://www.hurriyet.com.tr/spor/" title="Hürriyet Spor Haberleri - Spordan Haberler - Spor Haberleri">Spor</a></li>
+				<li><a href="http://www.hurriyet.com.tr/planet/" title="Hürriyet Planet Haberleri - Planetten Haberler - Planet Haberleri">Planet</a></li>
+				<li><a href="http://piyasanet.hurriyet.com.tr/" title="Hürriyet Piyasanet Haberleri - Piyasanetten Haberler - Piyasanet Haberleri">Piyasanet</a></li>
+				<li><a href="http://www.hurriyet.com.tr/yazarlar/" title="Hürriyet Yazar Yazýlarý - Yazarlar">Yazarlar</a></li>
+				<li><a href="http://www.hurriyet.com.tr/yasasinhayat/" title="Hürriyet Saðlýk Haberleri - Saðlýktan Haberler - Saðlýk Haberleri">Saðlýk</a></li>
+			</ul>
+		</div>
+		<div class="FooterDot FL"></div>
+		<div class="FooterMen FL">
+			<ul class="FooterTopMenu">
+				<li><a href="http://www.hurriyet.com.tr/teknoloji/" title="Hürriyet Teknoloji Haberleri - Teknolojiden Haberler - Teknoloji Haberleri">Teknoloji</a></li>
+				<li><a href="http://www.hurriyet.com.tr/kultur-sanat/" title="Hürriyet Kültür - Sanat Haberleri - Kültür - Sanatdan Haberler - Kültür - Sanat Haberleri">Kültür - Sanat</a></li>
+				<li><a href="http://sinema.hurriyet.com.tr/" title="Hürriyet Sinema Haberleri - Sinemadan Haberler - Sinema Haberleri">Sinema Filmleri</a></li>
+				<li><a href="http://www.hurriyet.com.tr/astroloji/" title="Hürriyet Astroloji Haberleri - Astrolojiden Haberler - Astroloji Haberleri">Astroloji</a></li>
+				<li><a href="http://tvrehberi.hurriyet.com.tr/" title="Hürriyet Televizyon Rehberi Haberleri - Televizyon Rehberinden Haberler - Televizyon Rehberi Haberleri - Televizyonda Ne Var?">Tv Rehberi</a></li>
+				<li><a href="http://fotogaleri.hurriyet.com.tr/" title="Hürriyet Foto Galeri Haberleri - Foto Galeri- Foto Galeri Resimleri">Foto Galeri</a></li>
+				<li><a href="http://kelebekgaleri.hurriyet.com.tr/" title="Hürriyet Kelebek Galeri Haberleri - Kelebek Galeri- Kelebek Galeri Resimleri">Kelebek Galeri</a></li>
+				<li><a href="http://fotoanaliz.hurriyet.com.tr/" title="Hürriyet Foto Analiz Haberleri - Foto Analiz- Foto Analiz Resimleri">Foto Analiz</a></li>
+			</ul>
+		</div>
+		<div class="FooterDot FL"></div>
+		<div class="FooterMen FL">
+			<ul class="FooterTopMenu">
+				<li><a href="http://eniyion.hurriyet.com.tr/" title="Hürriyet En Ýyi On  - En Ýyi On">En Ýyi On</a></li>
+				<li><a href="http://www.hurriyetaile.com/" title="Hürriyet Hürriyet Aile Haberleri - Hürriyet Aile">Hürriyet Aile</a></li>
+<li><a href="http://www.mahmure.com/" title="Mahmure">Mahmure</a></li>
+				<li><a href="http://www.yazarkafe.com/" title="Hürriyet Yazarkafe  - Yazarkafeden Haberler - Yazarkafeden Seçmeler -  Yazarkafe  - Bloglar">Yazarkafe</a></li>
+				<li><a href="http://havadurumu.hurriyet.com.tr/" title="Hürriyet Hava Durumu Haberleri - Hava Durumuden Haberler - Hava Durumu Haberleri">Hava Durumu</a></li>
+				<li><a href="http://e-gazete.hurriyet.com.tr/" title="Hürriyet E-Gazete  - E-Gazeteden  - E-Gazete ">E-Gazete</a></li>
+				<li><a href="http://okurtemsilcisi.hurriyet.com.tr/" title="Hürriyet Okur Temsilcisi Haberleri - Okur Temsilcisidan Haberler - Okur Temsilcisi Haberleri">Okur Temsilcisi</a></li>
+<li><a href="http://sansoyunlari.hurriyet.com.tr/" title="Hürriyet Þans Oyunlarý">Þans Oyunlarý</a></li>
+			</ul>
+		</div>
+		<div class="FooterDot FL"></div>
+		<div class="FooterMen FL">
+			<ul class="FooterTopMenu">
+				
+				<li><a href="http://canlimacsonuclari.hurriyet.com.tr/" title="Hürriyet Canlý Maç Sonuçlarý Haberleri - Canlý Maç Sonuçlarýten Haberler - Canlý Maç Sonuçlarý Haberleri">Canlý Maç Sonuçlarý</a></li>
+				<li><a href="http://stadyum.hurriyet.com.tr/" title="Hürriyet Stadyum - Canlý Maç Anlatýmý - Canlý Maç">Stadyum</a></li>
+				<li><a href="http://canlimacsonuclari.hurriyet.com.tr/iddaaprogram.aspx" title="Hürriyet Ýddaa - Ýddaa Programý">Ýddaa Programý</a></li>
+				<li><a href="http://yarisma.hurriyet.com.tr/" title="Hürriyet Bilgi Yarýþmasý - Bilgi Yarýþmasý">Bilgi Yarýþmasý</a></li>
+				<li><a href="http://anket.hurriyet.com.tr/allpoll.aspx" title="Hürriyet Anketler - Anketler Sonuçlarý">Anketler</a></li>
+				<li><a href="http://mind.hurriyet.com.tr/" title="Hürriyet Mind">Mind</a></li>
+				<li><a href="http://www.tipeez.com/ch/oyunlar/" title="Oyunlar">Oyunlar</a></li>
+				<li><a href="http://www.yenicarsim.com/?utm_source=hurriyet&utm_medium=footer&utm_campaign=anasayfa&utm_content=eM" title="Yeniçarþým">Yeniçarþým</a></li>
+			</ul>
+		</div>
+		<div class="FooterDot FL"></div>
+		<div class="FooterMen FL">
+			<ul class="FooterTopMenu">
+				<li><a href="http://benimsayfam.hurriyet.com.tr/" title="Hürriyet Benim Sayfam">Benim Sayfam</a></li>
+				<li><a href="http://bumerang.hurriyet.com.tr/" title="Hürriyet Bumerang">Bumerang</a></li>
+				<li><a href="http://www.hurlist.com/" title="Hürriyet Hürlist">Hürlist</a></li>
+				<li><a href="http://haberalarmi.hurriyet.com.tr/" title="Hürriyet Haber Alarmý">Haber Alarmý</a></li>
+				<li><a href="http://www.hurriyet.com.tr/spor/" title="Spor Haberleri">Spor Haberleri</a></li>
+				<li><a href="http://www.yenibiris.com/" title="Hürriyet Yenibiriþ">Yenibiriþ</a></li>
+				<li><a href="http://www.hurriyetemlak.com/" title="Satýlýk Kiralýk Emlak">Hürriyet Emlak</a></li>
+				<li><a href="http://basinilan.hurriyet.com.tr/" title="Hürriyet Basýn Ýlan Kurumu Ýlanlarý">Basýn Ýlan Kurumu Ýlanlarý</a></li>
+			</ul>
+		</div>
+		<div class="FooterDot FL"></div>
+		<div class="FooterMen FL">
+			<ul class="FooterTopMenu">
+				<li><a href="http://www.hurriyetoto.com/" title="2. El Araba">Hürriyet Oto</a></li>
+				<li><a href="http://www.hurriyetegitim.com/" title="Hürriyet Hürriyet Eðitim">Hürriyet Eðitim</a></li>
+				<li><a href="http://seriilan.hurriyet.com.tr/" title="Hürriyet Gazete Seri Ýlanlar">Gazete Seri Ýlanlar</a></li>
+				<li><a href="http://www.bigpara.com/" title="Bigpara">Bigpara</a></li>
+				<li><a href="http://www.yakala.co/" title="Hürriyet Yakala.co">Yakala.co</a></li>
+	<li><a href="http://www.ekolay.net/" title="ekolay">ekolay</a></li>
+				<li><a href="http://www.tipeez.com/" title="Hürriyet Tipeez">Tipeez</a></li>
+				<li><a href="http://www.hurriyet.de/" title="Hürriyet Avrupa">Hürriyet Avrupa</a></li>
+				<li><a href="http://www.hurriyet.com.tr/index/default.asp" title="Tüm Haberler">Tüm Haberler</a></li>
+			</ul>
+		</div>
+		<div class="FL"><img src="/p/2011/spacer.gif" width="885" height="10" border="0" /></div>
+		</div>
+	</div>
+	<div class="FooterHolderBottom FL">
+	<div class="FootBot">
+	<div class="FooterLeft FL"><span class="FooterTxt FL">© Copyright 2013 Hürriyet - Doðan Yayýn Holding</span></div>
+	<div class="FooterCenter FL"><span class="FooterTxt FL"><a href="http://proje.hurriyet.com.tr/bizeulasin/">Bize Ulaþýn</a></span></div>
+	<div class="FooterRight FL"><span class="FooterTxt FL"><a href="http://www.hurriyetkurumsal.com">Hürriyet Kurumsal</a></span></div>
+	</div>
+	</div>
+</div>
+
+</div>
+
+	<div id="fbl-box-container">
+      <div id="fbl-box-content">
+		<a href="javascript:void(0)" class="fbl-box-close">
+                <img src="/p/2012/FbApp/fbbox-close.png" width="20" height="20" alt="Kapat" /></a>
+		<div class="fbl-box-top">
+		  <span>Hürriyet Facebook Deneyimine Hoþgeldiniz</span>
+		  <a href="javascript:void(0)" class="fbl-box-action">
+		   <img src="/p/2012/FbApp/fbbox-world.png" width="315" height="223" alt="" />
+		  </a>
+        </div>
+		<div class="fbl-box-text">
+		<ul>
+		<li><span>Keþfedin!</span> Arkadaþlarýnýzýn okuduðu ilginizi çekecek haberleri keþfedin, Facebook hesabýnýzda arkadaþlarýnýzýn neleri okuduðunu görün.</li>
+		<li><span>Kolayca Paylaþýn!</span> Okuduðunuz haberler Facebook hesabýnýzda kolayca paylaþýlsýn, sizin gündeminizden arkadaþlarýnýz da haberdar olsun. </li>
+		<li><span>Kontrol Sizde!</span> Paylaþýmlarýnýzý istediðiniz zaman durdurun, istediðiniz zaman tekrar baþlatýn. Kontrolü her zaman elinizde tutun.</li>
+		<ul>
+		</div>
+		<a href="javascript:void(0)" class="fbl-box-action">
+                <img src="/p/2012/FbApp/fbbox-button.gif" width="163" height="40" alt="" /></a>
+      </div>
+      <div id="fbl-box-mask">
+      </div>
+</div>
+<script type="text/javascript" src="/_js/2012/tipsy.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".FbToolTip").tipsy();
+    });
+</script>
+
+
+</body>
+</html>
