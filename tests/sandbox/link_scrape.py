@@ -1,3 +1,4 @@
+from collections import defaultdict
 from datetime import datetime, timedelta
 from unittest import TestCase
 import urllib2
@@ -46,3 +47,7 @@ class CollectLinks(TestCase):
                 print 'saved:' + link
                 cnt+=1
                 print str(cnt) + ' editorial saved'
+
+    def test_default_dict(self):
+        d = defaultdict(int)
+        print d['cem']

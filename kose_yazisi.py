@@ -1,3 +1,4 @@
+from collections import defaultdict
 import urllib2
 from HtmlAndTextParseHelper import strip_tags
 from bottle import template
@@ -102,72 +103,66 @@ def keywords_cell(doc):
 def get_most_recent_docs(s):
     daysToGoBack = 0
     date_user = get_date_username(daysToGoBack)
-    new_docs = s.get_docs({'user_name': date_user})
+    new_docs = s.get_docs(get_username_query(date_user))
     while new_docs.count() == 0 and daysToGoBack < 7:
         daysToGoBack += 1
         date_user = get_date_username(daysToGoBack)
-        new_docs = s.get_docs({'user_name': date_user})
-    return new_docs
+        new_docs = s.get_docs(get_username_query(date_user))
+    return list(new_docs)
 
 
-def get_yazilar(user_name):
-    s = SimpleQuery('yazilar')
-    titles = ['yazar', 'tarih', 'baslik', 'action', 'keywords', 'gazete']
-    user_name_query = {'user_name': user_name}
-    archive_rows = []
+def get_archive_docs_list(s, user_name_query):
+    retList =[]
     for doc in s.get_docs(user_name_query):
+        retList.append(doc)
+    return retList
+
+
+def get_username_query(user_name):
+    return {'user_name': user_name}
+
+
+def archive_rows_for_html(archive_docs_list, user_name):
+    archive_rows = []
+    for doc in archive_docs_list:
         doc_row = []
-        doc_row.append(get_value_if_exists(doc,'author'))
-        doc_row.append(get_value_if_exists(doc,'date'))
+        doc_row.append(get_value_if_exists(doc, 'author'))
+        doc_row.append(get_value_if_exists(doc, 'date'))
         doc_row.append(link_cell(doc))
         doc_row.append(actions_cell_archive_row(doc, user_name))
         doc_row.append(keywords_cell(doc))
         doc_row.append(get_value_if_exists(doc, 'gazete'))
         archive_rows.append(doc_row)
+    return archive_rows
 
+
+def most_recent_rows_for_html(most_recent_docs_list, user_name):
     new_rows = []
-
-    for doc in get_most_recent_docs(s):
+    for doc in most_recent_docs_list:
         doc_row = []
-        doc_row.append(get_value_if_exists(doc,'author'))
-        doc_row.append(get_value_if_exists(doc,'date'))
+        doc_row.append(get_value_if_exists(doc, 'author'))
+        doc_row.append(get_value_if_exists(doc, 'date'))
         doc_row.append(link_cell(doc))
         doc_row.append(actions_cell_new_row(doc, user_name))
         doc_row.append(keywords_cell(doc))
         doc_row.append(get_value_if_exists(doc, 'gazete'))
         new_rows.append(doc_row)
+    return new_rows
 
-    return titles, archive_rows, new_rows
 
-def get_yazilar_old(user_name):
+def get_yazilar(user_name):
     s = SimpleQuery('yazilar')
-    titles = ['yazar', 'tarih', 'baslik', 'action', 'keywords', 'link', 'gazete']
-    mongo_fields_needed = ['author', 'date', 'title', '_id', 'keywords', 'url', 'gazete']
-    user_name_query = {'user_name': user_name}
-    archive_rows = s.get_data(mongo_fields_needed, user_name_query)
-    for row in archive_rows:
-        row[2] = template('link', url=row[5], link_text=row[2])
-        actionsCell = template('goster_button', object_id=row[3], user_name=user_name)
-        row[3] = actionsCell + template('delete_button', object_id=row[3], user_name=user_name)
-        keywordsListEncoded = []
-        for word in row[4]:
-            keywordsListEncoded.append(word.encode('utf-8'))
-        row[4] = str(keywordsListEncoded)
-    daysToGoBack = 0
-    date_user = get_date_username(daysToGoBack)
-    new_rows = s.get_data(mongo_fields_needed, {'user_name': date_user})
-    while len(new_rows) == 0 and daysToGoBack < 7:
-        daysToGoBack += 1
-        date_user = get_date_username(daysToGoBack)
-        new_rows = s.get_data(mongo_fields_needed, {'user_name': date_user})
+    archive_docs_list = get_archive_docs_list(s, get_username_query(user_name))
+    most_recent_docs_list = get_most_recent_docs(s)
 
-    for row in new_rows:
-        row[2] = template('link', url=row[5], link_text=row[2])
-        row[3] = template('add_button', url=row[5], user_name=user_name)
-        keywordsListEncoded = []
-        for word in row[4]:
-            keywordsListEncoded.append(word.encode('utf-8'))
-        row[4] = keywordsListEncoded
+    authorCounts = defaultdict(int)
+    for doc in archive_docs_list:
+        authorCounts[doc['author']]+=1
+
+    most_recent_docs_list.sort( key=lambda x: -(authorCounts[x['author']]))
+    titles = ['yazar', 'tarih', 'baslik', 'action', 'keywords', 'gazete']
+    archive_rows = archive_rows_for_html(archive_docs_list, user_name)
+    new_rows = most_recent_rows_for_html(most_recent_docs_list, user_name)
 
     return titles, archive_rows, new_rows
 
