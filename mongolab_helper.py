@@ -90,3 +90,6 @@ class SimpleQuery():
 
     def get_docs(self, query = None):
         return get_docs(self.collectionName, query)
+
+    def get_first_doc(self, query = None):
+        return get_docs(self.collectionName, query)[0]

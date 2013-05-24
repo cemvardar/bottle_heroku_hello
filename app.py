@@ -9,7 +9,7 @@ from bottle import route, run, template, post, request, get, redirect
 
 def get_names():
     s = SimpleQuery('names')
-    return s.get_data(['name', 'lastname'])
+    return s.get_docs()
 
 
 def get_commutes():
@@ -20,7 +20,7 @@ def get_commutes():
 def get_yazi_content(user_name, object_id):
     s = SimpleQuery('yazilar')
     query = {'user_name': user_name, '_id': object_id}
-    return s.get_data(['author', 'date', 'title', '_id', 'url', 'content'], query)
+    return s.get_first_doc(query)
 
 
 @route('/koseyazisi/:user_name')
@@ -46,8 +46,8 @@ def delete_kose_yazisi(user_name='cem'):
 @post('/koseyazisi/:user_name/goster')
 def show_kose_yazisi(user_name='cem'):
     object_id = request.forms.get('object_id')
-    yazi_row = get_yazi_content(user_name, object_id)[0]
-    return template('kose_yazisi_goster', author=yazi_row[0], date=yazi_row[1], content=yazi_row[5])
+    yazi_doc = get_yazi_content(user_name, object_id)
+    return template('kose_yazisi_goster', author=yazi_doc['author'], date=yazi_doc['date'], content=yazi_doc['content'])
 
 
 @route('/koseyazisi/:user_name/keywords')
@@ -90,20 +90,6 @@ def save_new_keyword(user_name='cem'):
 def index():
     redirect('/koseyazisi/cem')
 
-@get('/names')
-def show_names():
-    titles = ['isim', 'soyadi']
-    items = get_names()
-    return template('make_table', titles=titles, rows=items)
-
-@post('/', method='POST')
-def save_new_name():
-    name = request.forms.get('name')
-    lastname = request.forms.get('lastname')
-    newRecord = {"name": name, "lastname": lastname}
-    names_collection = get_names_collection()
-    names_collection.insert(newRecord)
-    return show_names()
 
 # a simple json test main page
 @route('/json')
@@ -168,7 +154,7 @@ def shop_aj_getallitems():
     cnt = 1
     json = {}
     for i in names:
-        json[cnt] = i[0] + ' ' + i[1]
+        json[cnt] = i['name'] + ' ' + i['lastname']
         cnt += 1
     return (json)
 

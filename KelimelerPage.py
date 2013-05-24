@@ -7,10 +7,10 @@ __author__ = 'cvardar'
 def get_kelimeler_content(user_name, collection_name='keywords'):
     s = SimpleQuery(collection_name)
     query = {'user_name': user_name}
-    content = s.get_data(['user_name', 'include'], query)
+    keywords_doc = s.get_first_doc(query)
     kelimeler = []
-    if content:
-        for i in content[0][1]:
+    if keywords_doc:
+        for i in keywords_doc['include']:
             delete_button = template('delete_keyword_button', object_id=i, user_name=user_name, collection_name= collection_name)
             kelimeler.append([i, delete_button])
     return kelimeler
