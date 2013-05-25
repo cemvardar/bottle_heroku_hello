@@ -38,6 +38,6 @@ class radikal_kose_yazisi_tests(TestCase):
         self.assertEqual(get_unicode('Ham Xavi elması'), yazi['title'])
         self.assertEqual(get_unicode('25/05/2013'), yazi['date'])
         self.assertEqual(get_unicode('TANIL BORA'), yazi['author'])
-        self.assertEqual(get_unicode('radikal'), yazi['gazete'])
+        self.assertEqual(get_unicode('Radikal'), yazi['gazete'])
 
 

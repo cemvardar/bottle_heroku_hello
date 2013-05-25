@@ -1,4 +1,4 @@
-from HtmlAndTextParseHelper import get_gazete_name, get_links_from_html
+from HtmlAndTextParseHelper import get_links_from_html
 from bs4 import BeautifulSoup
 
 __author__ = 'cvardar'
@@ -8,7 +8,7 @@ class HurriyetReader():
     def get_doc_from_html(self, html, url):
         soup = BeautifulSoup(html)
         yazi = {}
-        yazi['gazete'] = get_gazete_name(url)
+        yazi['gazete'] = 'Hurriyet'
         yazi['url'] = url
         tarih = soup.find('div', attrs={'class': 'tarihSp FL'}).text
         yazi['date'] = tarih

@@ -1,6 +1,8 @@
 from collections import defaultdict
 import urllib2
-from HtmlAndTextParseHelper import strip_tags, get_gazete_reader
+from HtmlAndTextParseHelper import strip_tags, get_gazete_name, get_html_from_url
+from HurriyetReader import HurriyetReader
+from RadikalReader import RadikalReader
 from bottle import template
 from bson import ObjectId
 from mongolab_helper import get_collection, SimpleQuery, get_date_username, find_one, insert, remove
@@ -145,3 +147,14 @@ def get_yazilar(user_name):
 
     return titles, archive_rows, new_rows
 
+
+def get_gazete_reader(url):
+    gazete_name = get_gazete_name(url)
+    if gazete_name =='hurriyet':
+        return HurriyetReader()
+    if gazete_name =='radikal':
+        return RadikalReader()
+
+def get_yazi_links_from_url(url):
+    html = get_html_from_url(url)
+    return get_gazete_reader(url).get_yazi_links(html)

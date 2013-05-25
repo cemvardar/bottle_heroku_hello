@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from unittest import TestCase
 from HtmlAndTextParseHelper import get_unicode
 from HurriyetReader import HurriyetReader
@@ -25,5 +27,5 @@ class hurriyet_kose_yazisi_tests(TestCase):
         self.assertEqual(get_unicode('Baro’metre'), yazi['title'])
         self.assertEqual(get_unicode('25 Mayıs 2013'), yazi['date'])
         self.assertEqual(get_unicode('Yılmaz ÖZDİL'), yazi['author'])
-        self.assertEqual(get_unicode('hurriyet'), yazi['gazete'])
+        self.assertEqual(get_unicode('Hurriyet'), yazi['gazete'])
         self.assertEqual(2915, len(yazi['content']))

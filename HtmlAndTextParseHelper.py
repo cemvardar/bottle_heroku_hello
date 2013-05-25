@@ -1,8 +1,6 @@
 from HTMLParser import HTMLParser
 import urllib2
 import urlparse
-from HurriyetReader import HurriyetReader
-from RadikalReader import RadikalReader
 from bs4 import BeautifulSoup
 
 __author__ = 'cvardar'
@@ -35,20 +33,11 @@ def get_links_from_html(html):
     links_html = soup.findAll('a')
     return links_html
 
-def get_gazete_reader(url):
-    gazete_name = get_gazete_name(url)
-    if gazete_name =='hurriyet':
-        return HurriyetReader()
-    if gazete_name =='radikal':
-        return RadikalReader()
 
 def get_html_from_url(url):
     request = urllib2.Request(url)
     return urllib2.urlopen(request)
 
 
-def get_yazi_links_from_url(url):
-    html = get_html_from_url(url)
-    return get_gazete_reader(url).get_yazi_links(html)
 
 
