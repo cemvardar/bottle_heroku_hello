@@ -3,7 +3,6 @@
 from unittest import TestCase
 from HtmlAndTextParseHelper import get_unicode
 from KelimelerPage import insert_new_keyword, delete_keyword
-from kose_yazisi import get_yazilar_collection
 from mongolab_helper import get_collection
 
 __author__ = 'cvardar'

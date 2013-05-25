@@ -1,29 +1,11 @@
 from collections import defaultdict
 import urllib2
-from HtmlAndTextParseHelper import strip_tags, get_gazete_name, get_radikal_doc_from_html
+from HtmlAndTextParseHelper import strip_tags, get_gazete_reader
 from bottle import template
-from bs4 import BeautifulSoup
 from bson import ObjectId
 from mongolab_helper import get_collection, SimpleQuery, get_date_username, find_one, insert, remove
 
 __author__ = 'cvardar'
-
-
-def get_hurriyet_doc_from_html(html, url):
-    soup = BeautifulSoup(html)
-    yazi = {}
-    yazi['gazete'] = get_gazete_name(url)
-    yazi['url'] = url
-    tarih = soup.find('div', attrs={'class': 'tarihSp FL'}).text
-    yazi['date'] = tarih
-    yazarName = soup.find('div', attrs={'class': 'YazarNameContainer_2'}).find('a').text
-    yazi['author'] = yazarName
-    yaziContent = soup.find("div", {"id": "YazarDetayText"})
-    title = yaziContent.find('span').text
-    yazi['content'] = unicode(yaziContent)
-    yazi['title'] = title
-    return yazi
-
 
 def get_contained_keywords(yazi, keywords):
     wordSet = set(strip_tags(yazi['content']).lower().split())
@@ -43,12 +25,8 @@ def get_yazi_json(url):
         else:
             raise
     html = response.read()
-    gazete_name = get_gazete_name(url)
-    if gazete_name =='hurriyet':
-        return get_hurriyet_doc_from_html(html, url)
-    if gazete_name =='radikal':
-        return get_radikal_doc_from_html(html,url)
-    raise
+    return get_gazete_reader(url).get_doc_from_html(html,url)
+
 
 def get_yazilar_collection():
     return get_collection('yazilar')
@@ -85,6 +63,7 @@ def link_cell(doc):
 def actions_cell_new_row(doc, user_name='cem'):
     url = get_value_if_exists(doc, 'url')
     return template('add_button', url=url, user_name=user_name)
+
 
 def actions_cell_archive_row(doc, user_name='cem'):
     object_id = get_value_if_exists(doc, '_id')

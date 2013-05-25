@@ -1,37 +1,31 @@
 from collections import defaultdict
 from datetime import datetime, timedelta
 from unittest import TestCase
-import urllib2
-import urlparse
-from HtmlAndTextParseHelper import get_html_from_url, get_hurriyet_yazi_links, get_radikal_yazi_links
-from bs4 import BeautifulSoup
+from HtmlAndTextParseHelper import get_yazi_links_from_url
 from kose_yazisi import get_yazi_json, insert_doc_into_yazilar
 from mongolab_helper import get_collection, get_date_username
 
 __author__ = 'cvardar'
-#
-# def get_links_html(linkToScrape):
-#     request = urllib2.Request(linkToScrape)
-#     response = urllib2.urlopen(request)
-#     soup = BeautifulSoup(response)
-#     links_html = soup.findAll('a')
-#     return links_html
 
 class CollectLinks(TestCase):
     def test_all_links_single_level(self):
-        yazi_links = get_hurriyet_yazi_links("http://www.hurriyet.com.tr/yazarlar/")
-        radikal_html = get_html_from_url("http://www.radikal.com.tr/yazarlar/")
-        radikal_yazi_links = get_radikal_yazi_links(radikal_html)
-        yazi_links = yazi_links.union(radikal_yazi_links)
+        yazar_page_urls = ["http://www.hurriyet.com.tr/yazarlar/",
+                           "http://www.radikal.com.tr/yazarlar/"]
+        all_yazi_links=set([])
+        for url in yazar_page_urls:
+            all_yazi_links = all_yazi_links.union(get_yazi_links_from_url(url))
+
         collection = get_collection('links_by_date')
-        collection.insert({'date':datetime.utcnow(), 'links': list(yazi_links)})
+        collection.insert({'date':datetime.utcnow(), 'links': list(all_yazi_links)})
 
     def test_hurriyet_links(self):
-        yazi_links = get_hurriyet_yazi_links("http://www.hurriyet.com.tr/yazarlar/")
-        radikal_html = get_html_from_url("http://www.radikal.com.tr/yazarlar/")
-        radikal_yazi_links = get_radikal_yazi_links(radikal_html)
-        yazi_links = yazi_links.union(radikal_yazi_links)
-        for i in yazi_links:
+        yazar_page_urls = ["http://www.hurriyet.com.tr/yazarlar/",
+                           "http://www.radikal.com.tr/yazarlar/"]
+        all_yazi_links=set([])
+        for url in yazar_page_urls:
+            all_yazi_links = all_yazi_links.union(get_yazi_links_from_url(url))
+
+        for i in all_yazi_links:
             print i
 
     def test_first(self):

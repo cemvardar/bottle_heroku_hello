@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from unittest import TestCase
-from HtmlAndTextParseHelper import get_radikal_yazi_links, get_radikal_doc_from_html, get_unicode, get_html_from_url
+from HtmlAndTextParseHelper import get_unicode
+from RadikalReader import RadikalReader
 
 __author__ = 'cvardar'
 
-class kose_yazisi_tests(TestCase):
+class radikal_kose_yazisi_tests(TestCase):
     def get_expected_links(self):
         expected_links = set([
             'http://www.radikal.com.tr/yazarlar/fatih_ozatay/henuz_gec_degil-1134903',
@@ -24,26 +25,19 @@ class kose_yazisi_tests(TestCase):
         f = open('RadikalYazarlar.html', 'r')
         f_read = f.read()
         expected_links = self.get_expected_links()
-        self.assertEqual(expected_links, get_radikal_yazi_links(f_read))
-
-    def test_read_yazarlar2(self):
-        # f = open('RadikalYazarlar.html', 'r')
-        f_read = get_html_from_url("http://www.radikal.com.tr/yazarlar/")
-        print f_read
-        expected_links = self.get_expected_links()
-        links = get_radikal_yazi_links(f_read)
-        print links
-        self.assertEqual(expected_links, links)
+        reader = RadikalReader()
+        self.assertEqual(expected_links, reader.get_yazi_links(f_read))
 
     def test_read_yazi(self):
         f = open('RadikalYazi.html', 'r')
         f_read = f.read()
         url = 'http://www.radikal.com.tr/yazarlar/fatih_ozatay/henuz_gec_degil-1134903'
-        yazi = get_radikal_doc_from_html(f_read, url)
+        reader = RadikalReader()
+
+        yazi = reader.get_doc_from_html(f_read, url)
         self.assertEqual(get_unicode('Ham Xavi elması'), yazi['title'])
         self.assertEqual(get_unicode('25/05/2013'), yazi['date'])
         self.assertEqual(get_unicode('TANIL BORA'), yazi['author'])
         self.assertEqual(get_unicode('radikal'), yazi['gazete'])
-        # print yazi['title']==get_unicode('Ham Xavi elması')
 
 
