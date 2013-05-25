@@ -1,6 +1,7 @@
 from HtmlAndTextParseHelper import get_unicode
+from SimpleQuery import SimpleQuery
 from bottle import template
-from mongolab_helper import SimpleQuery, upsert, find_one
+from mongolab_helper import upsert, find_one
 
 __author__ = 'cvardar'
 

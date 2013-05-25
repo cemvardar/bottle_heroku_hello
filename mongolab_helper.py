@@ -34,22 +34,6 @@ def get_collection(collectionName):
     names_collection = database[collectionName]
     return names_collection
 
-def get_data_from_collection(collection, fieldsToPull, query=None):
-    if query and '_id' in query:
-        query['_id'] = ObjectId(query['_id'])
-    if collection is not None:
-        docCursor = collection.find(query)
-        rows = []
-        for document in docCursor:
-            row = []
-            for f in fieldsToPull:
-                if f in document:
-                    row.append(document[f])
-                else:
-                    row.append('')
-            rows.append(row)
-        return rows
-    return []
 
 def get_docs(collectionName, query=None):
     collection = get_collection(collectionName)
@@ -80,16 +64,3 @@ def remove(collection_name, query):
     collection.remove(query)
 
 
-class SimpleQuery():
-    def __init__(self, collectionName):
-        self.collectionName = collectionName
-
-    def get_data(self, fieldsToPull, query=None):
-        collection = get_collection(self.collectionName)
-        return get_data_from_collection(collection,fieldsToPull,query)
-
-    def get_docs(self, query = None):
-        return get_docs(self.collectionName, query)
-
-    def get_first_doc(self, query = None):
-        return get_docs(self.collectionName, query)[0]

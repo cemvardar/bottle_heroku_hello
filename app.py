@@ -1,8 +1,9 @@
 import datetime
 from KelimelerPage import get_kelimeler_content, insert_new_keyword, delete_keyword
+from SimpleQuery import SimpleQuery
 import gviz_api
 from kose_yazisi import get_yazi_json, insert_doc_into_yazilar, delete_doc_from_yazilar, get_yazilar
-from mongolab_helper import get_names_collection, get_commutes_collection, SimpleQuery
+from mongolab_helper import get_commutes_collection
 import os
 from bottle import route, run, template, post, request, get, redirect
 
@@ -14,7 +15,7 @@ def get_names():
 
 def get_commutes():
     s = SimpleQuery('commutes')
-    return s.get_data(['date', 'duration'])
+    return s.get_data_as_list_of_lists(['date', 'duration'])
 
 
 def get_yazi_content(user_name, object_id):

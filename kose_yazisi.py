@@ -3,9 +3,10 @@ import urllib2
 from HtmlAndTextParseHelper import strip_tags, get_gazete_name, get_html_from_url
 from HurriyetReader import HurriyetReader
 from RadikalReader import RadikalReader
+from SimpleQuery import SimpleQuery
 from bottle import template
 from bson import ObjectId
-from mongolab_helper import get_collection, SimpleQuery, get_date_username, find_one, insert, remove
+from mongolab_helper import get_collection, get_date_username, find_one, insert, remove
 
 __author__ = 'cvardar'
 
