@@ -1,19 +1,15 @@
 from collections import defaultdict
 import urllib2
-from HtmlAndTextParseHelper import strip_tags
+from HtmlAndTextParseHelper import strip_tags, get_gazete_name, get_radikal_doc_from_html
 from bottle import template
 from bs4 import BeautifulSoup
 from bson import ObjectId
-from mongolab_helper import get_collection, SimpleQuery, get_date_username, find_one, insert, remove, get_docs
-import urlparse
+from mongolab_helper import get_collection, SimpleQuery, get_date_username, find_one, insert, remove
+
 __author__ = 'cvardar'
 
-def get_gazete_name(url):
-    parse_object = urlparse.urlparse(url)
-    address = parse_object.netloc
-    return address.replace('.tr', '').replace('.com','').replace('www.', '')
 
-def get_yazi_from_html(html, url):
+def get_hurriyet_doc_from_html(html, url):
     soup = BeautifulSoup(html)
     yazi = {}
     yazi['gazete'] = get_gazete_name(url)
@@ -47,8 +43,12 @@ def get_yazi_json(url):
         else:
             raise
     html = response.read()
-    return get_yazi_from_html(html, url)
-
+    gazete_name = get_gazete_name(url)
+    if gazete_name =='hurriyet':
+        return get_hurriyet_doc_from_html(html, url)
+    if gazete_name =='radikal':
+        return get_radikal_doc_from_html(html,url)
+    raise
 
 def get_yazilar_collection():
     return get_collection('yazilar')

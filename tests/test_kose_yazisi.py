@@ -4,7 +4,7 @@ from unittest import TestCase
 from HtmlAndTextParseHelper import get_unicode
 from KelimelerPage import insert_new_keyword
 import bottle
-from kose_yazisi import get_yazi_json, get_yazi_from_html, get_yazilar_collection, insert_doc_into_yazilar, get_yazilar, get_contained_keywords
+from kose_yazisi import get_yazi_json, get_hurriyet_doc_from_html, get_yazilar_collection, insert_doc_into_yazilar, get_yazilar, get_contained_keywords
 from mongolab_helper import get_collection
 
 __author__ = 'cvardar'
@@ -29,7 +29,7 @@ class kose_yazisi_tests(TestCase):
 
     def test_from_local_file(self):
         f = open('test_article.txt', 'r')
-        self.assert_yazi(get_yazi_from_html(f.read(), get_url()))
+        self.assert_yazi(get_hurriyet_doc_from_html(f.read(), get_url()))
 
     def clean_up_docs_for(self, userName):
         get_yazilar_collection().remove({'user_name': userName})
@@ -50,9 +50,9 @@ class kose_yazisi_tests(TestCase):
         self.clean_up_docs_for(get_mock_user_name())
 
         self.insert_keywords()
-        yazi = get_yazi_from_html(self.html_from_local_file(), get_url())
+        yazi = get_hurriyet_doc_from_html(self.html_from_local_file(), get_url())
         insert_doc_into_yazilar(yazi, get_mock_user_name())
-        yazi2 = get_yazi_from_html(self.html_from_local_file(), get_url())
+        yazi2 = get_hurriyet_doc_from_html(self.html_from_local_file(), get_url())
         insert_doc_into_yazilar(yazi2, get_mock_user_name())
         titles, rows, rows_new = get_yazilar(get_mock_user_name())
         self.assertEqual(2, len(rows))
@@ -63,7 +63,7 @@ class kose_yazisi_tests(TestCase):
     def test_find_keywords(self):
         f = open('test_article.txt', 'r')
         f_read = f.read()
-        yazi = get_yazi_from_html(f_read, get_url())
+        yazi = get_hurriyet_doc_from_html(f_read, get_url())
         test_keywords = [get_unicode('bir'), get_unicode('yakışan'), get_unicode('tayyip')]
         containedKeywords = get_contained_keywords(yazi, test_keywords)
         self.assertEqual(2, len(containedKeywords))
