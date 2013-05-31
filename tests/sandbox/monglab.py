@@ -1,7 +1,9 @@
+from collections import defaultdict
 from unittest import TestCase
 import sys
 from SimpleQuery import SimpleQuery
 from bson import ObjectId
+from kose_yazisi import get_archive_docs_list, HashableDict, get_key
 from mongolab_helper import get_names_collection
 import os
 import pymongo
@@ -24,9 +26,25 @@ class mongolab_tests(TestCase):
         for r in q.get_data_as_list_of_lists(fieldsToPull):
             print r
 
+
     def test_simple_query(self):
         q = SimpleQuery('yazilar')
-        fieldsToPull = ['_id']
-        for r in q.get_data_as_list_of_lists(fieldsToPull, {'_id': ObjectId('514535ed123f8fc61223f39e')}):
-            print r[0]
+        user_name_query= {"user_name":"cem"}
+        counter = {}
+        for doc in get_archive_docs_list(q, user_name_query):
+            key = get_key(doc)
+            if key not in counter:
+                counter[key] = [doc['_id']]
+            else:
+                counter[key].append(doc['_id'])
+        for doc in get_archive_docs_list(q, user_name_query):
+            if get_key(doc) in counter:
+                print 'yeppa'
+            else:
+                print 'nope'
 
+    def test_dictionary_behavior(self):
+        a = HashableDict()
+        a['user_name'] = 'cem'
+        b = {a: 1}
+        print b[a]

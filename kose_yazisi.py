@@ -118,14 +118,18 @@ def archive_rows_for_html(archive_docs_list, user_name):
     return archive_rows
 
 
-def most_recent_rows_for_html(most_recent_docs_list, user_name):
+def most_recent_rows_for_html(most_recent_docs_list, user_name, other_docs):
     new_rows = []
     for doc in most_recent_docs_list:
         doc_row = []
         doc_row.append(get_value_if_exists(doc, 'author'))
         doc_row.append(get_value_if_exists(doc, 'date'))
         doc_row.append(link_cell(doc))
-        doc_row.append(actions_cell_new_row(doc, user_name))
+        key = get_key(doc)
+        if key in other_docs:
+            doc_row.append(actions_cell_archive_row(other_docs[key], user_name))
+        else:
+            doc_row.append(actions_cell_new_row(doc, user_name))
         doc_row.append(keywords_cell(doc))
         doc_row.append(get_value_if_exists(doc, 'gazete'))
         new_rows.append(doc_row)
@@ -138,13 +142,18 @@ def get_yazilar(user_name):
     most_recent_docs_list = get_most_recent_docs(s)
 
     authorCounts = defaultdict(int)
+
+    counter = {}
     for doc in archive_docs_list:
         authorCounts[doc['author']]+=1
+        key = get_key(doc)
+        if key not in counter:
+            counter[key] = doc
 
     most_recent_docs_list.sort( key=lambda x: -(authorCounts[x['author']]))
     titles = ['yazar', 'tarih', 'baslik', 'action', 'keywords', 'gazete']
     archive_rows = archive_rows_for_html(archive_docs_list, user_name)
-    new_rows = most_recent_rows_for_html(most_recent_docs_list, user_name)
+    new_rows = most_recent_rows_for_html(most_recent_docs_list, user_name, counter)
 
     return titles, archive_rows, new_rows
 
@@ -159,3 +168,14 @@ def get_gazete_reader(url):
 def get_yazi_links_from_url(url):
     html = get_html_from_url(url)
     return get_gazete_reader(url).get_yazi_links(html)
+
+def get_key(doc):
+    key = HashableDict()
+    key['author'] = doc['author']
+    key['date'] = doc['date']
+    key['title'] = doc['title']
+    return key
+
+class HashableDict(dict):
+    def __hash__(self):
+        return hash(tuple(sorted(self.items())))
