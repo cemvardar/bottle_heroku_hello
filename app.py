@@ -24,6 +24,12 @@ def get_yazi_content(user_name, object_id):
     return s.get_first_doc(query)
 
 
+@route('/koseyazisi/:user_name/tile')
+def koseyazisi_show(user_name='cem'):
+    titles, rows, rows_new = get_yazilar(user_name)
+    return template('tiles', titles=titles, rows=rows, rows_new= rows_new, user_name=user_name)
+
+
 @route('/koseyazisi/:user_name')
 def koseyazisi_show(user_name='cem'):
     titles, rows, rows_new = get_yazilar(user_name)
