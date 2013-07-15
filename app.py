@@ -40,14 +40,14 @@ def koseyazisi_show(user_name='cem'):
 def save_new_koseyazisi(user_name='cem'):
     url = request.forms.get('url')
     insert_doc_into_yazilar(get_yazi_json(url), user_name)
-    redirect('/koseyazisi/' + user_name)
+    redirect('/koseyazisi/' + user_name + '/tile')
 
 
 @post('/koseyazisi/:user_name/sil')
 def delete_kose_yazisi(user_name='cem'):
     object_id = request.forms.get('object_id')
     delete_doc_from_yazilar(object_id, user_name)
-    redirect('/koseyazisi/' + user_name)
+    redirect('/koseyazisi/' + user_name + '/tile')
 
 
 @post('/koseyazisi/:user_name/goster')

@@ -22,20 +22,21 @@
 </head>
 <body>
 
-<ul id="sortable1" class="connectedSortable">
+<ul id="sortable2" class="connectedSortable">
+Bugunku Yazilar
+    %for row in rows_new:
+      <li class="ui-state-default">
 
-%for row in rows:
-  <li class="ui-state-default">
-
-  %for col in row:
-    <br>{{!col}}
-  %end
-  </li>
-%end
+      %for col in row:
+        <br>{{!col}}
+      %end
+      </li>
+    %end
 </ul>
 
-<ul id="sortable2" class="connectedSortable">
-    %for row in rows_new:
+<ul id="sortable1" class="connectedSortable">
+Arisivim
+    %for row in rows:
       <li class="ui-state-default">
 
       %for col in row:

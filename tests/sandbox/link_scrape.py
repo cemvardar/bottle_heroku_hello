@@ -7,7 +7,7 @@ from mongolab_helper import get_collection, get_date_username
 __author__ = 'cvardar'
 
 class CollectLinks(TestCase):
-    def test_all_links_single_level(self):
+    def test_get_daily_links_from_newspapers(self):
         yazar_page_urls = ["http://www.hurriyet.com.tr/yazarlar/",
                            "http://www.radikal.com.tr/yazarlar/"]
         all_yazi_links=set([])
@@ -17,17 +17,7 @@ class CollectLinks(TestCase):
         collection = get_collection('links_by_date')
         collection.insert({'date':datetime.utcnow(), 'links': list(all_yazi_links)})
 
-    def test_hurriyet_links(self):
-        yazar_page_urls = ["http://www.hurriyet.com.tr/yazarlar/",
-                           "http://www.radikal.com.tr/yazarlar/"]
-        all_yazi_links=set([])
-        for url in yazar_page_urls:
-            all_yazi_links = all_yazi_links.union(get_yazi_links_from_url(url))
-
-        for i in all_yazi_links:
-            print i
-
-    def test_first(self):
+    def test_get_articles_from_newpapers(self):
         cnt=0
         utc_now = datetime.utcnow()
         start = utc_now -  timedelta(days=1)
