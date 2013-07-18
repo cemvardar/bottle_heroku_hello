@@ -115,7 +115,10 @@ def archive_rows_for_html(archive_docs_list, user_name):
         doc_row.append(keywords_cell(doc))
         doc_row.append(get_value_if_exists(doc, 'gazete'))
         archive_rows.append(doc_row)
-    return archive_rows
+    if len(archive_rows) >0 :
+        return archive_rows
+    else:
+        return [["Buraya surukleyerek arsivlemeye baslayabilirsiniz"]]
 
 
 def most_recent_rows_for_html(most_recent_docs_list, user_name, other_docs):

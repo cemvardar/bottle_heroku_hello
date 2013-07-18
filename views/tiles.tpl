@@ -24,7 +24,7 @@
           //alert($('ui.item').attr('class'));
           var yazi_url =ui.item.attr('id');
           // Do some ajax action...
-          $.post('/koseyazisi/cem',{
+          $.post('/koseyazisi/{{!user_name}}',{
             url: yazi_url
             });
       }
