@@ -101,6 +101,10 @@ def index():
 def images(filename):
     return static_file(filename, root='static/img')
 
+@get('/<filename:re:.*\.js>')
+def javascripts(filename):
+    return static_file(filename, root='static/js')
+
 # a simple json test main page
 @route('/json')
 def jsontest():
