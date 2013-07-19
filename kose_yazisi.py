@@ -113,7 +113,7 @@ def archive_rows_for_html(archive_docs_list, user_name):
         doc_row.append(link_cell(doc))
         doc_row.append(actions_cell_archive_row(doc, user_name))
         doc_row.append(keywords_cell(doc))
-        doc_row.append(get_value_if_exists(doc, 'gazete'))
+        doc_row.append(get_gazete_image_html(doc))
         archive_rows.append(doc_row)
     if len(archive_rows) >0 :
         return archive_rows
@@ -134,7 +134,8 @@ def most_recent_rows_for_html(most_recent_docs_list, user_name, other_docs):
         else:
             doc_row.append(actions_cell_new_row(doc, user_name))
         doc_row.append(keywords_cell(doc))
-        doc_row.append(get_value_if_exists(doc, 'gazete'))
+        # doc_row.append(get_value_if_exists(doc, 'gazete'))
+        doc_row.append(get_gazete_image_html(doc))
         doc_row.append(get_value_if_exists(doc, 'url'))
         new_rows.append(doc_row)
     return new_rows
@@ -160,6 +161,14 @@ def get_yazilar(user_name):
     new_rows = most_recent_rows_for_html(most_recent_docs_list, user_name, counter)
 
     return titles, archive_rows, new_rows
+
+def get_gazete_image_html(doc):
+    gazete_name = get_value_if_exists(doc, 'gazete')
+    if gazete_name =='Hurriyet':
+        return "<img src='/hurriyet_logo.jpg' alt='some_text'>"
+    if gazete_name =='Radikal':
+        return "<img src='/radikal_logo.jpg' alt='some_text'>"
+    return ''
 
 
 def get_gazete_reader(url):

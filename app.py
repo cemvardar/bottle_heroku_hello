@@ -5,7 +5,7 @@ import gviz_api
 from kose_yazisi import get_yazi_json, insert_doc_into_yazilar, delete_doc_from_yazilar, get_yazilar
 from mongolab_helper import get_commutes_collection
 import os
-from bottle import route, run, template, post, request, get, redirect
+from bottle import route, run, template, post, request, get, redirect, static_file
 
 
 def get_names():
@@ -97,6 +97,9 @@ def save_new_keyword(user_name='cem'):
 def index():
     redirect('/koseyazisi/cem')
 
+@get('/<filename:re:.*\.(jpg|png|gif|ico)>')
+def images(filename):
+    return static_file(filename, root='static/img')
 
 # a simple json test main page
 @route('/json')
