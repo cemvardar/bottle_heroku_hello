@@ -124,11 +124,13 @@ def archive_rows_for_html(archive_docs_list, user_name):
 def most_recent_rows_for_html(most_recent_docs_list, user_name, other_docs):
     new_rows = []
     for doc in most_recent_docs_list:
+        key = get_key(doc)
+        if key in other_docs:
+            continue
         doc_row = []
         doc_row.append(get_value_if_exists(doc, 'author'))
         doc_row.append(get_value_if_exists(doc, 'date'))
         doc_row.append(link_cell(doc))
-        key = get_key(doc)
         if key in other_docs:
             doc_row.append(actions_cell_archive_row(other_docs[key], user_name))
         else:
