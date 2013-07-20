@@ -134,7 +134,6 @@ def most_recent_rows_for_html(most_recent_docs_list, user_name, other_docs):
         else:
             doc_row.append(actions_cell_new_row(doc, user_name))
         doc_row.append(keywords_cell(doc))
-        # doc_row.append(get_value_if_exists(doc, 'gazete'))
         doc_row.append(get_gazete_image_html(doc))
         doc_row.append(get_value_if_exists(doc, 'url'))
         new_rows.append(doc_row)

@@ -30,7 +30,18 @@
             });
       }
     }).disableSelection();
+    $(".deleteButton").click(function() {
+        var form = $(this).closest('form');
+        var obj_id = form.find("#object_id").val()
+        $.post('/koseyazisi/{{!user_name}}/sil',{
+            object_id: obj_id
+        });
+        var item = $(this).closest('li');
+        item.hide(1000);
+        return false;
+    });
   });
+
   </script>
 </head>
 <body>
