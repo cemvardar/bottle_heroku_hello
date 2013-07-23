@@ -6,6 +6,7 @@ from kose_yazisi import get_yazi_json, insert_doc_into_yazilar, delete_doc_from_
 from mongolab_helper import get_commutes_collection
 import os
 from bottle import route, run, template, post, request, get, redirect, static_file
+from yazi_crawler import get_daily_links_from_newspapers, get_articles_from_newpapers
 
 
 def get_names():
@@ -96,6 +97,11 @@ def save_new_keyword(user_name='cem'):
 @get('/')
 def index():
     redirect('/koseyazisi/cem')
+
+@get('/crawl_newspapers')
+def crawl():
+    get_daily_links_from_newspapers()
+    return get_articles_from_newpapers()
 
 @get('/<filename:re:.*\.(jpg|png|gif|ico)>')
 def images(filename):
