@@ -23,7 +23,7 @@
           // The position where the new item was dropped
           var newIndex = ui.item.index();
           //alert($('ui.item').attr('class'));
-          var yazi_url =ui.item.attr('id');
+          var yazi_url =ui.item.attr('url');
           // Do some ajax action...
           $.post('/koseyazisi/{{!user_name}}',{
             url: yazi_url
@@ -49,7 +49,7 @@
 <ul id="sortable2" class="connectedSortable">
 Bugunku Yazilar
     %for row in rows_new:
-      <li class="ui-state-default"  id="{{!row[6]}}">
+      <li class="ui-state-default"  url="{{!row[6]}}">
       %row.pop()
       %for col in row:
         <br>{{!col}}
