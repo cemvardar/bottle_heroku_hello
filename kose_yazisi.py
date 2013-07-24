@@ -64,14 +64,17 @@ def link_cell(doc):
 
 
 def actions_cell_new_row(doc, user_name='cem'):
+    object_id = get_value_if_exists(doc, '_id')
     url = get_value_if_exists(doc, 'url')
-    return template('add_button', url=url, user_name=user_name)
+    actionsCell= template('add_button', url=url, user_name=user_name)
+    return actionsCell + template('delete_button', form_id="silFormHidden", object_id=object_id, user_name=user_name)
 
 
-def actions_cell_archive_row(doc, user_name='cem'):
+
+def actions_cell_archive_row(doc, user_name='cem', form_id='silForm'):
     object_id = get_value_if_exists(doc, '_id')
     actionsCell = template('goster_button', object_id=object_id, user_name=user_name)
-    return actionsCell + template('delete_button', object_id=object_id, user_name=user_name)
+    return actionsCell + template('delete_button', form_id=form_id, object_id=object_id, user_name=user_name)
 
 
 def keywords_cell(doc):
@@ -131,10 +134,8 @@ def most_recent_rows_for_html(most_recent_docs_list, user_name, other_docs):
         doc_row.append(get_value_if_exists(doc, 'author'))
         doc_row.append(get_value_if_exists(doc, 'date'))
         doc_row.append(link_cell(doc))
-        if key in other_docs:
-            doc_row.append(actions_cell_archive_row(other_docs[key], user_name))
-        else:
-            doc_row.append(actions_cell_new_row(doc, user_name))
+
+        doc_row.append(actions_cell_new_row(doc, user_name))
         doc_row.append(keywords_cell(doc))
         doc_row.append(get_gazete_image_html(doc))
         doc_row.append(get_value_if_exists(doc, 'url'))

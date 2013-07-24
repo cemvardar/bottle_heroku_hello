@@ -10,8 +10,9 @@
   <script src="/jquery.ui.touch-punch.min.js"></script>
   <link rel="stylesheet" href="/resources/demos/style.css" />
   <style>
-  #sortable1, #sortable2 { list-style-type: none; margin: 0; padding: 0 0 2.5em; float: left; margin-right: 10px; }
-  #sortable1 li, #sortable2 li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; width: 360px; }
+      #sortable1, #sortable2 { list-style-type: none; margin: 0; padding: 0 0 2.5em; float: left; margin-right: 10px; }
+      #sortable1 li, #sortable2 li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; width: 360px; }
+      #silFormHidden {visibility:hidden;}
   </style>
   <script>
   $(function() {
@@ -22,12 +23,15 @@
       receive: function(event, ui) {
           // The position where the new item was dropped
           var newIndex = ui.item.index();
-          //alert($('ui.item').attr('class'));
+          ui.item.children('#silFormHidden').css('visibility','visible');
+          ui.item.children('#ekleForm').hide();
+          //alert(ui.item.children('#silFormHidden').css());
+
           var yazi_url =ui.item.attr('url');
           // Do some ajax action...
           $.post('/koseyazisi/{{!user_name}}',{
             url: yazi_url
-            });
+          });
       }
     }).disableSelection();
     $(".deleteButton").click(function() {
@@ -49,8 +53,8 @@
 <ul id="sortable2" class="connectedSortable">
 Bugunku Yazilar
     %for row in rows_new:
-      <li class="ui-state-default"  url="{{!row[6]}}">
-      %row.pop()
+      %url = row.pop()
+      <li class="ui-state-default"  url="{{!url}}">
       %for col in row:
         <br>{{!col}}
       %end
