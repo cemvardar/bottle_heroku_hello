@@ -48,6 +48,10 @@ def delete_doc_from_yazilar(object_id, user_name):
     query = {'_id': ObjectId(object_id), 'user_name': user_name}
     remove('yazilar', query)
 
+def delete_doc_from_yazilar_url(url, user_name):
+    query = {'url': url, 'user_name': user_name}
+    remove('yazilar', query)
+
 
 def get_value_if_exists(document, fieldName):
     if fieldName in document:
@@ -67,14 +71,24 @@ def actions_cell_new_row(doc, user_name='cem'):
     object_id = get_value_if_exists(doc, '_id')
     url = get_value_if_exists(doc, 'url')
     actionsCell= template('add_button', url=url, user_name=user_name)
-    return actionsCell + template('delete_button', form_id="silFormHidden", object_id=object_id, user_name=user_name)
+    data = {}
+    data['form_id'] = "silFormHidden"
+    data['object_id'] = object_id
+    data['user_id'] = user_name
+    data['url'] = url
+    return actionsCell + template('delete_button', data=data, form_id="silFormHidden", object_id=object_id, user_name=user_name)
 
 
 
 def actions_cell_archive_row(doc, user_name='cem', form_id='silForm'):
     object_id = get_value_if_exists(doc, '_id')
     actionsCell = template('goster_button', object_id=object_id, user_name=user_name)
-    return actionsCell + template('delete_button', form_id=form_id, object_id=object_id, user_name=user_name)
+    data = {}
+    data['form_id'] = form_id
+    data['object_id'] = object_id
+    data['user_id'] = user_name
+    data['url'] = get_value_if_exists(doc, 'url')
+    return actionsCell + template('delete_button', data = data, form_id=form_id, object_id=object_id, user_name=user_name)
 
 
 def keywords_cell(doc):
@@ -118,7 +132,7 @@ def archive_rows_for_html(archive_docs_list, user_name):
         doc_row.append(keywords_cell(doc))
         doc_row.append(get_gazete_image_html(doc))
         archive_rows.append(doc_row)
-    if len(archive_rows) >0 :
+    if len(archive_rows) >0:
         return archive_rows
     else:
         return [["Buraya surukleyerek arsivlemeye baslayabilirsiniz"]]

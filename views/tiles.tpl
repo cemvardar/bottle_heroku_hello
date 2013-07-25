@@ -37,8 +37,10 @@
     $(".deleteButton").click(function() {
         var form = $(this).closest('form');
         var obj_id = form.find("#object_id").val()
+        var url_id = form.find("#url").val()
         $.post('/koseyazisi/{{!user_name}}/sil',{
-            object_id: obj_id
+            object_id: obj_id,
+            url: url_id
         });
         var item = $(this).closest('li');
         item.hide(1000);
