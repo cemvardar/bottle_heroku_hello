@@ -125,11 +125,9 @@ def archive_rows_for_html(archive_docs_list, user_name):
     archive_rows = []
     for doc in archive_docs_list:
         doc_row = []
-        doc_row.append(get_value_if_exists(doc, 'author'))
-        doc_row.append(get_value_if_exists(doc, 'date'))
+        doc_row.append(get_author_plus_date(doc))
         doc_row.append(link_cell(doc))
         doc_row.append(actions_cell_archive_row(doc, user_name))
-        doc_row.append(keywords_cell(doc))
         doc_row.append(get_gazete_image_html(doc))
         archive_rows.append(doc_row)
     if len(archive_rows) >0:
@@ -145,16 +143,19 @@ def most_recent_rows_for_html(most_recent_docs_list, user_name, other_docs):
         if key in other_docs:
             continue
         doc_row = []
-        doc_row.append(get_value_if_exists(doc, 'author'))
-        doc_row.append(get_value_if_exists(doc, 'date'))
+        doc_row.append(get_author_plus_date(doc))
         doc_row.append(link_cell(doc))
 
         doc_row.append(actions_cell_new_row(doc, user_name))
-        doc_row.append(keywords_cell(doc))
         doc_row.append(get_gazete_image_html(doc))
         doc_row.append(get_value_if_exists(doc, 'url'))
         new_rows.append(doc_row)
     return new_rows
+
+def get_author_plus_date(doc):
+    authorText = get_value_if_exists(doc, 'author')
+    dateText = get_value_if_exists(doc, 'date')
+    return authorText + "--" + dateText
 
 
 def get_yazilar(user_name):
