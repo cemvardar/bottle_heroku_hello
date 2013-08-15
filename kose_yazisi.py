@@ -127,13 +127,17 @@ def archive_rows_for_html(archive_docs_list, user_name):
         doc_row = []
         doc_row.append(get_author_plus_date(doc))
         doc_row.append(link_cell(doc))
-        doc_row.append(actions_cell_archive_row(doc, user_name))
-        doc_row.append(get_gazete_image_html(doc))
+        doc_row.append(get_archive_actions_plus_gazete_image(doc, user_name))
         archive_rows.append(doc_row)
     if len(archive_rows) >0:
         return archive_rows
     else:
         return [["Buraya surukleyerek arsivlemeye baslayabilirsiniz"]]
+
+def get_archive_actions_plus_gazete_image(doc, user_name):
+    image_html = get_gazete_image_html(doc)
+    archiveAction = actions_cell_archive_row(doc, user_name)
+    return image_html + archiveAction
 
 
 def most_recent_rows_for_html(most_recent_docs_list, user_name, other_docs):
@@ -146,11 +150,17 @@ def most_recent_rows_for_html(most_recent_docs_list, user_name, other_docs):
         doc_row.append(get_author_plus_date(doc))
         doc_row.append(link_cell(doc))
 
-        doc_row.append(actions_cell_new_row(doc, user_name))
-        doc_row.append(get_gazete_image_html(doc))
+        doc_row.append(get_most_recent_actions_plus_gazete_image(doc, user_name))
+        # doc_row.append(actions_cell_new_row(doc, user_name))
+        # doc_row.append(get_gazete_image_html(doc))
         doc_row.append(get_value_if_exists(doc, 'url'))
         new_rows.append(doc_row)
     return new_rows
+
+def get_most_recent_actions_plus_gazete_image(doc, user_name):
+    mostRecentAction = actions_cell_new_row(doc, user_name)
+    image_html = get_gazete_image_html(doc)
+    return  image_html + mostRecentAction
 
 def get_author_plus_date(doc):
     authorText = get_value_if_exists(doc, 'author')
