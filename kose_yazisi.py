@@ -4,6 +4,7 @@ from HtmlAndTextParseHelper import strip_tags, get_gazete_name, get_html_from_ur
 from HurriyetReader import HurriyetReader
 from RadikalReader import RadikalReader
 from SimpleQuery import SimpleQuery
+from ZamanReader import ZamanReader
 from bottle import template
 from bson import ObjectId
 from mongolab_helper import get_collection, get_date_username, find_one, insert, remove
@@ -28,8 +29,11 @@ def get_yazi_json(url):
         else:
             raise
     html = response.read()
-    return get_gazete_reader(url).get_doc_from_html(html,url)
-
+    try:
+        return get_gazete_reader(url).get_doc_from_html(html,url)
+    except:
+        print url
+        return {}
 
 def get_yazilar_collection():
     return get_collection('yazilar')
@@ -195,6 +199,8 @@ def get_gazete_image_html(doc):
         return "<img src='/hurriyet_logo.jpg' alt='some_text'>"
     if gazete_name =='Radikal':
         return "<img src='/radikal_logo.jpg' alt='some_text'>"
+    if gazete_name =='Zaman':
+        return "<img src='/zaman_logo.jpg' alt='some_text'>"
     return ''
 
 
@@ -204,6 +210,8 @@ def get_gazete_reader(url):
         return HurriyetReader()
     if gazete_name =='radikal':
         return RadikalReader()
+    if gazete_name =='zaman':
+        return ZamanReader()
 
 def get_yazi_links_from_url(url):
     html = get_html_from_url(url)

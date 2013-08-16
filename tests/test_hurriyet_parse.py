@@ -29,3 +29,4 @@ class hurriyet_kose_yazisi_tests(TestCase):
         self.assertEqual(get_unicode('Yılmaz ÖZDİL'), yazi['author'])
         self.assertEqual(get_unicode('Hurriyet'), yazi['gazete'])
         self.assertEqual(2915, len(yazi['content']))
+

@@ -27,3 +27,4 @@ class HurriyetReader():
                 and 'default' not in a['href'] and 'ID' not in a['href']:
                 links.add(a['href'])
         return links
+

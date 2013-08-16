@@ -6,7 +6,8 @@ __author__ = 'cvardar'
 
 def get_daily_links_from_newspapers():
     yazar_page_urls = ["http://www.hurriyet.com.tr/yazarlar/",
-                       "http://www.radikal.com.tr/yazarlar/"]
+                       "http://www.radikal.com.tr/yazarlar/",
+                       "http://zaman.com.tr/yazarlar"]
     all_yazi_links=set([])
     for url in yazar_page_urls:
         all_yazi_links = all_yazi_links.union(get_yazi_links_from_url(url))
