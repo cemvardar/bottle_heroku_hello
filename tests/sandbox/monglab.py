@@ -1,13 +1,7 @@
-from collections import defaultdict
 from unittest import TestCase
-import sys
 from SimpleQuery import SimpleQuery
-from bson import ObjectId
 from kose_yazisi import get_archive_docs_list, HashableDict, get_key
-from mongolab_helper import get_names_collection
-import os
-import pymongo
-from pymongo import MongoClient
+from mongolab_helper import get_names_collection, create_indexes
 
 __author__ = 'cvardar'
 
@@ -48,3 +42,6 @@ class mongolab_tests(TestCase):
         a['user_name'] = 'cem'
         b = {a: 1}
         print b[a]
+
+    def test_create_indexes(self):
+        create_indexes()

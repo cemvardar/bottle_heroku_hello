@@ -31,8 +31,7 @@ def get_collection(collectionName):
     except:
         print('Error: Unable to connect to database.')
         return None
-    names_collection = database[collectionName]
-    return names_collection
+    return database[collectionName]
 
 
 def get_docs(collectionName, query=None):
@@ -56,12 +55,16 @@ def get_date_username(daysToGoBack=0):
 
 def insert(collection_name, json_doc):
     collection = get_collection(collection_name)
-    collection.ensure_index([('user_name', 1), ('author', 1), ('date', 1), ('title', 1)])
-    collection.ensure_index([('url', 1)])
     collection.insert(json_doc)
 
 def remove(collection_name, query):
     collection = get_collection(collection_name)
     collection.remove(query)
 
+def create_indexes():
+    collection = get_collection('yazilar')
+    collection.ensure_index([('user_name', 1), ('author', 1), ('date', 1), ('title', 1)])
+    collection.ensure_index([('url', 1)])
 
+    collection = get_collection('links_by_date')
+    collection.ensure_index([('date', 1)])
