@@ -7,7 +7,7 @@ from SimpleQuery import SimpleQuery
 from ZamanReader import ZamanReader
 from bottle import template
 from bson import ObjectId
-from mongolab_helper import get_collection, get_date_username, find_one, insert, remove
+from mongolab_helper import get_collection, get_date_username, find_one, insert, remove, upsert
 
 __author__ = 'cvardar'
 
@@ -40,12 +40,23 @@ def get_yazilar_collection():
 
 
 def insert_doc_into_yazilar(json_doc, user_name='cem'):
+    upsert_doc_into_yazilar(json_doc, user_name)
+    # json_doc['user_name'] = user_name
+    # keywordsDoc = find_one('keywords', {'user_name': user_name})
+    # if keywordsDoc:
+    #     containedKeywords = get_contained_keywords(json_doc, keywordsDoc['include'])
+    #     json_doc['keywords'] = list(containedKeywords)
+    # insert('yazilar', json_doc)
+
+def upsert_doc_into_yazilar(json_doc, user_name='cem'):
     json_doc['user_name'] = user_name
     keywordsDoc = find_one('keywords', {'user_name': user_name})
     if keywordsDoc:
         containedKeywords = get_contained_keywords(json_doc, keywordsDoc['include'])
         json_doc['keywords'] = list(containedKeywords)
-    insert('yazilar', json_doc)
+    query = {'url': json_doc['url'], 'user_name': user_name}
+    upsert('yazilar', query, json_doc)
+
 
 
 def delete_doc_from_yazilar(object_id, user_name):

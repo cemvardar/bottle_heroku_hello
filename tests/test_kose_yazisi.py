@@ -5,13 +5,16 @@ from HtmlAndTextParseHelper import get_unicode
 from HurriyetReader import HurriyetReader
 from KelimelerPage import insert_new_keyword
 import bottle
-from kose_yazisi import get_yazi_json, get_yazilar_collection, insert_doc_into_yazilar, get_yazilar, get_contained_keywords
+from kose_yazisi import get_yazi_json, get_yazilar_collection, insert_doc_into_yazilar, get_yazilar, get_contained_keywords, upsert_doc_into_yazilar
 from mongolab_helper import get_collection
 
 __author__ = 'cvardar'
 
 def get_url():
      return 'http://www.hurriyet.com.tr/yazarlar/22878887.asp'
+
+def get_url2():
+     return 'http://www.hurriyet.com.tr/yazarlar/5.asp'
 
 def get_mock_user_name():
     return 'unit_test_5161a220123f8f3a15798389'
@@ -42,19 +45,25 @@ class kose_yazisi_tests(TestCase):
         f.close()
         return f_read
 
-    def test_save_doc(self):
+    def get_yazi_with_url(self, url):
+        reader = HurriyetReader()
+        return reader.get_doc_from_html(self.html_from_local_file(), url)
+
+    def test_save_doc_NoDuplicatesBasedOnUrl(self):
         bottle.TEMPLATE_PATH.append('../views')
         self.clean_up_docs_for(get_mock_user_name())
 
         self.insert_keywords()
-        reader = HurriyetReader()
-        yazi = reader.get_doc_from_html(self.html_from_local_file(), get_url())
-        insert_doc_into_yazilar(yazi, get_mock_user_name())
-        yazi2 = reader.get_doc_from_html(self.html_from_local_file(), get_url())
-        insert_doc_into_yazilar(yazi2, get_mock_user_name())
+        self.insert_doc_with_mock_user(self.get_yazi_with_url(get_url()))
+        self.insert_doc_with_mock_user(self.get_yazi_with_url(get_url()))
+        self.insert_doc_with_mock_user(self.get_yazi_with_url(get_url2()))
+
         titles, rows, rows_new = get_yazilar(get_mock_user_name())
         self.assertEqual(2, len(rows))
         self.clean_up_docs_for(get_mock_user_name())
+
+    def insert_doc_with_mock_user(self, doc):
+        insert_doc_into_yazilar(doc, get_mock_user_name())
 
     def test_find_keywords(self):
         f = open('test_article.txt', 'r')

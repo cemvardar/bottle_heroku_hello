@@ -42,9 +42,9 @@ def get_docs(collectionName, query=None):
     if collection is not None:
         return collection.find(query)
 
-def upsert(collection_name, query, set_action):
+def upsert(collection_name, query, doc_to_upsert):
     collection = get_collection(collection_name)
-    collection.update(query, set_action, upsert=True, safe=True)
+    collection.update(query, doc_to_upsert, upsert=True, safe=True)
 
 def find_one(collection_name, query):
     collection = get_collection(collection_name)
