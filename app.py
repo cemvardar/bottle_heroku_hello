@@ -2,7 +2,7 @@ import datetime
 from KelimelerPage import get_kelimeler_content, insert_new_keyword, delete_keyword
 from SimpleQuery import SimpleQuery
 import gviz_api
-from kose_yazisi import get_yazi_json, insert_doc_into_yazilar, delete_doc_from_yazilar, get_yazilar, delete_doc_from_yazilar_url
+from kose_yazisi import get_yazi_json, upsert_doc_into_yazilar, delete_doc_from_yazilar, get_yazilar, delete_doc_from_yazilar_url
 from mongolab_helper import get_commutes_collection
 import os
 from bottle import route, run, template, post, request, get, redirect, static_file
@@ -40,7 +40,7 @@ def koseyazisi_show(user_name='cem'):
 @post('/koseyazisi/:user_name')
 def save_new_koseyazisi(user_name='cem'):
     url = request.forms.get('url')
-    insert_doc_into_yazilar(get_yazi_json(url), user_name)
+    upsert_doc_into_yazilar(get_yazi_json(url), user_name)
     redirect('/koseyazisi/' + user_name + '/tile')
 
 

@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-from kose_yazisi import get_yazi_links_from_url, get_yazi_json, insert_doc_into_yazilar
+from kose_yazisi import get_yazi_links_from_url, get_yazi_json, upsert_doc_into_yazilar
 from mongolab_helper import get_collection, get_date_username
 
 __author__ = 'cvardar'
@@ -22,7 +22,7 @@ def get_articles_from_newpapers():
         json = get_yazi_json(link)
         if not json:
             continue
-        insert_doc_into_yazilar(json,get_date_username())
+        upsert_doc_into_yazilar(json,get_date_username())
         # print 'saved:' + link
         cnt+=1
         print str(cnt) + ' editorial saved'

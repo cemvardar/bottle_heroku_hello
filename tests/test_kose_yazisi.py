@@ -5,7 +5,7 @@ from HtmlAndTextParseHelper import get_unicode
 from HurriyetReader import HurriyetReader
 from KelimelerPage import insert_new_keyword
 import bottle
-from kose_yazisi import get_yazi_json, get_yazilar_collection, insert_doc_into_yazilar, get_yazilar, get_contained_keywords, upsert_doc_into_yazilar
+from kose_yazisi import get_yazi_json, get_yazilar_collection, upsert_doc_into_yazilar, get_yazilar, get_contained_keywords
 from mongolab_helper import get_collection
 
 __author__ = 'cvardar'
@@ -63,7 +63,7 @@ class kose_yazisi_tests(TestCase):
         self.clean_up_docs_for(get_mock_user_name())
 
     def insert_doc_with_mock_user(self, doc):
-        insert_doc_into_yazilar(doc, get_mock_user_name())
+        upsert_doc_into_yazilar(doc, get_mock_user_name())
 
     def test_find_keywords(self):
         f = open('test_article.txt', 'r')
