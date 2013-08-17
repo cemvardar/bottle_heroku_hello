@@ -2,7 +2,7 @@ from collections import defaultdict
 from datetime import datetime, timedelta
 from unittest import TestCase
 from kose_yazisi import get_yazi_json, upsert_doc_into_yazilar, get_yazi_links_from_url
-from mongolab_helper import get_collection, get_date_username
+from mongolab_helper import get_collection, get_date_username, upsert
 
 __author__ = 'cvardar'
 

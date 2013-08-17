@@ -106,15 +106,12 @@ def keywords_cell(doc):
 
 
 def get_most_recent_docs(s):
-    daysToGoBack = 0
-    date_user = get_date_username(daysToGoBack)
-    new_docs = s.get_docs(get_username_query(date_user))
-    while new_docs.count() == 0 and daysToGoBack < 7:
-        daysToGoBack += 1
-        date_user = get_date_username(daysToGoBack)
-        new_docs = s.get_docs(get_username_query(date_user))
+    new_docs = s.get_docs(get_username_query(get_current_user_name()))
     return list(new_docs)
 
+def get_current_user_name(collectionName='scrape_log'):
+    doc = get_collection(collectionName).find_one(sort=[('date', -1)])
+    return doc['user_name']
 
 def get_archive_docs_list(s, user_name_query):
     retList =[]

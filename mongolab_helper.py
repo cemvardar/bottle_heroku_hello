@@ -68,3 +68,6 @@ def create_indexes():
 
     collection = get_collection('links_by_date')
     collection.ensure_index([('date', 1)])
+
+    collection = get_collection('scrape_log')
+    collection.ensure_index([('date', 1)])
