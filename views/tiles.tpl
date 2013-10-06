@@ -78,9 +78,7 @@ Bugunku Yazilar
     </select>
     <br>
     %for row in rows_new:
-      %url = row.pop()
-      %gazete = row.pop()
-      <li class="ui-state-default"  url="{{!url}}" gazete = "{{!gazete}}" type = "Bugun">
+      <li class="ui-state-default"  url="{{!row.url}}" gazete = "{{!row.gazete}}" type = "Bugun">
       %for col in row:
         {{!col}}<br>
       %end

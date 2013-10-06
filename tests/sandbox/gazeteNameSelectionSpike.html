@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#gazeteler').change(function()
+                {
+                   $("li[gazete=" + this.value +"][type='Bugun']").show(250);
+                   $("li[gazete!=" + this.value +"][type='Bugun']").hide(250);
+                });
+        });
+    </script>
+</head>
+<body>
+
+<a href='#' id='links'>Toggle</a>
+
+<select name="gazeteler" id="gazeteler">
+    <option value="hurriyet" selected="selected">hurriyet</option>
+    <option value="radikal">radikal</option>
+
+</select>
+
+<ul id="sortable2" class="connectedSortable">
+Bugunku Yazilar
+      <li class="ui-state-default"  gazete='hurriyet' type='Bugun'>
+        Doğan HIZLAN--5 Ekim 2013<br>
+        <a href=http://www.hurriyet.com.tr/yazarlar/24854662.asp> Her vekile bir tane lazım</a><br>
+      </li>
+      <li class="ui-state-default" gazete='radikal' type='Bugun'>
+        EYÜP CAN--05/10/2013<br>
+        <a href=http://www.radikal.com.tr/yazarlar/eyup_can/bu_kafayla-1154126> Bu kafayla...</a><br>
+      </li>
+    <li class="ui-state-default">
+        EYÜP CAN--05/10/2013<br>
+        <a href=http://www.radikal.com.tr/yazarlar/eyup_can/bu_kafayla-1154126> Bu kafayla...</a><br>
+      </li>
+   </ul>
+</body>
+</html>

@@ -150,18 +150,19 @@ def most_recent_rows_for_html(most_recent_docs_list, user_name, other_docs):
         key = get_key(doc)
         if key in other_docs:
             continue
-        doc_row = []
+        doc_row = DocRow(doc)
         doc_row.append(get_author_plus_date(doc))
         doc_row.append(link_cell(doc))
-
         doc_row.append(get_most_recent_actions_plus_gazete_image(doc, user_name))
-        # doc_row.append(actions_cell_new_row(doc, user_name))
-        # doc_row.append(get_gazete_image_html(doc))
-
-        doc_row.append(get_value_if_exists(doc, 'gazete'))
-        doc_row.append(get_value_if_exists(doc, 'url'))
+        # doc_row.append(get_value_if_exists(doc, 'gazete'))
+        # doc_row.append(get_value_if_exists(doc, 'url'))
         new_rows.append(doc_row)
     return new_rows
+
+class DocRow(list):
+    def __init__(self, doc):
+        self.url = get_value_if_exists(doc, 'url')
+        self.gazete = get_value_if_exists(doc, 'gazete')
 
 def get_most_recent_actions_plus_gazete_image(doc, user_name):
     mostRecentAction = actions_cell_new_row(doc, user_name)
