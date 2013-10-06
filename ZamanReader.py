@@ -22,6 +22,8 @@ class ZamanReader():
     def get_yazi_links(self, html):
         links = set([])
         for a in get_links_from_html(html):
-            if 'href' in a.attrs and '.html' in a['href']:
+            if 'href' in a.attrs \
+                and '.html' in a['href']\
+                and 'http:' not in a['href']:
                 links.add("http://zaman.com.tr" + a['href'])
         return links

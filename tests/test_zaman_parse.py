@@ -17,6 +17,13 @@ class test_zaman_parse(TestCase):
         expected_links = set([x.strip() for x in f.readlines()])
         self.assertEqual(expected_links, links)
 
+    def test_read_yazarlar_zaman(self):
+        f = open('ZamanYazarlar2.html', 'r')
+        f_read = f.read()
+        reader = ZamanReader()
+        links = reader.get_yazi_links(f_read)
+        self.assertEqual(38, len(links))
+
     def test_read_yazi_zaman(self):
         f = open('ZamanYazi.html', 'r')
         f_read = f.read()

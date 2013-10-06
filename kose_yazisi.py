@@ -22,6 +22,7 @@ def get_contained_keywords(yazi, keywords):
 
 def get_yazi_json(url):
     try:
+        print url
         response = urllib2.urlopen(url)
     except urllib2.HTTPError, err:
         if err.code == 404:

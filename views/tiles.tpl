@@ -18,7 +18,8 @@
   $(function() {
     $( "#sortable2" ).sortable({
       connectWith: "#sortable1",
-   }).disableSelection();
+    }).disableSelection();
+
     $( "#sortable1" ).sortable({
       receive: function(event, ui) {
           // The position where the new item was dropped
@@ -34,6 +35,7 @@
           });
       }
     }).disableSelection();
+
     $(".deleteButton").click(function() {
         var form = $(this).closest('form');
         var obj_id = form.find("#object_id").val()
