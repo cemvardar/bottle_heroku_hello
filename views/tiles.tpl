@@ -37,11 +37,8 @@
 
     $( "#sortable1" ).sortable({
       receive: function(event, ui) {
-          // The position where the new item was dropped
-          var newIndex = ui.item.index();
           ui.item.children('#silFormHidden').css('visibility','visible');
           ui.item.children('#ekleForm').hide();
-          //alert(ui.item.children('#silFormHidden').css());
 
           var yazi_url =ui.item.attr('url');
           // Do some ajax action...
@@ -71,11 +68,7 @@
 
 <ul id="sortable2" class="connectedSortable">
 Bugunku Yazilar
-    <select name="gazeteler" id="gazeteler">
-        <option value="Hurriyet" selected="selected">Hurriyet</option>
-        <option value="Radikal">Radikal</option>
-        <option value="Zaman">Zaman</option>
-    </select>
+    %include gazeteler_selection gazeteler = gazeteler
     <br>
     %for row in rows_new:
       <li class="ui-state-default"  url="{{!row.url}}" gazete = "{{!row.gazete}}" type = "Bugun">

@@ -58,7 +58,7 @@ class kose_yazisi_tests(TestCase):
         self.insert_doc_with_mock_user(self.get_yazi_with_url(get_url()))
         self.insert_doc_with_mock_user(self.get_yazi_with_url(get_url2()))
 
-        titles, rows, rows_new = get_yazilar(get_mock_user_name())
+        rows, rows_new = get_yazilar(get_mock_user_name())
         self.assertEqual(2, len(rows))
         self.clean_up_docs_for(get_mock_user_name())
 

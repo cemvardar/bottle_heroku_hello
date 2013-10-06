@@ -29,14 +29,15 @@ def get_yazi_content(user_name, object_id):
 
 @route('/koseyazisi/:user_name/tile')
 def koseyazisi_show(user_name='cem'):
-    titles, rows, rows_new = get_yazilar(user_name)
-    return template('tiles', titles=titles, rows=rows, rows_new= rows_new, user_name=user_name)
+    rows, rows_new = get_yazilar(user_name)
+    gazeteler = ['Hurriyet', 'Radikal', 'Zaman']
+    return template('tiles', rows=rows, rows_new= rows_new, user_name=user_name , gazeteler = gazeteler)
 
 
 @route('/koseyazisi/:user_name')
 def koseyazisi_show(user_name='cem'):
-    titles, rows, rows_new = get_yazilar(user_name)
-    return template('kose_yazisi', titles=titles, rows=rows, rows_new= rows_new, user_name=user_name)
+    rows, rows_new = get_yazilar(user_name)
+    return template('kose_yazisi', titles=[], rows=rows, rows_new= rows_new, user_name=user_name)
 
 
 @post('/koseyazisi/:user_name')

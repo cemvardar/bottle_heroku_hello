@@ -78,24 +78,22 @@ def actions_cell_new_row(doc, user_name='cem'):
     object_id = get_value_if_exists(doc, '_id')
     url = get_value_if_exists(doc, 'url')
     actionsCell= template('add_button', url=url, user_name=user_name)
-    data = {}
-    data['form_id'] = "silFormHidden"
-    data['object_id'] = object_id
-    data['user_id'] = user_name
-    data['url'] = url
-    return actionsCell + template('delete_button', data=data, form_id="silFormHidden", object_id=object_id, user_name=user_name)
+    data = {'form_id': "silFormHidden",
+            'object_id': object_id,
+            'user_id': user_name,
+            'url': url}
+    return actionsCell + template('delete_button', data=data)
 
 
 
 def actions_cell_archive_row(doc, user_name='cem', form_id='silForm'):
     object_id = get_value_if_exists(doc, '_id')
     actionsCell = template('goster_button', object_id=object_id, user_name=user_name)
-    data = {}
-    data['form_id'] = form_id
-    data['object_id'] = object_id
-    data['user_id'] = user_name
-    data['url'] = get_value_if_exists(doc, 'url')
-    return actionsCell + template('delete_button', data = data, form_id=form_id, object_id=object_id, user_name=user_name)
+    data = {'form_id': form_id,
+            'object_id': object_id,
+            'user_id': user_name,
+            'url': get_value_if_exists(doc, 'url')}
+    return actionsCell + template('delete_button', data = data)
 
 
 def keywords_cell(doc):
@@ -144,18 +142,16 @@ def get_archive_actions_plus_gazete_image(doc, user_name):
     return image_html + archiveAction
 
 
-def most_recent_rows_for_html(most_recent_docs_list, user_name, other_docs):
+def most_recent_rows_for_html(most_recent_docs_list, user_name, archive_docs_keys):
     new_rows = []
     for doc in most_recent_docs_list:
         key = get_key(doc)
-        if key in other_docs:
+        if key in archive_docs_keys:
             continue
         doc_row = DocRow(doc)
         doc_row.append(get_author_plus_date(doc))
         doc_row.append(link_cell(doc))
         doc_row.append(get_most_recent_actions_plus_gazete_image(doc, user_name))
-        # doc_row.append(get_value_if_exists(doc, 'gazete'))
-        # doc_row.append(get_value_if_exists(doc, 'url'))
         new_rows.append(doc_row)
     return new_rows
 
@@ -182,19 +178,18 @@ def get_yazilar(user_name):
 
     authorCounts = defaultdict(int)
 
-    counter = {}
+    docsInArchive = {}
     for doc in archive_docs_list:
         authorCounts[doc['author']]+=1
         key = get_key(doc)
-        if key not in counter:
-            counter[key] = doc
+        if key not in docsInArchive:
+            docsInArchive[key] = doc
 
     most_recent_docs_list.sort( key=lambda x: -(authorCounts[x['author']]))
-    titles = ['yazar', 'tarih', 'baslik', 'action', 'keywords', 'gazete']
     archive_rows = archive_rows_for_html(archive_docs_list, user_name)
-    new_rows = most_recent_rows_for_html(most_recent_docs_list, user_name, counter)
+    new_rows = most_recent_rows_for_html(most_recent_docs_list, user_name, docsInArchive)
 
-    return titles, archive_rows, new_rows
+    return archive_rows, new_rows
 
 def get_gazete_image_html(doc):
     gazete_name = get_value_if_exists(doc, 'gazete')
