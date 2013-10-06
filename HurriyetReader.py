@@ -23,8 +23,11 @@ class HurriyetReader():
     def get_yazi_links(self, html):
         links = set([])
         for a in get_links_from_html(html):
-            if 'yazarlar' in a['href'] and 'asp' in a['href'] \
-                and 'default' not in a['href'] and 'ID' not in a['href']:
+            if ('yazarlar' in a['href']
+                and 'asp' in a['href']
+                and 'default' not in a['href']
+                and 'ID' not in a['href']
+            ):
                 links.add(a['href'])
         return links
 
