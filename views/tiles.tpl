@@ -14,6 +14,21 @@
       #sortable1 li, #sortable2 li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; width: 360px; }
       #silFormHidden {visibility:hidden;}
   </style>
+  <script type="text/javascript">
+    function SelectGazete(gazeteName){
+        $("li[gazete=" + gazeteName +"][type='Bugun']").show(250);
+        $("li[gazete!=" + gazeteName +"][type='Bugun']").hide(250);
+    }
+  </script>
+  <script type="text/javascript">
+        $(document).ready(function(){
+            $('#gazeteler').change(function()
+                {
+                   SelectGazete(this.value);
+                });
+            SelectGazete('Hurriyet');
+        });
+  </script>
   <script>
   $(function() {
     $( "#sortable2" ).sortable({
@@ -56,9 +71,16 @@
 
 <ul id="sortable2" class="connectedSortable">
 Bugunku Yazilar
+    <select name="gazeteler" id="gazeteler">
+        <option value="Hurriyet" selected="selected">Hurriyet</option>
+        <option value="Radikal">Radikal</option>
+        <option value="Zaman">Zaman</option>
+    </select>
+    <br>
     %for row in rows_new:
       %url = row.pop()
-      <li class="ui-state-default"  url="{{!url}}">
+      %gazete = row.pop()
+      <li class="ui-state-default"  url="{{!url}}" gazete = "{{!gazete}}" type = "Bugun">
       %for col in row:
         {{!col}}<br>
       %end
