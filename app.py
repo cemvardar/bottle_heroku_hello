@@ -2,7 +2,7 @@ from gevent import monkey; monkey.patch_all()
 import datetime
 from KelimelerPage import get_kelimeler_content, insert_new_keyword, delete_keyword
 from SimpleQuery import SimpleQuery
-from gevent import monkey; monkey.patch_all()
+# from gevent import monkey; monkey.patch_all()
 import gviz_api
 from kose_yazisi import get_yazi_json, upsert_doc_into_yazilar, delete_doc_from_yazilar, get_yazilar, delete_doc_from_yazilar_url
 from mongolab_helper import get_commutes_collection

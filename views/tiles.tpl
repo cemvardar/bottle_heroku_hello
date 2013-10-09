@@ -13,6 +13,11 @@
       #sortable1, #sortable2 {list-style-type: none; margin: 0; padding: 0 0 0.5em; float: left; margin-right: 10px; }
       #sortable1 li, #sortable2 li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; width: 360px; }
       #silFormHidden {visibility:hidden;}
+      .connectedSortable{
+            overflow: scroll;
+            height: 700px;
+            width: 385px;
+      }
   </style>
   <script type="text/javascript">
     function SelectGazete(gazeteName){
