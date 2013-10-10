@@ -31,7 +31,7 @@
                 {
                    SelectGazete(this.value);
                 });
-            SelectGazete('Hurriyet');
+            SelectGazete($('#gazeteler').val());
         });
   </script>
   <script>
@@ -73,7 +73,7 @@
 
 <ul id="sortable2" class="connectedSortable">
 Bugunku Yazilar
-    %include gazeteler_selection gazeteler = gazeteler
+    %include gazeteler_selection gazeteler = rows_new.newspapers
     <br>
     %for row in rows_new:
       <li class="ui-state-default"  url="{{!row.url}}" gazete = "{{!row.gazete}}" type = "Bugun">

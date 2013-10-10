@@ -30,8 +30,7 @@ def get_yazi_content(user_name, object_id):
 @route('/koseyazisi/:user_name/tile')
 def koseyazisi_show(user_name='cem'):
     rows, rows_new = get_yazilar(user_name)
-    gazeteler = ['Hurriyet', 'Radikal', 'Zaman']
-    return template('tiles', rows=rows, rows_new= rows_new, user_name=user_name , gazeteler = gazeteler)
+    return template('tiles', rows=rows, rows_new= rows_new, user_name=user_name)
 
 
 @route('/koseyazisi/:user_name')

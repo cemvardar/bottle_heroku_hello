@@ -143,7 +143,7 @@ def get_archive_actions_plus_gazete_image(doc, user_name):
 
 
 def most_recent_rows_for_html(most_recent_docs_list, user_name, archive_docs_keys):
-    new_rows = []
+    new_rows = DocRowContainer()
     for doc in most_recent_docs_list:
         key = get_key(doc)
         if key in archive_docs_keys:
@@ -154,6 +154,13 @@ def most_recent_rows_for_html(most_recent_docs_list, user_name, archive_docs_key
         doc_row.append(get_most_recent_actions_plus_gazete_image(doc, user_name))
         new_rows.append(doc_row)
     return new_rows
+
+class DocRowContainer(list):
+    def __init__(self):
+        self.newspapers = set([])
+    def append(self, docRow):
+        self.newspapers.add(docRow.gazete)
+        super(DocRowContainer, self).append(docRow)
 
 class DocRow(list):
     def __init__(self, doc):
