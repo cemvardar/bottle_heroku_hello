@@ -124,9 +124,9 @@ def get_username_query(user_name):
 
 
 def archive_rows_for_html(archive_docs_list, user_name):
-    archive_rows = []
+    archive_rows = DocRowContainer()
     for doc in archive_docs_list:
-        doc_row = []
+        doc_row = DocRow(doc)
         doc_row.append(get_author_plus_date(doc))
         doc_row.append(link_cell(doc))
         doc_row.append(get_archive_actions_plus_gazete_image(doc, user_name))

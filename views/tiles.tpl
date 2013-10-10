@@ -20,18 +20,22 @@
       }
   </style>
   <script type="text/javascript">
-    function SelectGazete(gazeteName){
-        $("li[gazete=" + gazeteName +"][type='Bugun']").show(250);
-        $("li[gazete!=" + gazeteName +"][type='Bugun']").hide(250);
+    function SelectGazete(gazeteName, rowCollectionName){
+        $("li[gazete=" + gazeteName +"][type=" + rowCollectionName+"]").show(250);
+        $("li[gazete!=" + gazeteName +"][type=" +   rowCollectionName+"]").hide(250);
     }
   </script>
   <script type="text/javascript">
         $(document).ready(function(){
             $('#gazeteler').change(function()
                 {
-                   SelectGazete(this.value);
+                   SelectGazete(this.value, 'Bugun');
                 });
-            SelectGazete($('#gazeteler').val());
+            $('#Arsiv').change(function()
+                {
+                   SelectGazete(this.value, 'Archive');
+                });
+            SelectGazete($('#gazeteler').val(), 'Bugun');
         });
   </script>
   <script>
@@ -73,7 +77,7 @@
 
 <ul id="sortable2" class="connectedSortable">
 Bugunku Yazilar
-    %include gazeteler_selection gazeteler = rows_new.newspapers
+    %include gazeteler_selection gazeteler = rows_new.newspapers, row_collection_name='gazeteler'
     <br>
     %for row in rows_new:
       <li class="ui-state-default"  url="{{!row.url}}" gazete = "{{!row.gazete}}" type = "Bugun">
@@ -86,8 +90,10 @@ Bugunku Yazilar
 
 <ul id="sortable1" class="connectedSortable">
 Arisivim
+    %include gazeteler_selection gazeteler = rows.newspapers, row_collection_name='Arsiv'
+    <br>
     %for row in rows:
-      <li class="ui-state-default" id="{{!row[0]}}">
+      <li class="ui-state-default" id="{{!row[0]}}" gazete = "{{!row.gazete}}" type = "Archive">
 
       %for col in row:
         {{!col}}<br>
