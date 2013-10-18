@@ -3,21 +3,20 @@ from bs4 import BeautifulSoup
 
 __author__ = 'cvardar'
 
-
-class ZamanReader():
+class SozcuReader():
     def get_doc_from_html(self, html, url):
         try:
             soup = BeautifulSoup(html)
             yazi = {}
-            yazi['gazete'] = 'Zaman'
+            yazi['gazete'] = 'Sozcu'
             yazi['url'] = url
-            tarih = soup.find('div', attrs={'class': 'detayTarih'}).text
+            tarih = soup.find('meta', attrs={'itemprop': 'datePublished'})['content']
             yazi['date'] = tarih
-            yazarName = soup.find('span', attrs={'itemprop': 'author'}).text
+            yazarName = soup.find('div', attrs={'class': 'yazdet'}).text
             yazi['author'] = yazarName
-            yaziContent = soup.find('span', {"itemprop": "articleBody"})
+            yaziContent = soup.find('div', {"class": "content"})
             yazi['content'] = unicode(yaziContent)
-            yazi['title'] = soup.find('title').text.strip('- ZAMAN')
+            yazi['title'] = soup.find('meta', attrs={'property': 'og:title'})['content']
             return yazi
         except:
             return {}
@@ -27,8 +26,9 @@ class ZamanReader():
         for a in get_links_from_html(html):
             if (
                     'href' in a.attrs
-                and '.html' in a['href']
-                and 'http:' not in a['href']
+                and 'yazarlar' in a['href']
+                and 'kategori' not in a['href']
+                and 'spor-yazarlari' not in a['href']
             ):
-                links.add("http://zaman.com.tr" + a['href'])
+                links.add(a['href'])
         return links

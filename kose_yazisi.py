@@ -1,9 +1,11 @@
 from collections import defaultdict
 import urllib2
+import time
 from HtmlAndTextParseHelper import strip_tags, get_gazete_name, get_html_from_url
 from HurriyetReader import HurriyetReader
 from RadikalReader import RadikalReader
 from SimpleQuery import SimpleQuery
+from SozcuReader import SozcuReader
 from ZamanReader import ZamanReader
 from bottle import template
 from bson import ObjectId
@@ -21,20 +23,35 @@ def get_contained_keywords(yazi, keywords):
 
 
 def get_yazi_json(url):
-    try:
-        print url
-        response = urllib2.urlopen(url)
-    except urllib2.HTTPError, err:
-        if err.code == 404:
-            return {}
-        else:
-            raise
-    html = response.read()
-    try:
+    print url
+    html = try_10_times(url)
+    if html:
         return get_gazete_reader(url).get_doc_from_html(html,url)
-    except:
-        print url
-        return {}
+    print url
+    return {}
+
+def try_10_times(url):
+        user_agents = [
+            'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11',
+            'Opera/9.25 (Windows NT 5.1; U; en)',
+            'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)',
+            'Mozilla/5.0 (compatible; Konqueror/3.5; Linux) KHTML/3.5.5 (like Gecko) (Kubuntu)',
+            'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.12) Gecko/20070731 Ubuntu/dapper-security Firefox/1.5.0.12',
+            'Lynx/2.8.5rel.1 libwww-FM/2.14 SSL-MM/1.4.1 GNUTLS/1.2.9'
+        ]
+        for i in range(10):
+            # choice1 = choice(user_agents)
+            choice1 = user_agents[i % 6]
+            # print choice1
+
+            headers = {'User-Agent': choice1}
+            req = urllib2.Request(url, None, headers)
+            try:
+                html = urllib2.urlopen(req).read()
+                return html
+            except:
+                time.sleep(3)
+                pass
 
 def get_yazilar_collection():
     return get_collection('yazilar')
@@ -206,6 +223,8 @@ def get_gazete_image_html(doc):
         return "<img src='/radikal_logo.jpg' alt='some_text'>"
     if gazete_name =='Zaman':
         return "<img src='/zaman_logo.jpg' alt='some_text'>"
+    if gazete_name =='Sozcu':
+        return "<img src='/sozcu_logo.jpg' alt='some_text'>"
     return ''
 
 
@@ -217,9 +236,11 @@ def get_gazete_reader(url):
         return RadikalReader()
     if gazete_name =='zaman':
         return ZamanReader()
+    if gazete_name =='sozcu':
+        return SozcuReader()
 
 def get_yazi_links_from_url(url):
-    html = get_html_from_url(url)
+    html = try_10_times(url)
     return get_gazete_reader(url).get_yazi_links(html)
 
 def get_key(doc):
