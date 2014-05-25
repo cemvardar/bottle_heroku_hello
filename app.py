@@ -1,3 +1,5 @@
+import json
+import urllib2
 from gevent import monkey; monkey.patch_all()
 import datetime
 from KelimelerPage import get_kelimeler_content, insert_new_keyword, delete_keyword
@@ -32,6 +34,21 @@ def koseyazisi_show(user_name='cem'):
     rows, rows_new = get_yazilar(user_name)
     return template('tiles', rows=rows, rows_new= rows_new, user_name=user_name)
 
+@route('/fantezi/:user_name')
+def mac_show(user_name='cem'):
+    matchId = '{"matchId":"11868966"}'
+    url = "http://www.ligtv.com.tr/_AjaxServices/MatchService.aspx/Statistics"
+    a = {}
+    a['Accept-Encoding'] ='gzip,deflate,sdch'
+    a['Accept-Language'] ='en-US,en;q=0.8,tr;q=0.6'
+    a['Content-Type']= 'application/json; charset=UTF-8'
+    a['Accept']= 'application/json, text/javascript, /; q=0.01'
+    a['Cache-Control']= 'max-age=0'
+    a['X-Requested-With'] = 'XMLHttpRequest'
+    request = urllib2.Request(url, headers=a, data=matchId)
+    response = urllib2.urlopen(request)
+    data = json.load(response)
+    return data
 
 @route('/koseyazisi/:user_name')
 def koseyazisi_show(user_name='cem'):
